@@ -1,5 +1,20 @@
 ---
-title: "matteo-torres.github.io"
+#title: "Matteo Torres"
+image: meds_headshot.jpeg
+about: 
+  template: trestles
+  image-shape: rounded
+  image-width: 16em
+  links:
+    - text: LinkedIn
+      href: http://www.linkedin.com/in/matteo-torres-876a62234
+    - text: GitHub
+      href: https://github.com/matteo-torres
+    - text: Email
+      href: mailto:matteotorres@bren.ucsb.edu
 ---
 
+Matteo Torres is a graduate student at the University of California, Santa Barbara Bren School of Environmental Science & Management, pursuing a master’s degree in Environmental Data Science. He recently earned his bachelor’s degree in Biology from California State University, Long Beach (CSULB).
+
+Matteo is eager to acquire new data science skills and address complex environmental issues. He is passionate about continuing his professional career in environmental data science, with a particular focus on ecology and conservation planning.
 

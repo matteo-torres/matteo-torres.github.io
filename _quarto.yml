@@ -3,18 +3,19 @@ project:
   output-dir: docs
 
 website:
-  title: "matteo-torres.github.io"
+  title: "Matteo Torres"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+      - href: resources.qmd
+        text: Resources
 
 format:
   html:
-    theme: cosmo
+    theme: cyborg
     css: styles.css
     toc: true
 
-editor: visual
 
