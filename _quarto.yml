@@ -5,17 +5,30 @@ project:
 website:
   title: "Matteo Torres"
   navbar:
-    left:
+    title: false
+    logo: images/logo.png
+    logo-alt: "Alt text for logo"
+    right:
       - href: index.qmd
         text: Home
       - about.qmd
       - href: resources.qmd
         text: Resources
+      - href: posts.qmd
+        text: Blog
+      - href: Torres_Matteo_Resume.pdf
+        text: Resume
+        target: _blank
+  page-footer:
+    background: dark
+    left: Copyright 2024, Matteo Torres
+    right: This website is built with {{< fa heart title="a heart" >}}
 
 format:
   html:
-    theme: cyborg
-    css: styles.css
-    toc: true
+    theme: styles.scss
+    mainfont: Unna
+    toc: false
+    page-layout: full
 
 
