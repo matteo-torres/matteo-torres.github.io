@@ -1,0 +1,18 @@
+/*-- scss:defaults --*/
+
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+// Colors 
+$apple-green: #A9B83D;
+$moss-green: #8EA253;
+
+// Quarto Sass Variables 
+$navbar-bg: $moss-green; // navbar
+
+/*-- scss:rules --*/
+
+.navbar-brand img {
+  max-height: 50px;
+  width: auto;
+}
