@@ -25,8 +25,8 @@ website:
 format:
   html:
     theme: 
-      - cyborg
-      - styles.scss
+    - cyborg
+    - styles.scss
     mainfont: Arial Narrow
     fontcolor: white
     toc: false
