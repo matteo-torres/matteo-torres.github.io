@@ -5,29 +5,30 @@ project:
 website:
   title: "Matteo Torres"
   navbar:
-    title: false
-    logo: images/logo.png
-    logo-alt: "Alt text for logo"
+    title: matteo
     right:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: home
+      - href: about.qmd
+        text: about
       - href: resources.qmd
-        text: Resources
+        text: resources
       - href: posts.qmd
-        text: Blog
+        text: blog
       - href: Torres_Matteo_Resume.pdf
-        text: Resume
+        text: resume
         target: _blank
   page-footer:
-    background: dark
     left: Copyright 2024, Matteo Torres
-    right: This website is built with {{< fa heart title="a heart" >}}
+    right: This website is built with {{< fa brands github title="The GitHub octocat logo" >}}, {{< fa brands r-project title="R Project" >}}, Quarto, and {{< fa heart title="a heart" >}}
 
 format:
   html:
-    theme: styles.scss
-    mainfont: Unna
+    theme: 
+      - cyborg
+      - styles.scss
+    mainfont: Arial Narrow
+    fontcolor: white
     toc: false
     page-layout: full
 

@@ -12,7 +12,7 @@ about:
       target: _blank
     - text: GitHub
       icon: github
-      href: https://github.com/matteo-torres
+      href: https://github.com/matteo-torresin
       target: _blank
     - text: Email
       icon: envelope
@@ -20,7 +20,7 @@ about:
       target: _blank
 ---
 
-Matteo Torres is a graduate student at the University of California, Santa Barbara Bren School of Environmental Science & Management, pursuing a master’s degree in Environmental Data Science. He recently earned his bachelor’s degree in Biology from California State University, Long Beach (CSULB).
+Hi, my name is Matteo Torres, and I am a chicano from Wilmington, CA. I recently relocated to pursue a master's in Environmental Data Science (MEDS)  at the University of California, Santa Barbara Bren School of Environmental Science & Management.
 
-Matteo is eager to acquire new data science skills and address complex environmental issues. He is passionate about continuing his professional career in environmental data science, with a particular focus on ecology and conservation planning.
 
+I am interested in learning new data science skills to address complex environmental issues, particularly those related to ecology, conservation, and restoration. Outside of academics, I love to dance, attend concerts, and listen to various genres of music!
