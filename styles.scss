@@ -6,13 +6,15 @@
 // Colors 
 $apple-green: #A9B83D;
 $moss-green: #8EA253;
+$brat-green: #8ACE00;
+$brat-blue: #1004b4;
+$black: #000000;
 
 // Quarto Sass Variables 
-$navbar-bg: $moss-green; // navbar
+$footer-bg: $brat-green; // footer
+$navbar-hl: $brat-green;
+$link-color: $brat-green;
 
 /*-- scss:rules --*/
 
-.navbar-brand img {
-  max-height: 50px;
-  width: auto;
-}
+
