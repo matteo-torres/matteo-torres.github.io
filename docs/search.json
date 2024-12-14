@@ -9,9 +9,9 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Me",
     "section": "",
-    "text": "I love to work!"
+    "text": "I am full time graduate student pursuing a master of environmental data science at the Bren School of Environmental Science & Management at the University of California, Santa Barbara.\n\n\n\nNCEAS"
   },
   {
     "objectID": "DELETE-LATER/practice.html",
@@ -39,7 +39,7 @@
     "href": "posts.html",
     "title": "Blog",
     "section": "",
-    "text": "Blog Post Title\n\n\n\nQuarto\n\n\nMEDS\n\n\n\nA short catchy description of the blog post\n\n\n\nMatteo Torres\n\n\nOct 18, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Exploring Environmental Justice in Los Angeles County\n\n\n\nEnvironmental Justice\n\n\nStatistics\n\n\n\nHow do environmental pollutants and socio-economic factors relate to life expectancy in Los Angeles County?\n\n\n\nMatteo Torres\n\n\nDec 13, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBlog Post Title\n\n\n\nQuarto\n\n\nMEDS\n\n\n\nA short catchy description of the blog post\n\n\n\nMatteo Torres\n\n\nOct 18, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/2024-10-18-my-first-post/index.html#this-is-my-second-section",
@@ -75,5 +75,82 @@
     "title": "All of my favorite resources!",
     "section": "",
     "text": "Coming soon…"
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "About",
+    "section": "",
+    "text": "I am full time graduate student pursuing a master of environmental data science at the Bren School of Environmental Science & Management at the University of California, Santa Barbara."
+  },
+  {
+    "objectID": "posts/2024-12-13-stats-final/index.html",
+    "href": "posts/2024-12-13-stats-final/index.html",
+    "title": "Exploring Environmental Justice in Los Angeles County",
+    "section": "",
+    "text": "Repository: https://github.com/matteo-torres/ejscreen-LA"
+  },
+  {
+    "objectID": "posts/2024-12-13-stats-final/index.html#background",
+    "href": "posts/2024-12-13-stats-final/index.html#background",
+    "title": "Exploring Environmental Justice in Los Angeles County",
+    "section": "Background",
+    "text": "Background\nLos Angeles County is home to over 9 million people. Approximately 30% of the population identifies as people of color, and about 14% are considered low income. Many of these individuals are affected by historical redlining, which has led to the segregation of communities. Redlining originated from the Home Owners’ Loan Corporation (HOLC) grades introduced in the 1930s, which primarily benefited affluent white neighborhoods. This practice has resulted in unequal access to resources and disparities in the quality of life for many residents of Los Angeles.\nThe purpose of this study is to statistically analyze current data reflecting how pollutants and socioeconomic factors may relate to life expectancy in LA County. My goal is to identify trends that enhance our understanding of the current situation in communities that have historically faced disparities."
+  },
+  {
+    "objectID": "posts/2024-12-13-stats-final/index.html#highlights",
+    "href": "posts/2024-12-13-stats-final/index.html#highlights",
+    "title": "Exploring Environmental Justice in Los Angeles County",
+    "section": "Highlights",
+    "text": "Highlights"
+  },
+  {
+    "objectID": "posts/2024-12-13-stats-final/index.html#data-descriptions",
+    "href": "posts/2024-12-13-stats-final/index.html#data-descriptions",
+    "title": "Exploring Environmental Justice in Los Angeles Countyy",
+    "section": "Data Descriptions",
+    "text": "Data Descriptions"
+  },
+  {
+    "objectID": "posts/2024-12-13-stats-final/index.html#about-the-data",
+    "href": "posts/2024-12-13-stats-final/index.html#about-the-data",
+    "title": "Exploring Environmental Justice in Los Angeles County",
+    "section": "About the data",
+    "text": "About the data\nI will be using data from the United States Environmental Protection Agency for this analysis. Specifically, I will work with a CSV file from the State EJScreen: Environmental Justice Screening and Mapping Tool at the block group level.\n\nDependent Variable\n\nLow Life Expectancy: This measure identifies areas where life expectancy is lower than national averages. EJScreen utilizes an inverse approach, where higher values correspond to lower life expectancy and lower scores indicate higher life expectancy. The percentage of Low Life Expectancy is calculated using the formula:\n\n% Low Life Expectancy = 1 - (Life Expectancy / Max Life Expectancy)\n\n\nIndependent Variables\nEnvironmental Burden Indicators\n\nParticulate Matter 2.5 (PM 2.5): This metric quantifies potential exposure to fine particulate matter (2.5 micrometers or smaller) and is expressed as the annual average concentration in the air, measured in micrograms per cubic meter.\nOzone: The ozone indicator in EJScreen version 2.3 reflects the annual mean of the 10 highest daily maximum 8-hour (MDA8) ozone concentrations.\nHazardous Waste Proximity: This indicator considers the total number of hazardous waste facilities within a 10-kilometer radius of the average resident in each block group, adjusted for distance. It is calculated as a population-weighted average of the blocks within each block group.\n\nSocioeconomic Indicators\n\nPeople of Color: This group includes individuals who identify their racial status as a race other than “white alone” and/or identify their ethnicity as Hispanic or Latino.\nLow Income: A household is classified as low income if its income is equal to or less than twice the poverty level, which is defined as $29,950 by the U.S. Census Bureau.\n\n\n\nLimitations\n\nThis tool is not designed to provide a comprehensive risk analysis. Instead, it serves as a screening tool to explore important issues related to environmental justice.\nIt is based on demographic and environmental estimates that carry a considerable degree of uncertainty, particularly when analyzing small geographic areas."
+  },
+  {
+    "objectID": "posts/2024-12-13-stats-final/index.html#citations",
+    "href": "posts/2024-12-13-stats-final/index.html#citations",
+    "title": "Exploring Environmental Justice in Los Angeles County",
+    "section": "Citations",
+    "text": "Citations\nEnvironmental Protection Agency. (n.d.-b). EPA. https://www.epa.gov/ejscreen/download-ejscreen-data\nPhD., B. M. (2022, March 8). Holc “redlining” maps: The persistent structure of segregation and economic inequality ” NCRC. National Community Reinvestment Coalition. https://ncrc.org/holc/#:~:text=Redlining%20buttressed%20the%20segregated%20structure,%25)%20are%20minority%20neighborhoods%20now.\nBureau, U. C. (2024b, November 28). U.S. Census Bureau. Census.gov. https://www.census.gov/"
+  },
+  {
+    "objectID": "posts/2024-12-13-stats-final/index.html#limitations",
+    "href": "posts/2024-12-13-stats-final/index.html#limitations",
+    "title": "Exploring Environmental Justice in Los Angeles County",
+    "section": "Limitations",
+    "text": "Limitations\n\nThis tool is not designed to provide a comprehensive risk analysis. Instead, it serves as a screening tool to explore important issues related to environmental justice.\nIt is based on demographic and environmental estimates that carry a considerable degree of uncertainty, particularly when analyzing small geographic areas."
+  },
+  {
+    "objectID": "posts/2024-12-13-stats-final/index.html#analysis",
+    "href": "posts/2024-12-13-stats-final/index.html#analysis",
+    "title": "Exploring Environmental Justice in Los Angeles County",
+    "section": "Analysis",
+    "text": "Analysis\nGoal: Explore the relationship between environmental pollutants and socio-economic factors, controlling for confounding variables.\n\nCorrelation Analysis\n\n\nRegression Models"
+  },
+  {
+    "objectID": "posts/2024-12-13-stats-final/index.html#analysis-plan",
+    "href": "posts/2024-12-13-stats-final/index.html#analysis-plan",
+    "title": "Exploring Environmental Justice in Los Angeles County",
+    "section": "Analysis Plan",
+    "text": "Analysis Plan\nGoal: To explore the relationship between environmental pollutants and socio-economic factors while controlling for confounding variables.\n\nCorrelation Analysis\n\nExamine pairwise correlations among pollutants, socio-economic factors, and life expectancy.\n\n\n\nRegression Models\n\nModel 1: Use simple regression to predict life expectancy based on environmental pollutants.\nModel 2: Implement multiple linear regression, incorporating socio-economic factors as additional predictors.\nModel 3: Investigate interaction effects to determine how socio-economic factors influence the relationship between pollutants and life expectancy."
+  },
+  {
+    "objectID": "posts/2024-12-13-stats-final/index.html#results",
+    "href": "posts/2024-12-13-stats-final/index.html#results",
+    "title": "Exploring Environmental Justice in Los Angeles County",
+    "section": "Results",
+    "text": "Results\n\nPairwise Correlation Analysis\n\n\n\npm25\nozone\nptsdf\nlowincpct\nlifeexppct\npeopcolorpct\n\n\n\n\npm25\n1.00\n-0.10\n0.59\n0.17\n0.12\n0.46\n\n\nozone\n-0.10\n1.00\n-0.52\n-0.02\n-0.19\n0.05\n\n\nptsdf\n0.59\n-0.52\n1.00\n0.29\n0.24\n0.39\n\n\nlowincpct\n0.17\n-0.02\n0.29\n1.00\n0.41\n0.52\n\n\nlifeexppct\n0.12\n-0.19\n0.24\n0.41\n1.00\n0.38\n\n\npeopcolorpct\n0.46\n0.05\n0.39\n0.52\n0.38\n1.00\n\n\n\n# Simple regression model\nlm(lifeexppct ~ pm25 + ozone + ptsdf, data = los_angeles)\n\nSimple Regression Model\n\n\nCoefficients\nEstimate\nStd. Error\nt value\nPr(&gt;\n\n\n\n\n(Intercept)\n1.841e-01\n5.296e-03\n34.765\n&lt; 2e-16 ***\n\n\npm25\n1.022e-04\n3.200e-04\n0.319\n0.749\n\n\nozone\n-3.287e-04\n5.364e-05\n-6.128\n9.43e-10 ***\n\n\nptsdf\n7.626e-04\n7.584e-05\n10.056\n&lt; 2e-16 ***\n\n\n\nResidual standard error: 0.03196 on 6289 degrees of freedom Multiple R-squared: 0.06136, Adjusted R-squared: 0.06091 F-statistic: 137 on 3 and 6289 DF, p-value: &lt; 2.2e-16\n\n\n\nInsert Caption Here\n\n\n# Multiple regression model\nsummary(lm(lifeexppct ~ pm25 + ozone + ptsdf + peopcolorpct + lowincpct, data = los_angeles))\n\nMultiple regression model\n\n\nCoefficients\nEstimate\nStd. Error\nt value\nPr(&gt;\n\n\n\n\n(Intercept)\n2.146e-01\n4.870e-03\n44.072\n&lt; 2e-16 ***\n\n\npm25\n-1.092e-03\n2.990e-04\n-3.654\n0.000261 ***\n\n\nozone\n-7.951e-04\n4.964e-05\n-16.017\n&lt; 2e-16 ***\n\n\nptsdf\n-1.683e-04\n7.183e-05\n-2.343\n0.019141 *\n\n\npeopcolorpct\n3.679e-02\n1.858e-03\n19.802\n&lt; 2e-16 ***\n\n\nlowincpct\n4.828e-02\n2.269e-03\n21.280\n&lt; 2e-16 ***\n\n\n\nResidual standard error: 0.0286 on 6287 degrees of freedom Multiple R-squared: 0.2486, Adjusted R-squared: 0.248 F-statistic: 416 on 5 and 6287 DF, p-value: &lt; 2.2e-16\n\n\n\nInsert Caption Here\n\n\n# Interaction model (pm25)\nsummary(lm(lifeexppct ~ pm25 + ozone + ptsdf + lowincpct + peopcolorpct + pm25:lowincpct + pm25:peopcolorpct, data = los_angeles))\n\nInteraction model (pm25)\n\n\nCoefficients\nEstimate\nStd. Error\nt value Pr(&gt;\nt\n\n\n\n\n(Intercept)\n1.762e-01\n1.015e-02\n17.369\n&lt; 2e-16 ***\n\n\npm25\n2.272e-03\n8.385e-04\n2.710\n0.006750 **\n\n\nozone\n-8.134e-04\n4.974e-05\n-16.354\n&lt; 2e-16 ***\n\n\nptsdf\n-1.960e-04\n7.240e-05\n-2.708\n0.006796 **\n\n\nlowincpct\n7.113e-02\n1.843e-02\n3.860\n0.000115 ***\n\n\npeopcolorpct\n8.244e-02\n1.491e-02\n5.528\n3.38e-08 ***\n\n\npm25:lowincpct\n-1.751e-03\n1.436e-03\n-1.220\n0.222597\n\n\npm25:peopcolorpct\n-3.767e-03\n1.203e-03\n-3.132\n0.001747 **\n\n\n\nResidual standard error: 0.02856 on 6285 degrees of freedom Multiple R-squared: 0.251, Adjusted R-squared: 0.2502 F-statistic: 300.9 on 7 and 6285 DF, p-value: &lt; 2.2e-16\n\n\n\nInsert Caption Here\n\n\n\n\n\nInsert Caption Here\n\n\n# Interaction model (ozone)\nsummary(lm(lifeexppct ~ pm25 + ozone + ptsdf + lowincpct + peopcolorpct + ozone:lowincpct + ozone:peopcolorpct, data = los_angeles))\n\nInteraction model (ozone)\n\n\nCoefficients\nEstimate\nStd. Error\nt value\nPr(&gt;\n\n\n\n\n(Intercept)\n5.760e-02\n1.090e-02\n5.286\n1.29e-07 ***\n\n\npm25\n-3.570e-04\n2.992e-04\n-1.193\n0.233\n\n\nozone\n1.046e-03\n1.248e-04\n8.384\n&lt; 2e-16 ***\n\n\nptsdf\n-4.230e-04\n7.293e-05\n-5.800\n6.96e-09 ***\n\n\nlowincpct\n3.485e-02\n2.166e-02\n1.609\n0.108\n\n\npeopcolorpct\n2.629e-01\n1.635e-02\n16.086\n&lt; 2e-16 ***\n\n\nozone:lowincpct\n1.353e-04\n2.576e-04\n0.525\n0.599\n\n\nozone:peopcolorpct\n-2.710e-03\n1.937e-04\n-13.991\n&lt; 2e-16 ***\n\n\n\nResidual standard error: 0.02804 on 6285 degrees of freedom Multiple R-squared: 0.2781, Adjusted R-squared: 0.2773 F-statistic: 345.9 on 7 and 6285 DF, p-value: &lt; 2.2e-16\n\n\n\nInsert Caption Here\n\n\n\n\n\nInsert Caption Here\n\n\n# Interaction model (ptsdf)\nsummary(lm(lifeexppct ~ pm25 + ozone + ptsdf + lowincpct + peopcolorpct + ptsdf:lowincpct + ptsdf:peopcolorpct, data = los_angeles))\n\nInteraction model (ptsdf)\n\n\nCoefficients\nEstimate\nStd.\nError\nt value\n\n\n\n\n(Intercept)\n2.094e-01\n5.169e-03\n40.513\n&lt; 2e-16 ***\n\n\npm25\n-1.008e-03\n3.003e-04\n-3.358\n0.000791 ***\n\n\nozone\n-7.771e-04\n5.053e-05\n-15.380\n&lt; 2e-16 ***\n\n\nptsdf\n-1.352e-05\n1.613e-04\n-0.084 0.933184\n\n\n\nlowincpct\n7.232e-02\n6.077e-03\n11.899\n&lt; 2e-16 ***\n\n\npeopcolorpct\n3.094e-02\n4.551e-03\n6.798\n1.16e-11 ***\n\n\nptsdf:lowincpct\n-1.178e-03\n2.779e-04\n-4.238\n2.29e-05 ***\n\n\nptsdf:peopcolorpct\n2.720e-04\n2.281e-04\n1.193\n0.233109\n\n\n\nResidual standard error: 0.02856 on 6285 degrees of freedom Multiple R-squared: 0.2509, Adjusted R-squared: 0.25 F-statistic: 300.7 on 7 and 6285 DF, p-value: &lt; 2.2e-16\n\n\n\nInsert Caption Here\n\n\n\n\n\nInsert Caption Here"
   }
 ]
