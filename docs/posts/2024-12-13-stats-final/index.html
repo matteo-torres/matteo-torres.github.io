@@ -23,40 +23,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -358,7 +324,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
-<p>According to the pairwise correlation analysis, which quantified the linear relationships between all variable pairs, there is a moderately positive association between hazardous waste proximity and exposure to particulate matter (PM 2.5). There is also a moderately positive association between the percentage of people of color and the percentage of low-income individuals. Conversely, there is a moderate negative association between hazardous waste proximity and the ozone indicator.</p>
+<p>According to the pairwise correlation analysis, which quantified the linear relationships between all variable pairs, there is a moderately positive association between hazardous waste proximity and exposure to particulate matter (PM 2.5). There is also a moderately positive association between the percentage of people of color and the percentage of low-income individuals. However, there is a moderate negative association between hazardous waste proximity and the ozone indicator.</p>
 <p>While these moderate relationships may provide insights into the situation in Los Angeles County, we cannot assume that correlation implies causation. It is essential to further analyze the data in different ways to gain a clearer understanding of whether these relationships are causal.</p>
 </section>
 <section id="regression-models-1" class="level4">
@@ -408,13 +374,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 <p>Adjusted R-squared: 0.06091</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="simple_regression.png" class="img-fluid figure-img"></p>
-<figcaption>Insert Caption Here</figcaption>
-</figure>
-</div>
-<p>The results indicate that both ozone levels and proximity to hazardous waste sites are significant predictors of life expectancy, as evidenced by the low p-values. The negative coefficient for ozone suggests that areas with higher ozone levels tend to have lower life expectancy. Conversely, the positive coefficient for proximity to hazardous waste sites indicates that regions closer to these sites also tend to have lower life expectancy. However, the model explains only about 6.1% of the variation in life expectancy, which implies it may not fully account for all the factors influencing this outcome. There may be other variables not included in the model that could have a more substantial impact on life expectancy.</p>
+<p><img src="simple_regression.png" class="img-fluid"></p>
+<p>The results indicate that both ozone levels and proximity to hazardous waste sites are significant predictors of life expectancy, as evidenced by the low p-values. The negative coefficient for ozone suggests that areas with higher ozone levels tend to have lower life expectancy. On the other hand, the positive coefficient for proximity to hazardous waste sites indicates that regions closer to these sites also tend to have lower life expectancy. However, the model explains only about 6.1% of the variation in life expectancy, which implies it may not fully account for all the factors influencing this outcome. There may be other variables not included in the model that could have a more substantial impact on life expectancy.</p>
 <p><em>Model 2</em>: Multiple Regression</p>
 <p><code>lm(lifeexppct ~ pm25 + ozone + ptsdf + peopcolorpct + lowincpct, data = los_angeles)</code></p>
 <table class="caption-top table">
@@ -462,7 +423,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>3.679e-02</td>
 <td>1.858e-03</td>
 <td>19.802</td>
-<td>&lt; 2e-16 ***</td>
+<td>&lt; 2e-16</td>
 </tr>
 <tr class="even">
 <td>lowincpct</td>
@@ -474,13 +435,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 <p>Adjusted R-squared: 0.248</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="multiple_regression.png" class="img-fluid figure-img"></p>
-<figcaption>Insert Caption Here</figcaption>
-</figure>
-</div>
-<p>Based on the new model, both particulate matter (PM 2.5) and ozone levels show a negative and statistically significant relationship with life expectancy. This indicates that higher pollution levels are linked to lower life expectancy. Additionally, communities located closer to hazardous waste sites also tend to have lower life expectancy. The analysis reveals that higher percentages of people of color and low-income individuals are associated with lower life expectancy, highlighting the compounded effects of environmental and socioeconomic factors in vulnerable communities. The model now accounts for approximately 24.8% of the variation in life expectancy, which is a significant improvement over the previous model. This suggests that incorporating both environmental and socioeconomic variables has enhanced the model’s explanatory power.</p>
+<p><img src="multiple_regression.png" class="img-fluid"></p>
+<p>Based on the new model, both particulate matter (PM 2.5) and ozone levels show a negative and statistically significant relationship with life expectancy. This indicates that higher pollution levels are linked to lower life expectancy. Additionally, communities located closer to hazardous waste sites also tend to have lower life expectancy. The analysis reveals that higher percentages of people of color and low-income individuals are associated with lower life expectancy, highlighting the compounded effects of environmental and socioeconomic factors in vulnerable communities. The model now accounts for approximately 24.8% of the variation in life expectancy, which is a significant improvement over the previous model. This suggests that incorporating both environmental and socioeconomic variables has enhanced the model’s fit.</p>
 <p><em>Model 3</em>: Interaction Effects (PM 2.5)</p>
 <p><code>(lm(lifeexppct ~ pm25 + ozone + ptsdf + lowincpct + peopcolorpct + pm25:lowincpct + pm25:peopcolorpct, data = los_angeles)</code></p>
 <table class="caption-top table">
@@ -554,29 +510,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 <p>Adjusted R-squared: 0.2502</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="peop_pm25.png" class="img-fluid figure-img"></p>
-<figcaption>Insert Caption Here</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="low_pm25.png" class="img-fluid figure-img"></p>
-<figcaption>Insert Caption Here</figcaption>
-</figure>
-</div>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Interaction model (ozone)</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">summary</span><span class="er">(</span><span class="ex">lm</span><span class="er">(</span><span class="ex">lifeexppct</span> ~ pm25 + ozone + ptsdf + lowincpct + peopcolorpct + ozone:lowincpct + ozone:peopcolorpct, data = los_angeles<span class="kw">))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="peop_pm25.png" class="img-fluid"></p>
+<p><img src="low_pm25.png" class="img-fluid"> According to the interaction model, the relationship between PM 2.5 levels and life expectancy is influenced by the proportion of people of color in a community. It suggests that in communities with higher percentages of people of color, the harmful effects of PM 2.5 on life expectancy are more pronounced. However, there is no significant interaction effect between particulate matter levels and the percentage of low-income individuals in predicting life expectancy. This model explains approximately 25.02% of the variability in life expectancy. Although the explanatory power of the model has slightly improved with the addition of interaction terms, it still does not account for a large portion of the variation in life expectancy, indicating that additional factors or more advanced modeling may be needed.</p>
+<p><em>Model 3</em>: Interaction Effects (Ozone)</p>
+<p><code>(lm(lifeexppct ~ pm25 + ozone + ptsdf + lowincpct + peopcolorpct + ozone:lowincpct + ozone:peopcolorpct, data = los_angeles)</code></p>
 <table class="caption-top table">
-<caption>Interaction model (ozone)</caption>
+<caption>Interaction Effects (Ozone)</caption>
 <thead>
 <tr class="header">
 <th>Coefficients</th>
 <th>Estimate</th>
 <th>Std. Error</th>
-<th>t value</th>
-<th>Pr(&gt;</th>
+<th>t-value</th>
+<th>p-value</th>
 </tr>
 </thead>
 <tbody>
@@ -585,7 +531,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>5.760e-02</td>
 <td>1.090e-02</td>
 <td>5.286</td>
-<td>1.29e-07 ***</td>
+<td>1.29e-07</td>
 </tr>
 <tr class="even">
 <td>pm25</td>
@@ -599,14 +545,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>1.046e-03</td>
 <td>1.248e-04</td>
 <td>8.384</td>
-<td>&lt; 2e-16 ***</td>
+<td>&lt; 2e-16</td>
 </tr>
 <tr class="even">
 <td>ptsdf</td>
 <td>-4.230e-04</td>
 <td>7.293e-05</td>
 <td>-5.800</td>
-<td>6.96e-09 ***</td>
+<td>6.96e-09</td>
 </tr>
 <tr class="odd">
 <td>lowincpct</td>
@@ -620,7 +566,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>2.629e-01</td>
 <td>1.635e-02</td>
 <td>16.086</td>
-<td>&lt; 2e-16 ***</td>
+<td>&lt; 2e-16</td>
 </tr>
 <tr class="odd">
 <td>ozone:lowincpct</td>
@@ -634,34 +580,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>-2.710e-03</td>
 <td>1.937e-04</td>
 <td>-13.991</td>
-<td>&lt; 2e-16 ***</td>
+<td>&lt; 2e-16</td>
 </tr>
 </tbody>
 </table>
-<p>Residual standard error: 0.02804 on 6285 degrees of freedom Multiple R-squared: 0.2781, Adjusted R-squared: 0.2773 F-statistic: 345.9 on 7 and 6285 DF, p-value: &lt; 2.2e-16</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="peop_ozone.png" class="img-fluid figure-img"></p>
-<figcaption>Insert Caption Here</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="low_ozone.png" class="img-fluid figure-img"></p>
-<figcaption>Insert Caption Here</figcaption>
-</figure>
-</div>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Interaction model (ptsdf)</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">summary</span><span class="er">(</span><span class="ex">lm</span><span class="er">(</span><span class="ex">lifeexppct</span> ~ pm25 + ozone + ptsdf + lowincpct + peopcolorpct + ptsdf:lowincpct + ptsdf:peopcolorpct, data = los_angeles<span class="kw">))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Adjusted R-squared: 0.2773</p>
+<p><img src="peop_ozone.png" class="img-fluid"></p>
+<p><img src="low_ozone.png" class="img-fluid"></p>
+<p>According to the interaction model, the relationship between ozone levels and the percentage of people of color is highly significant, indicating that communities of color face disproportionately higher health risks from ozone pollution. In contrast, the interaction between ozone levels and the percentage of low-income individuals is not significant, suggesting that income levels do not influence the negative effects of ozone on life expectancy. Approximately 27.73% of the variability in life expectancy is explained by this model, which shows an improvement to previous models, likely due to the inclusion of interaction terms.</p>
+<p><em>Model 3</em>: Interaction Effects (Hazardous Waste Proximity)</p>
+<p><code>(lm(lifeexppct ~ pm25 + ozone + ptsdf + lowincpct + peopcolorpct + ptsdf:lowincpct + ptsdf:peopcolorpct, data = los_angeles)</code></p>
 <table class="caption-top table">
-<caption>Interaction model (ptsdf)</caption>
+<caption>Interaction Effects (Hazardous Waste Proximity)</caption>
 <thead>
 <tr class="header">
 <th>Coefficients</th>
 <th>Estimate</th>
-<th>Std.</th>
-<th>Error</th>
-<th>t value</th>
+<th>Std.Error</th>
+<th>t-value</th>
+<th>p-value</th>
 </tr>
 </thead>
 <tbody>
@@ -670,49 +607,49 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>2.094e-01</td>
 <td>5.169e-03</td>
 <td>40.513</td>
-<td>&lt; 2e-16 ***</td>
+<td>&lt; 2e-16</td>
 </tr>
 <tr class="even">
 <td>pm25</td>
 <td>-1.008e-03</td>
 <td>3.003e-04</td>
 <td>-3.358</td>
-<td>0.000791 ***</td>
+<td>0.000791</td>
 </tr>
 <tr class="odd">
 <td>ozone</td>
 <td>-7.771e-04</td>
 <td>5.053e-05</td>
 <td>-15.380</td>
-<td>&lt; 2e-16 ***</td>
+<td>&lt; 2e-16</td>
 </tr>
 <tr class="even">
 <td>ptsdf</td>
 <td>-1.352e-05</td>
 <td>1.613e-04</td>
-<td>-0.084 0.933184</td>
-<td></td>
+<td>-0.084</td>
+<td>0.933184</td>
 </tr>
 <tr class="odd">
 <td>lowincpct</td>
 <td>7.232e-02</td>
 <td>6.077e-03</td>
 <td>11.899</td>
-<td>&lt; 2e-16 ***</td>
+<td>&lt; 2e-16</td>
 </tr>
 <tr class="even">
 <td>peopcolorpct</td>
 <td>3.094e-02</td>
 <td>4.551e-03</td>
 <td>6.798</td>
-<td>1.16e-11 ***</td>
+<td>1.16e-11</td>
 </tr>
 <tr class="odd">
 <td>ptsdf:lowincpct</td>
 <td>-1.178e-03</td>
 <td>2.779e-04</td>
 <td>-4.238</td>
-<td>2.29e-05 ***</td>
+<td>2.29e-05</td>
 </tr>
 <tr class="even">
 <td>ptsdf:peopcolorpct</td>
@@ -723,19 +660,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
-<p>Residual standard error: 0.02856 on 6285 degrees of freedom Multiple R-squared: 0.2509, Adjusted R-squared: 0.25 F-statistic: 300.7 on 7 and 6285 DF, p-value: &lt; 2.2e-16</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="haz_peop.png" class="img-fluid figure-img"></p>
-<figcaption>Insert Caption Here</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="haz_low.png" class="img-fluid figure-img"></p>
-<figcaption>Insert Caption Here</figcaption>
-</figure>
-</div>
+<p>Adjusted R-squared: 0.25</p>
+<p><img src="haz_peop.png" class="img-fluid"></p>
+<p><img src="haz_low.png" class="img-fluid"></p>
+<p>According to this interaction model, the significant interaction effect indicates that low-income communities are more vulnerable to the negative impacts of living near hazardous waste sites. In contrast, the non-significant interaction between proximity to hazardous waste and the percentage of people of color suggests that the racial composition of a neighborhood does not significantly influence the health effects of living near these sites. The model accounts for approximately 25% of the variance in life expectancy.</p>
+<p>Further exploration of potential interactions between other environmental pollutants and socioeconomic factors could provide deeper insights. This exploration may reveal instances of omitted variable bias, which occurs when an important factor is left out of the analysis. Additionally, we could consider model improvements by incorporating variations of effects from other variables and interactions to enhance the overall the analysis.</p>
 </section>
 </section>
 <section id="citations" class="level2">
