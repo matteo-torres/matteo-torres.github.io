@@ -8,7 +8,7 @@
 
 <meta name="author" content="Matteo Torres">
 <meta name="dcterms.date" content="2024-12-13">
-<meta name="description" content="How do environmental pollutants and socio-economic factors relate to life expectancy in Los Angeles County?">
+<meta name="description" content="How do environmental pollutants and socioeconomic factors relate to life expectancy?">
 
 <title>Matteo Torres - Exploring Environmental Justice in Los Angeles County</title>
 <style>
@@ -160,7 +160,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <h1 class="title">Exploring Environmental Justice in Los Angeles County</h1>
                   <div>
         <div class="description">
-          How do environmental pollutants and socio-economic factors relate to life expectancy in Los Angeles County?
+          How do environmental pollutants and socioeconomic factors relate to life expectancy?
         </div>
       </div>
                           <div class="quarto-categories">
@@ -209,17 +209,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
-  <li><a href="#about-the-data" id="toc-about-the-data" class="nav-link" data-scroll-target="#about-the-data">About the data</a>
-  <ul class="collapse">
-  <li><a href="#dependent-variable" id="toc-dependent-variable" class="nav-link" data-scroll-target="#dependent-variable">Dependent Variable</a></li>
-  <li><a href="#independent-variables" id="toc-independent-variables" class="nav-link" data-scroll-target="#independent-variables">Independent Variables</a></li>
-  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
-  </ul></li>
-  <li><a href="#analysis-plan" id="toc-analysis-plan" class="nav-link" data-scroll-target="#analysis-plan">Analysis Plan</a>
-  <ul class="collapse">
-  <li><a href="#correlation-analysis" id="toc-correlation-analysis" class="nav-link" data-scroll-target="#correlation-analysis">Correlation Analysis</a></li>
-  <li><a href="#regression-models" id="toc-regression-models" class="nav-link" data-scroll-target="#regression-models">Regression Models</a></li>
-  </ul></li>
+  <li><a href="#about-the-data" id="toc-about-the-data" class="nav-link" data-scroll-target="#about-the-data">About the Data</a></li>
+  <li><a href="#analysis-plan" id="toc-analysis-plan" class="nav-link" data-scroll-target="#analysis-plan">Analysis Plan</a></li>
   <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
   <li><a href="#citations" id="toc-citations" class="nav-link" data-scroll-target="#citations">Citations</a></li>
   </ul>
@@ -235,56 +226,61 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Repository: https://github.com/matteo-torres/ejscreen-LA</p>
 <section id="background" class="level2">
 <h2 class="anchored" data-anchor-id="background">Background</h2>
-<p>Los Angeles County is home to over 9 million people. Approximately 30% of the population identifies as people of color, and about 14% are considered low income. Many of these individuals are affected by historical redlining, which has led to the segregation of communities. Redlining originated from the Home Owners’ Loan Corporation (HOLC) grades introduced in the 1930s, which primarily benefited affluent white neighborhoods. This practice has resulted in unequal access to resources and disparities in the quality of life for many residents of Los Angeles.</p>
-<p>The purpose of this study is to statistically analyze current data reflecting how pollutants and socioeconomic factors may relate to life expectancy in LA County. My goal is to identify trends that enhance our understanding of the current situation in communities that have historically faced disparities.</p>
+<p>Los Angeles County, home to approximately 9.6 million residents, is one of the most diverse regions in the United States. About 30% of its population identifies as people of color, and around 14% are classified as low-income or living in poverty (US Census). Many of these individuals have been adversely affected by the generational impact of historical redlining, a practice that began in the 1930s under the Home Owners’ Loan Corporation (HOLC).</p>
+<p>The term “redlining” originates from HOLC’s use of color-coded maps to rank neighborhoods, with green designated as the best and red labeled as hazardous. This practice systematically deepened racial segregation, excluding communities of color from neighborhoods deemed “green,” and primarily benefiting white individuals and neighborhoods. As a result, perceptions of neighborhoods shifted, along with the allocation of resources, living conditions, and overall quality of life for those in red areas.</p>
+<p>Evidence suggests that the HOLC grading system is associated with numerous adverse health outcomes and poorer environmental characteristics in present-day neighborhoods (Swope). Some of these include higher levels of pollution, limited access to healthy food, and increased surface temperatures. Despite the passage of time, many residents of Los Angeles continue to bear the consequences of living in these historically redlined areas, which have seen little to no improvement in quality.</p>
+<p>The purpose of this study is to statistically analyze current data to understand how pollutants and socioeconomic factors may correlate with life expectancy in Los Angeles County. My goal is to identify trends that deepen our understanding of the current situation in communities that have historically experienced disparities.</p>
 </section>
 <section id="about-the-data" class="level2">
-<h2 class="anchored" data-anchor-id="about-the-data">About the data</h2>
-<p>I will be using data from the United States Environmental Protection Agency for this analysis. Specifically, I will work with a CSV file from the State EJScreen: Environmental Justice Screening and Mapping Tool at the block group level.</p>
-<section id="dependent-variable" class="level3">
-<h3 class="anchored" data-anchor-id="dependent-variable">Dependent Variable</h3>
+<h2 class="anchored" data-anchor-id="about-the-data">About the Data</h2>
+<p>For this study, I chose to utilize the EJScreen: Environmental Justice Screening and Mapping Tool dataset provided by the Environmental Protection Agency. This CSV file contains a variety of variables that assess different environmental burden indicators, socioeconomic indicators, and health disparity indicators, with Census block groups serving as the primary geographic unit.</p>
+<p>To begin my analysis, it is essential to filter the dataset to include only observations from Los Angeles County, select the relevant variables for measurement, and remove any entries with missing data.</p>
+<section id="dependent-variable" class="level4">
+<h4 class="anchored" data-anchor-id="dependent-variable">Dependent Variable</h4>
+<p>The primary focus of this statistical analysis is to measure how life expectancy responds to environmental and socioeconomic factors.</p>
 <ul>
-<li><strong>Low Life Expectancy</strong>: This measure identifies areas where life expectancy is lower than national averages. EJScreen utilizes an inverse approach, where higher values correspond to lower life expectancy and lower scores indicate higher life expectancy. The percentage of Low Life Expectancy is calculated using the formula:</li>
+<li><em>Low Life Expectancy</em>: This measure identifies areas where life expectancy is lower than the national average.</li>
 </ul>
+<p>EJScreen employs an inverse approach, where higher values correspond to lower life expectancy, and lower scores indicate higher life expectancy. The percentage of low life expectancy is calculated using the formula:</p>
 <p><em>% Low Life Expectancy = 1 - (Life Expectancy / Max Life Expectancy)</em></p>
 </section>
-<section id="independent-variables" class="level3">
-<h3 class="anchored" data-anchor-id="independent-variables">Independent Variables</h3>
-<p><em>Environmental Burden Indicators</em></p>
+<section id="independent-variables" class="level4">
+<h4 class="anchored" data-anchor-id="independent-variables">Independent Variables</h4>
+<p><strong>Environmental Burden Indicators</strong></p>
 <ul>
-<li><strong>Particulate Matter 2.5 (PM 2.5)</strong>: This metric quantifies potential exposure to fine particulate matter (2.5 micrometers or smaller) and is expressed as the annual average concentration in the air, measured in micrograms per cubic meter.</li>
-<li><strong>Ozone</strong>: The ozone indicator in EJScreen version 2.3 reflects the annual mean of the 10 highest daily maximum 8-hour (MDA8) ozone concentrations.</li>
-<li><strong>Hazardous Waste Proximity</strong>: This indicator considers the total number of hazardous waste facilities within a 10-kilometer radius of the average resident in each block group, adjusted for distance. It is calculated as a population-weighted average of the blocks within each block group.</li>
+<li><p><em>Particulate Matter 2.5 (PM 2.5)</em>: This metric quantifies potential exposure to fine particulate matter (2.5 micrometers or smaller) and is expressed as the annual average concentration in the air, measured in micrograms per cubic meter.</p></li>
+<li><p><em>Ozone</em>: The ozone indicator in EJScreen reflects the annual mean of the 10 highest daily maximum 8-hour (MDA8) ozone concentrations.</p></li>
+<li><p><em>Hazardous Waste Proximity</em>: This indicator considers the total number of hazardous waste facilities within a 10-kilometer radius of the average resident in each block group, adjusted for distance. It is calculated as a population-weighted average of the blocks within each block group.</p></li>
 </ul>
-<p><em>Socioeconomic Indicators</em></p>
+<p><strong>Socioeconomic Indicators</strong></p>
 <ul>
-<li><strong>People of Color</strong>: This group includes individuals who identify their racial status as a race other than “white alone” and/or identify their ethnicity as Hispanic or Latino.</li>
-<li><strong>Low Income</strong>: A household is classified as low income if its income is equal to or less than twice the poverty level, which is defined as $29,950 by the U.S. Census Bureau.</li>
+<li><p><em>People of Color</em>: This group includes individuals who identify as a race other than “white alone” and/or identify their ethnicity as Hispanic or Latino.</p></li>
+<li><p><em>Low Income</em>: A household is classified as low income if its income is equal to or less than twice the poverty level, defined as $29,950 by the U.S. Census Bureau.</p></li>
 </ul>
 </section>
-<section id="limitations" class="level3">
-<h3 class="anchored" data-anchor-id="limitations">Limitations</h3>
+<section id="limitations" class="level4">
+<h4 class="anchored" data-anchor-id="limitations">Limitations</h4>
+<p>Before continuing onto my analysis plan, it’s important to acknowledge the limitations of the EJScreen dataset.</p>
 <ol type="1">
-<li>This tool is not designed to provide a comprehensive risk analysis. Instead, it serves as a screening tool to explore important issues related to environmental justice.</li>
-<li>It is based on demographic and environmental estimates that carry a considerable degree of uncertainty, particularly when analyzing small geographic areas.</li>
+<li><p>This tool is not intended to provide a comprehensive risk analysis. Instead, it functions as a screening tool to examine certain issues related to environmental justice. It does not encompass all relevant issues that should be considered, and it strives to balance the need for data quality and national coverage while including as many significant environmental factors as possible within the constraints of available resources.</p></li>
+<li><p>The dataset relies on demographic and environmental estimates that carry a considerable degree of uncertainty, especially when analyzing smaller geographic areas.</p></li>
 </ol>
 </section>
 </section>
 <section id="analysis-plan" class="level2">
 <h2 class="anchored" data-anchor-id="analysis-plan">Analysis Plan</h2>
-<p><strong>Goal:</strong> To explore the relationship between environmental pollutants and socio-economic factors while controlling for confounding variables.</p>
-<section id="correlation-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="correlation-analysis">Correlation Analysis</h3>
+<section id="correlation-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="correlation-analysis">Correlation Analysis</h4>
 <ul>
-<li>Examine pairwise correlations among pollutants, socio-economic factors, and life expectancy.</li>
+<li>Analyze the pairwise correlations among Environmental Burden Indicators, Socioeconomic Indicators, and Low Life Expectancy.</li>
 </ul>
 </section>
-<section id="regression-models" class="level3">
-<h3 class="anchored" data-anchor-id="regression-models">Regression Models</h3>
+<section id="regression-models" class="level4">
+<h4 class="anchored" data-anchor-id="regression-models">Regression Models</h4>
 <ul>
-<li><strong>Model 1:</strong> Use simple regression to predict life expectancy based on environmental pollutants.</li>
-<li><strong>Model 2:</strong> Implement multiple linear regression, incorporating socio-economic factors as additional predictors.</li>
-<li><strong>Model 3:</strong> Investigate interaction effects to determine how socio-economic factors influence the relationship between pollutants and life expectancy.</li>
+<li><p><em>Model 1</em>: Utilize simple regression to predict life expectancy based on environmental burden indicators (pollutants).</p></li>
+<li><p><em>Model 2</em>: Implement multiple linear regression by including socioeconomic indicators as additional predictors.</p></li>
+<li><p><em>Model 3</em>: Examine interaction effects to understand how socioeconomic indicators influence the relationship between environmental burden indicators (pollutants) and low life expectancy.</p></li>
 </ul>
 </section>
 </section>
@@ -734,9 +730,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="citations" class="level2">
 <h2 class="anchored" data-anchor-id="citations">Citations</h2>
-<p>Environmental Protection Agency. (n.d.-b). EPA. https://www.epa.gov/ejscreen/download-ejscreen-data</p>
-<p>PhD., B. M. (2022, March 8). Holc “redlining” maps: The persistent structure of segregation and economic inequality ” NCRC. National Community Reinvestment Coalition. https://ncrc.org/holc/#:~:text=Redlining%20buttressed%20the%20segregated%20structure,%25)%20are%20minority%20neighborhoods%20now.</p>
-<p>Bureau, U. C. (2024b, November 28). U.S. Census Bureau. Census.gov. https://www.census.gov/</p>
+<p>Environmental Protection Agency. (2024). EJScreen: Environmental Justice Mapping and Screening Tool. epa.gov. https://www.epa.gov/ejscreen/download-ejscreen-data</p>
+<p>Swope, C.B., Hernández, D. &amp; Cushing, L.J. The Relationship of Historical Redlining with Present-Day Neighborhood Environmental and Health Outcomes: A Scoping Review and Conceptual Model. J Urban Health 99, 959–983 (2022). https://doi.org/10.1007/s11524-022-00665-z</p>
+<p>United States Census Bureau. (2023). Quick Facts Los Angeles County, California. Census.gov. https://www.census.gov/quickfacts/losangelescountycalifornia</p>
 
 
 </section>
