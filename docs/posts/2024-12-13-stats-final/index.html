@@ -286,8 +286,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="results" class="level2">
 <h2 class="anchored" data-anchor-id="results">Results</h2>
+<section id="correlation-analysis-1" class="level4">
+<h4 class="anchored" data-anchor-id="correlation-analysis-1">Correlation Analysis</h4>
 <table class="caption-top table">
-<caption>Pairwise Correlation Analysis</caption>
+<caption>Pairwise Correlation Analysis for all Variables</caption>
 <thead>
 <tr class="header">
 <th></th>
@@ -356,8 +358,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 </tbody>
 </table>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Simple regression model</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">lm</span><span class="er">(</span><span class="ex">lifeexppct</span> ~ pm25 + ozone + ptsdf, data = los_angeles<span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>According to the pairwise correlation analysis, which quantified the linear relationships between all variable pairs, there is a moderately positive association between hazardous waste proximity and exposure to particulate matter (PM 2.5). There is also a moderately positive association between the percentage of people of color and the percentage of low-income individuals. Conversely, there is a moderate negative association between hazardous waste proximity and the ozone indicator.</p>
+<p>While these moderate relationships may provide insights into the situation in Los Angeles County, we cannot assume that correlation implies causation. It is essential to further analyze the data in different ways to gain a clearer understanding of whether these relationships are causal.</p>
+</section>
+<section id="regression-models-1" class="level4">
+<h4 class="anchored" data-anchor-id="regression-models-1">Regression Models</h4>
+<p><em>Model 1</em>: Simple Regression</p>
+<p><code>lm(lifeexppct ~ pm25 + ozone + ptsdf, data = los_angeles)</code></p>
 <table class="caption-top table">
 <caption>Simple Regression Model</caption>
 <thead>
@@ -365,8 +372,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <th>Coefficients</th>
 <th>Estimate</th>
 <th>Std. Error</th>
-<th>t value</th>
-<th>Pr(&gt;</th>
+<th>t-value</th>
+<th>p-value</th>
 </tr>
 </thead>
 <tbody>
@@ -375,7 +382,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>1.841e-01</td>
 <td>5.296e-03</td>
 <td>34.765</td>
-<td>&lt; 2e-16 ***</td>
+<td>&lt; 2e-16</td>
 </tr>
 <tr class="even">
 <td>pm25</td>
@@ -389,35 +396,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>-3.287e-04</td>
 <td>5.364e-05</td>
 <td>-6.128</td>
-<td>9.43e-10 ***</td>
+<td>9.43e-10</td>
 </tr>
 <tr class="even">
 <td>ptsdf</td>
 <td>7.626e-04</td>
 <td>7.584e-05</td>
 <td>10.056</td>
-<td>&lt; 2e-16 ***</td>
+<td>&lt; 2e-16</td>
 </tr>
 </tbody>
 </table>
-<p>Residual standard error: 0.03196 on 6289 degrees of freedom Multiple R-squared: 0.06136, Adjusted R-squared: 0.06091 F-statistic: 137 on 3 and 6289 DF, p-value: &lt; 2.2e-16</p>
+<p>Adjusted R-squared: 0.06091</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="simple_regression.png" class="img-fluid figure-img"></p>
 <figcaption>Insert Caption Here</figcaption>
 </figure>
 </div>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Multiple regression model</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">summary</span><span class="er">(</span><span class="ex">lm</span><span class="er">(</span><span class="ex">lifeexppct</span> ~ pm25 + ozone + ptsdf + peopcolorpct + lowincpct, data = los_angeles<span class="kw">))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The results indicate that both ozone levels and proximity to hazardous waste sites are significant predictors of life expectancy, as evidenced by the low p-values. The negative coefficient for ozone suggests that areas with higher ozone levels tend to have lower life expectancy. Conversely, the positive coefficient for proximity to hazardous waste sites indicates that regions closer to these sites also tend to have lower life expectancy. However, the model explains only about 6.1% of the variation in life expectancy, which implies it may not fully account for all the factors influencing this outcome. There may be other variables not included in the model that could have a more substantial impact on life expectancy.</p>
+<p><em>Model 2</em>: Multiple Regression</p>
+<p><code>lm(lifeexppct ~ pm25 + ozone + ptsdf + peopcolorpct + lowincpct, data = los_angeles)</code></p>
 <table class="caption-top table">
-<caption>Multiple regression model</caption>
+<caption>Multiple Regression Model</caption>
 <thead>
 <tr class="header">
 <th>Coefficients</th>
 <th>Estimate</th>
 <th>Std. Error</th>
-<th>t value</th>
-<th>Pr(&gt;</th>
+<th>t-value</th>
+<th>p-value</th>
 </tr>
 </thead>
 <tbody>
@@ -426,28 +434,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>2.146e-01</td>
 <td>4.870e-03</td>
 <td>44.072</td>
-<td>&lt; 2e-16 ***</td>
+<td>&lt; 2e-16</td>
 </tr>
 <tr class="even">
 <td>pm25</td>
 <td>-1.092e-03</td>
 <td>2.990e-04</td>
 <td>-3.654</td>
-<td>0.000261 ***</td>
+<td>0.000261</td>
 </tr>
 <tr class="odd">
 <td>ozone</td>
 <td>-7.951e-04</td>
 <td>4.964e-05</td>
 <td>-16.017</td>
-<td>&lt; 2e-16 ***</td>
+<td>&lt; 2e-16</td>
 </tr>
 <tr class="even">
 <td>ptsdf</td>
 <td>-1.683e-04</td>
 <td>7.183e-05</td>
 <td>-2.343</td>
-<td>0.019141 *</td>
+<td>0.019141</td>
 </tr>
 <tr class="odd">
 <td>peopcolorpct</td>
@@ -461,28 +469,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>4.828e-02</td>
 <td>2.269e-03</td>
 <td>21.280</td>
-<td>&lt; 2e-16 ***</td>
+<td>&lt; 2e-16</td>
 </tr>
 </tbody>
 </table>
-<p>Residual standard error: 0.0286 on 6287 degrees of freedom Multiple R-squared: 0.2486, Adjusted R-squared: 0.248 F-statistic: 416 on 5 and 6287 DF, p-value: &lt; 2.2e-16</p>
+<p>Adjusted R-squared: 0.248</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="multiple_regression.png" class="img-fluid figure-img"></p>
 <figcaption>Insert Caption Here</figcaption>
 </figure>
 </div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Interaction model (pm25)</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">summary</span><span class="er">(</span><span class="ex">lm</span><span class="er">(</span><span class="ex">lifeexppct</span> ~ pm25 + ozone + ptsdf + lowincpct + peopcolorpct + pm25:lowincpct + pm25:peopcolorpct, data = los_angeles<span class="kw">))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Based on the new model, both particulate matter (PM 2.5) and ozone levels show a negative and statistically significant relationship with life expectancy. This indicates that higher pollution levels are linked to lower life expectancy. Additionally, communities located closer to hazardous waste sites also tend to have lower life expectancy. The analysis reveals that higher percentages of people of color and low-income individuals are associated with lower life expectancy, highlighting the compounded effects of environmental and socioeconomic factors in vulnerable communities. The model now accounts for approximately 24.8% of the variation in life expectancy, which is a significant improvement over the previous model. This suggests that incorporating both environmental and socioeconomic variables has enhanced the model’s explanatory power.</p>
+<p><em>Model 3</em>: Interaction Effects (PM 2.5)</p>
+<p><code>(lm(lifeexppct ~ pm25 + ozone + ptsdf + lowincpct + peopcolorpct + pm25:lowincpct + pm25:peopcolorpct, data = los_angeles)</code></p>
 <table class="caption-top table">
-<caption>Interaction model (pm25)</caption>
+<caption>Interaction Effects (PM 2.5)</caption>
 <thead>
 <tr class="header">
 <th>Coefficients</th>
 <th>Estimate</th>
 <th>Std. Error</th>
-<th>t value Pr(&gt;</th>
-<th>t</th>
+<th>t-value</th>
+<th>p-value</th>
 </tr>
 </thead>
 <tbody>
@@ -491,42 +500,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>1.762e-01</td>
 <td>1.015e-02</td>
 <td>17.369</td>
-<td>&lt; 2e-16 ***</td>
+<td>&lt; 2e-16</td>
 </tr>
 <tr class="even">
 <td>pm25</td>
 <td>2.272e-03</td>
 <td>8.385e-04</td>
 <td>2.710</td>
-<td>0.006750 **</td>
+<td>0.006750</td>
 </tr>
 <tr class="odd">
 <td>ozone</td>
 <td>-8.134e-04</td>
 <td>4.974e-05</td>
 <td>-16.354</td>
-<td>&lt; 2e-16 ***</td>
+<td>&lt; 2e-16</td>
 </tr>
 <tr class="even">
 <td>ptsdf</td>
 <td>-1.960e-04</td>
 <td>7.240e-05</td>
 <td>-2.708</td>
-<td>0.006796 **</td>
+<td>0.006796</td>
 </tr>
 <tr class="odd">
 <td>lowincpct</td>
 <td>7.113e-02</td>
 <td>1.843e-02</td>
 <td>3.860</td>
-<td>0.000115 ***</td>
+<td>0.000115</td>
 </tr>
 <tr class="even">
 <td>peopcolorpct</td>
 <td>8.244e-02</td>
 <td>1.491e-02</td>
 <td>5.528</td>
-<td>3.38e-08 ***</td>
+<td>3.38e-08</td>
 </tr>
 <tr class="odd">
 <td>pm25:lowincpct</td>
@@ -540,11 +549,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>-3.767e-03</td>
 <td>1.203e-03</td>
 <td>-3.132</td>
-<td>0.001747 **</td>
+<td>0.001747</td>
 </tr>
 </tbody>
 </table>
-<p>Residual standard error: 0.02856 on 6285 degrees of freedom Multiple R-squared: 0.251, Adjusted R-squared: 0.2502 F-statistic: 300.9 on 7 and 6285 DF, p-value: &lt; 2.2e-16</p>
+<p>Adjusted R-squared: 0.2502</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="peop_pm25.png" class="img-fluid figure-img"></p>
@@ -557,8 +566,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <figcaption>Insert Caption Here</figcaption>
 </figure>
 </div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Interaction model (ozone)</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">summary</span><span class="er">(</span><span class="ex">lm</span><span class="er">(</span><span class="ex">lifeexppct</span> ~ pm25 + ozone + ptsdf + lowincpct + peopcolorpct + ozone:lowincpct + ozone:peopcolorpct, data = los_angeles<span class="kw">))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Interaction model (ozone)</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">summary</span><span class="er">(</span><span class="ex">lm</span><span class="er">(</span><span class="ex">lifeexppct</span> ~ pm25 + ozone + ptsdf + lowincpct + peopcolorpct + ozone:lowincpct + ozone:peopcolorpct, data = los_angeles<span class="kw">))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <table class="caption-top table">
 <caption>Interaction model (ozone)</caption>
 <thead>
@@ -642,8 +651,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <figcaption>Insert Caption Here</figcaption>
 </figure>
 </div>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Interaction model (ptsdf)</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">summary</span><span class="er">(</span><span class="ex">lm</span><span class="er">(</span><span class="ex">lifeexppct</span> ~ pm25 + ozone + ptsdf + lowincpct + peopcolorpct + ptsdf:lowincpct + ptsdf:peopcolorpct, data = los_angeles<span class="kw">))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Interaction model (ptsdf)</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">summary</span><span class="er">(</span><span class="ex">lm</span><span class="er">(</span><span class="ex">lifeexppct</span> ~ pm25 + ozone + ptsdf + lowincpct + peopcolorpct + ptsdf:lowincpct + ptsdf:peopcolorpct, data = los_angeles<span class="kw">))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <table class="caption-top table">
 <caption>Interaction model (ptsdf)</caption>
 <thead>
@@ -727,6 +736,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <figcaption>Insert Caption Here</figcaption>
 </figure>
 </div>
+</section>
 </section>
 <section id="citations" class="level2">
 <h2 class="anchored" data-anchor-id="citations">Citations</h2>
