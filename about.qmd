@@ -1,11 +1,12 @@
 ---
-title: "About"
+title: "About Me"
 ---
 
-## What I do for work
+I am full time graduate student pursuing a master of environmental data science at the Bren School of Environmental Science & Management at the University of California, Santa Barbara. 
 
-I love to work!
+![NCEAS](images/IMG_4458.jpeg){fig-align="left" width=500}
 
-## What I do for fun
+![](images/IMG_4517.jpeg){fig-align="left" width=500}
 
-I love to have fun!
+
+![](images/Bren-LeafArtOnly-FullColor-RGB-transparent.png){width=100 fig-align="center"}

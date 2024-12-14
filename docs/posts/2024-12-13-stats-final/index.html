@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.555">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Matteo Torres">
+<meta name="dcterms.date" content="2024-12-13">
+<meta name="description" content="How do environmental pollutants and socio-economic factors relate to life expectancy in Los Angeles County?">
+
+<title>Matteo Torres - Exploring Environmental Justice in Los Angeles County</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">matteo</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">about</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../resources.html"> 
+<span class="menu-text">resources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html"> 
+<span class="menu-text">blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../Torres_Matteo_Resume.pdf" target="_blank"> 
+<span class="menu-text">resume</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Exploring Environmental Justice in Los Angeles County</h1>
+                  <div>
+        <div class="description">
+          How do environmental pollutants and socio-economic factors relate to life expectancy in Los Angeles County?
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Environmental Justice</div>
+                <div class="quarto-category">Statistics</div>
+              </div>
+                  </div>
+  </div>
+    
+  <div class="quarto-title-meta-author column-page-left">
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Affiliation</div>
+    
+      <div class="quarto-title-meta-contents">
+      <p class="author"><a href="https://matteo-torres.github.io/">Matteo Torres</a> </p>
+    </div>
+    <div class="quarto-title-meta-contents">
+          <p class="affiliation">
+              <a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science">
+              MEDS
+              </a>
+            </p>
+        </div>
+    </div>
+
+  <div class="quarto-title-meta column-page-left">
+
+        
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">December 13, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  <li><a href="#about-the-data" id="toc-about-the-data" class="nav-link" data-scroll-target="#about-the-data">About the data</a>
+  <ul class="collapse">
+  <li><a href="#dependent-variable" id="toc-dependent-variable" class="nav-link" data-scroll-target="#dependent-variable">Dependent Variable</a></li>
+  <li><a href="#independent-variables" id="toc-independent-variables" class="nav-link" data-scroll-target="#independent-variables">Independent Variables</a></li>
+  <li><a href="#limitations" id="toc-limitations" class="nav-link" data-scroll-target="#limitations">Limitations</a></li>
+  </ul></li>
+  <li><a href="#analysis-plan" id="toc-analysis-plan" class="nav-link" data-scroll-target="#analysis-plan">Analysis Plan</a>
+  <ul class="collapse">
+  <li><a href="#correlation-analysis" id="toc-correlation-analysis" class="nav-link" data-scroll-target="#correlation-analysis">Correlation Analysis</a></li>
+  <li><a href="#regression-models" id="toc-regression-models" class="nav-link" data-scroll-target="#regression-models">Regression Models</a></li>
+  </ul></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
+  <li><a href="#citations" id="toc-citations" class="nav-link" data-scroll-target="#citations">Citations</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+
+
+
+
+
+<p>Repository: https://github.com/matteo-torres/ejscreen-LA</p>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>Los Angeles County is home to over 9 million people. Approximately 30% of the population identifies as people of color, and about 14% are considered low income. Many of these individuals are affected by historical redlining, which has led to the segregation of communities. Redlining originated from the Home Owners’ Loan Corporation (HOLC) grades introduced in the 1930s, which primarily benefited affluent white neighborhoods. This practice has resulted in unequal access to resources and disparities in the quality of life for many residents of Los Angeles.</p>
+<p>The purpose of this study is to statistically analyze current data reflecting how pollutants and socioeconomic factors may relate to life expectancy in LA County. My goal is to identify trends that enhance our understanding of the current situation in communities that have historically faced disparities.</p>
+</section>
+<section id="about-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="about-the-data">About the data</h2>
+<p>I will be using data from the United States Environmental Protection Agency for this analysis. Specifically, I will work with a CSV file from the State EJScreen: Environmental Justice Screening and Mapping Tool at the block group level.</p>
+<section id="dependent-variable" class="level3">
+<h3 class="anchored" data-anchor-id="dependent-variable">Dependent Variable</h3>
+<ul>
+<li><strong>Low Life Expectancy</strong>: This measure identifies areas where life expectancy is lower than national averages. EJScreen utilizes an inverse approach, where higher values correspond to lower life expectancy and lower scores indicate higher life expectancy. The percentage of Low Life Expectancy is calculated using the formula:</li>
+</ul>
+<p><em>% Low Life Expectancy = 1 - (Life Expectancy / Max Life Expectancy)</em></p>
+</section>
+<section id="independent-variables" class="level3">
+<h3 class="anchored" data-anchor-id="independent-variables">Independent Variables</h3>
+<p><em>Environmental Burden Indicators</em></p>
+<ul>
+<li><strong>Particulate Matter 2.5 (PM 2.5)</strong>: This metric quantifies potential exposure to fine particulate matter (2.5 micrometers or smaller) and is expressed as the annual average concentration in the air, measured in micrograms per cubic meter.</li>
+<li><strong>Ozone</strong>: The ozone indicator in EJScreen version 2.3 reflects the annual mean of the 10 highest daily maximum 8-hour (MDA8) ozone concentrations.</li>
+<li><strong>Hazardous Waste Proximity</strong>: This indicator considers the total number of hazardous waste facilities within a 10-kilometer radius of the average resident in each block group, adjusted for distance. It is calculated as a population-weighted average of the blocks within each block group.</li>
+</ul>
+<p><em>Socioeconomic Indicators</em></p>
+<ul>
+<li><strong>People of Color</strong>: This group includes individuals who identify their racial status as a race other than “white alone” and/or identify their ethnicity as Hispanic or Latino.</li>
+<li><strong>Low Income</strong>: A household is classified as low income if its income is equal to or less than twice the poverty level, which is defined as $29,950 by the U.S. Census Bureau.</li>
+</ul>
+</section>
+<section id="limitations" class="level3">
+<h3 class="anchored" data-anchor-id="limitations">Limitations</h3>
+<ol type="1">
+<li>This tool is not designed to provide a comprehensive risk analysis. Instead, it serves as a screening tool to explore important issues related to environmental justice.</li>
+<li>It is based on demographic and environmental estimates that carry a considerable degree of uncertainty, particularly when analyzing small geographic areas.</li>
+</ol>
+</section>
+</section>
+<section id="analysis-plan" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-plan">Analysis Plan</h2>
+<p><strong>Goal:</strong> To explore the relationship between environmental pollutants and socio-economic factors while controlling for confounding variables.</p>
+<section id="correlation-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="correlation-analysis">Correlation Analysis</h3>
+<ul>
+<li>Examine pairwise correlations among pollutants, socio-economic factors, and life expectancy.</li>
+</ul>
+</section>
+<section id="regression-models" class="level3">
+<h3 class="anchored" data-anchor-id="regression-models">Regression Models</h3>
+<ul>
+<li><strong>Model 1:</strong> Use simple regression to predict life expectancy based on environmental pollutants.</li>
+<li><strong>Model 2:</strong> Implement multiple linear regression, incorporating socio-economic factors as additional predictors.</li>
+<li><strong>Model 3:</strong> Investigate interaction effects to determine how socio-economic factors influence the relationship between pollutants and life expectancy.</li>
+</ul>
+</section>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<table class="caption-top table">
+<caption>Pairwise Correlation Analysis</caption>
+<thead>
+<tr class="header">
+<th></th>
+<th>pm25</th>
+<th>ozone</th>
+<th>ptsdf</th>
+<th>lowincpct</th>
+<th>lifeexppct</th>
+<th>peopcolorpct</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>pm25</td>
+<td>1.00</td>
+<td>-0.10</td>
+<td>0.59</td>
+<td>0.17</td>
+<td>0.12</td>
+<td>0.46</td>
+</tr>
+<tr class="even">
+<td>ozone</td>
+<td>-0.10</td>
+<td>1.00</td>
+<td>-0.52</td>
+<td>-0.02</td>
+<td>-0.19</td>
+<td>0.05</td>
+</tr>
+<tr class="odd">
+<td>ptsdf</td>
+<td>0.59</td>
+<td>-0.52</td>
+<td>1.00</td>
+<td>0.29</td>
+<td>0.24</td>
+<td>0.39</td>
+</tr>
+<tr class="even">
+<td>lowincpct</td>
+<td>0.17</td>
+<td>-0.02</td>
+<td>0.29</td>
+<td>1.00</td>
+<td>0.41</td>
+<td>0.52</td>
+</tr>
+<tr class="odd">
+<td>lifeexppct</td>
+<td>0.12</td>
+<td>-0.19</td>
+<td>0.24</td>
+<td>0.41</td>
+<td>1.00</td>
+<td>0.38</td>
+</tr>
+<tr class="even">
+<td>peopcolorpct</td>
+<td>0.46</td>
+<td>0.05</td>
+<td>0.39</td>
+<td>0.52</td>
+<td>0.38</td>
+<td>1.00</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Simple regression model</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">lm</span><span class="er">(</span><span class="ex">lifeexppct</span> ~ pm25 + ozone + ptsdf, data = los_angeles<span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<table class="caption-top table">
+<caption>Simple Regression Model</caption>
+<thead>
+<tr class="header">
+<th>Coefficients</th>
+<th>Estimate</th>
+<th>Std. Error</th>
+<th>t value</th>
+<th>Pr(&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>(Intercept)</td>
+<td>1.841e-01</td>
+<td>5.296e-03</td>
+<td>34.765</td>
+<td>&lt; 2e-16 ***</td>
+</tr>
+<tr class="even">
+<td>pm25</td>
+<td>1.022e-04</td>
+<td>3.200e-04</td>
+<td>0.319</td>
+<td>0.749</td>
+</tr>
+<tr class="odd">
+<td>ozone</td>
+<td>-3.287e-04</td>
+<td>5.364e-05</td>
+<td>-6.128</td>
+<td>9.43e-10 ***</td>
+</tr>
+<tr class="even">
+<td>ptsdf</td>
+<td>7.626e-04</td>
+<td>7.584e-05</td>
+<td>10.056</td>
+<td>&lt; 2e-16 ***</td>
+</tr>
+</tbody>
+</table>
+<p>Residual standard error: 0.03196 on 6289 degrees of freedom Multiple R-squared: 0.06136, Adjusted R-squared: 0.06091 F-statistic: 137 on 3 and 6289 DF, p-value: &lt; 2.2e-16</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="simple_regression.png" class="img-fluid figure-img"></p>
+<figcaption>Insert Caption Here</figcaption>
+</figure>
+</div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Multiple regression model</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">summary</span><span class="er">(</span><span class="ex">lm</span><span class="er">(</span><span class="ex">lifeexppct</span> ~ pm25 + ozone + ptsdf + peopcolorpct + lowincpct, data = los_angeles<span class="kw">))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<table class="caption-top table">
+<caption>Multiple regression model</caption>
+<thead>
+<tr class="header">
+<th>Coefficients</th>
+<th>Estimate</th>
+<th>Std. Error</th>
+<th>t value</th>
+<th>Pr(&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>(Intercept)</td>
+<td>2.146e-01</td>
+<td>4.870e-03</td>
+<td>44.072</td>
+<td>&lt; 2e-16 ***</td>
+</tr>
+<tr class="even">
+<td>pm25</td>
+<td>-1.092e-03</td>
+<td>2.990e-04</td>
+<td>-3.654</td>
+<td>0.000261 ***</td>
+</tr>
+<tr class="odd">
+<td>ozone</td>
+<td>-7.951e-04</td>
+<td>4.964e-05</td>
+<td>-16.017</td>
+<td>&lt; 2e-16 ***</td>
+</tr>
+<tr class="even">
+<td>ptsdf</td>
+<td>-1.683e-04</td>
+<td>7.183e-05</td>
+<td>-2.343</td>
+<td>0.019141 *</td>
+</tr>
+<tr class="odd">
+<td>peopcolorpct</td>
+<td>3.679e-02</td>
+<td>1.858e-03</td>
+<td>19.802</td>
+<td>&lt; 2e-16 ***</td>
+</tr>
+<tr class="even">
+<td>lowincpct</td>
+<td>4.828e-02</td>
+<td>2.269e-03</td>
+<td>21.280</td>
+<td>&lt; 2e-16 ***</td>
+</tr>
+</tbody>
+</table>
+<p>Residual standard error: 0.0286 on 6287 degrees of freedom Multiple R-squared: 0.2486, Adjusted R-squared: 0.248 F-statistic: 416 on 5 and 6287 DF, p-value: &lt; 2.2e-16</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="multiple_regression.png" class="img-fluid figure-img"></p>
+<figcaption>Insert Caption Here</figcaption>
+</figure>
+</div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Interaction model (pm25)</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">summary</span><span class="er">(</span><span class="ex">lm</span><span class="er">(</span><span class="ex">lifeexppct</span> ~ pm25 + ozone + ptsdf + lowincpct + peopcolorpct + pm25:lowincpct + pm25:peopcolorpct, data = los_angeles<span class="kw">))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<table class="caption-top table">
+<caption>Interaction model (pm25)</caption>
+<thead>
+<tr class="header">
+<th>Coefficients</th>
+<th>Estimate</th>
+<th>Std. Error</th>
+<th>t value Pr(&gt;</th>
+<th>t</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>(Intercept)</td>
+<td>1.762e-01</td>
+<td>1.015e-02</td>
+<td>17.369</td>
+<td>&lt; 2e-16 ***</td>
+</tr>
+<tr class="even">
+<td>pm25</td>
+<td>2.272e-03</td>
+<td>8.385e-04</td>
+<td>2.710</td>
+<td>0.006750 **</td>
+</tr>
+<tr class="odd">
+<td>ozone</td>
+<td>-8.134e-04</td>
+<td>4.974e-05</td>
+<td>-16.354</td>
+<td>&lt; 2e-16 ***</td>
+</tr>
+<tr class="even">
+<td>ptsdf</td>
+<td>-1.960e-04</td>
+<td>7.240e-05</td>
+<td>-2.708</td>
+<td>0.006796 **</td>
+</tr>
+<tr class="odd">
+<td>lowincpct</td>
+<td>7.113e-02</td>
+<td>1.843e-02</td>
+<td>3.860</td>
+<td>0.000115 ***</td>
+</tr>
+<tr class="even">
+<td>peopcolorpct</td>
+<td>8.244e-02</td>
+<td>1.491e-02</td>
+<td>5.528</td>
+<td>3.38e-08 ***</td>
+</tr>
+<tr class="odd">
+<td>pm25:lowincpct</td>
+<td>-1.751e-03</td>
+<td>1.436e-03</td>
+<td>-1.220</td>
+<td>0.222597</td>
+</tr>
+<tr class="even">
+<td>pm25:peopcolorpct</td>
+<td>-3.767e-03</td>
+<td>1.203e-03</td>
+<td>-3.132</td>
+<td>0.001747 **</td>
+</tr>
+</tbody>
+</table>
+<p>Residual standard error: 0.02856 on 6285 degrees of freedom Multiple R-squared: 0.251, Adjusted R-squared: 0.2502 F-statistic: 300.9 on 7 and 6285 DF, p-value: &lt; 2.2e-16</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="peop_pm25.png" class="img-fluid figure-img"></p>
+<figcaption>Insert Caption Here</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="low_pm25.png" class="img-fluid figure-img"></p>
+<figcaption>Insert Caption Here</figcaption>
+</figure>
+</div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Interaction model (ozone)</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">summary</span><span class="er">(</span><span class="ex">lm</span><span class="er">(</span><span class="ex">lifeexppct</span> ~ pm25 + ozone + ptsdf + lowincpct + peopcolorpct + ozone:lowincpct + ozone:peopcolorpct, data = los_angeles<span class="kw">))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<table class="caption-top table">
+<caption>Interaction model (ozone)</caption>
+<thead>
+<tr class="header">
+<th>Coefficients</th>
+<th>Estimate</th>
+<th>Std. Error</th>
+<th>t value</th>
+<th>Pr(&gt;</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>(Intercept)</td>
+<td>5.760e-02</td>
+<td>1.090e-02</td>
+<td>5.286</td>
+<td>1.29e-07 ***</td>
+</tr>
+<tr class="even">
+<td>pm25</td>
+<td>-3.570e-04</td>
+<td>2.992e-04</td>
+<td>-1.193</td>
+<td>0.233</td>
+</tr>
+<tr class="odd">
+<td>ozone</td>
+<td>1.046e-03</td>
+<td>1.248e-04</td>
+<td>8.384</td>
+<td>&lt; 2e-16 ***</td>
+</tr>
+<tr class="even">
+<td>ptsdf</td>
+<td>-4.230e-04</td>
+<td>7.293e-05</td>
+<td>-5.800</td>
+<td>6.96e-09 ***</td>
+</tr>
+<tr class="odd">
+<td>lowincpct</td>
+<td>3.485e-02</td>
+<td>2.166e-02</td>
+<td>1.609</td>
+<td>0.108</td>
+</tr>
+<tr class="even">
+<td>peopcolorpct</td>
+<td>2.629e-01</td>
+<td>1.635e-02</td>
+<td>16.086</td>
+<td>&lt; 2e-16 ***</td>
+</tr>
+<tr class="odd">
+<td>ozone:lowincpct</td>
+<td>1.353e-04</td>
+<td>2.576e-04</td>
+<td>0.525</td>
+<td>0.599</td>
+</tr>
+<tr class="even">
+<td>ozone:peopcolorpct</td>
+<td>-2.710e-03</td>
+<td>1.937e-04</td>
+<td>-13.991</td>
+<td>&lt; 2e-16 ***</td>
+</tr>
+</tbody>
+</table>
+<p>Residual standard error: 0.02804 on 6285 degrees of freedom Multiple R-squared: 0.2781, Adjusted R-squared: 0.2773 F-statistic: 345.9 on 7 and 6285 DF, p-value: &lt; 2.2e-16</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="peop_ozone.png" class="img-fluid figure-img"></p>
+<figcaption>Insert Caption Here</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="low_ozone.png" class="img-fluid figure-img"></p>
+<figcaption>Insert Caption Here</figcaption>
+</figure>
+</div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Interaction model (ptsdf)</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ex">summary</span><span class="er">(</span><span class="ex">lm</span><span class="er">(</span><span class="ex">lifeexppct</span> ~ pm25 + ozone + ptsdf + lowincpct + peopcolorpct + ptsdf:lowincpct + ptsdf:peopcolorpct, data = los_angeles<span class="kw">))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<table class="caption-top table">
+<caption>Interaction model (ptsdf)</caption>
+<thead>
+<tr class="header">
+<th>Coefficients</th>
+<th>Estimate</th>
+<th>Std.</th>
+<th>Error</th>
+<th>t value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>(Intercept)</td>
+<td>2.094e-01</td>
+<td>5.169e-03</td>
+<td>40.513</td>
+<td>&lt; 2e-16 ***</td>
+</tr>
+<tr class="even">
+<td>pm25</td>
+<td>-1.008e-03</td>
+<td>3.003e-04</td>
+<td>-3.358</td>
+<td>0.000791 ***</td>
+</tr>
+<tr class="odd">
+<td>ozone</td>
+<td>-7.771e-04</td>
+<td>5.053e-05</td>
+<td>-15.380</td>
+<td>&lt; 2e-16 ***</td>
+</tr>
+<tr class="even">
+<td>ptsdf</td>
+<td>-1.352e-05</td>
+<td>1.613e-04</td>
+<td>-0.084 0.933184</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>lowincpct</td>
+<td>7.232e-02</td>
+<td>6.077e-03</td>
+<td>11.899</td>
+<td>&lt; 2e-16 ***</td>
+</tr>
+<tr class="even">
+<td>peopcolorpct</td>
+<td>3.094e-02</td>
+<td>4.551e-03</td>
+<td>6.798</td>
+<td>1.16e-11 ***</td>
+</tr>
+<tr class="odd">
+<td>ptsdf:lowincpct</td>
+<td>-1.178e-03</td>
+<td>2.779e-04</td>
+<td>-4.238</td>
+<td>2.29e-05 ***</td>
+</tr>
+<tr class="even">
+<td>ptsdf:peopcolorpct</td>
+<td>2.720e-04</td>
+<td>2.281e-04</td>
+<td>1.193</td>
+<td>0.233109</td>
+</tr>
+</tbody>
+</table>
+<p>Residual standard error: 0.02856 on 6285 degrees of freedom Multiple R-squared: 0.2509, Adjusted R-squared: 0.25 F-statistic: 300.7 on 7 and 6285 DF, p-value: &lt; 2.2e-16</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="haz_peop.png" class="img-fluid figure-img"></p>
+<figcaption>Insert Caption Here</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="haz_low.png" class="img-fluid figure-img"></p>
+<figcaption>Insert Caption Here</figcaption>
+</figure>
+</div>
+</section>
+<section id="citations" class="level2">
+<h2 class="anchored" data-anchor-id="citations">Citations</h2>
+<p>Environmental Protection Agency. (n.d.-b). EPA. https://www.epa.gov/ejscreen/download-ejscreen-data</p>
+<p>PhD., B. M. (2022, March 8). Holc “redlining” maps: The persistent structure of segregation and economic inequality ” NCRC. National Community Reinvestment Coalition. https://ncrc.org/holc/#:~:text=Redlining%20buttressed%20the%20segregated%20structure,%25)%20are%20minority%20neighborhoods%20now.</p>
+<p>Bureau, U. C. (2024b, November 28). U.S. Census Bureau. Census.gov. https://www.census.gov/</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2024, Matteo Torres</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>This website is built with <i class="fa-brands fa-github" title="The GitHub octocat logo" aria-label="github"></i>, <i class="fa-brands fa-r-project" title="R Project" aria-label="r-project"></i>, Quarto, and <i class="fa-solid fa-heart" title="a heart" aria-label="heart"></i></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
