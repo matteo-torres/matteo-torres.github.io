@@ -2,11 +2,30 @@
 title: "About Me"
 ---
 
-I am full time graduate student pursuing a master of environmental data science at the Bren School of Environmental Science & Management at the University of California, Santa Barbara. 
+## Education
 
-![NCEAS](images/IMG_4458.jpeg){fig-align="left" width=500}
+**Master of Environmental Data Science (MEDS)** (Expected June 2025)
 
-![](images/IMG_4517.jpeg){fig-align="left" width=500}
+**Bren School of Environmental Data Science & Management — University of California, Santa Barbara (UCSB)**
 
+Insert Description Here
 
-![](images/Bren-LeafArtOnly-FullColor-RGB-transparent.png){width=100 fig-align="center"}
+![](images/bren-logo.png){width=100 fig-align="center"}
+
+**Bachelor of Science, Biology | Minor in Dance** (December 2023)
+
+**College of Natural Sciences & Mathematics — California State University, Long Beach (CSULB)**
+
+Insert Description Here
+
+![](images/lb-logo.png){width=125 fig-align="center"}
+
+## Background
+
+I grew up in Wilmington, CA, a small neighborhood in the South Bay and Harbor region of Los Angeles. The area has a predominantly Hispanic/Latino population and is home to a working-class community. Wilmington is located adjacent to the Port of Los Angeles and is home to the third-largest oil field in the continental United States. Several major oil refineries, including Marathon, Phillips 66, Valero, and Tesoro, are based here, making it a critical hub for the region’s industrial and energy infrastructure.
+
+Living in this environment has deeply inspired me to pursue environmental data science. Growing up surrounded by industrial activity, pollution, and environmental challenges has fueled my desire to contribute something positive to my community. I aim to use my education and skills to work on projects focused on environmental justice, conservation planning, and biodiversity monitoring. Through data-driven solutions, I hope to help create a more sustainable and equitable future for communities like mine.
+
+## Interests
+
+Outside of academics, I enjoy dancing, attending concerts, and exploring a variety of music genres! 🎧
