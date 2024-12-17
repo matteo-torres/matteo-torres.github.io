@@ -19,7 +19,16 @@ about:
       href: mailto:matteotorres@bren.ucsb.edu
       target: _blank
 ---
+## Welcome to my website!💚
 
-Hello, and welcome to my website! My name is Matteo Torres, and I am a Chicano from Wilmington, California. I recently relocated to pursue a Master's in Environmental Data Science (MEDS) at the Bren School of Environmental Science & Management at the University of California, Santa Barbara.
+I was worried you might have gotten lost on the way...
 
-I am interested in learning new data science skills to address complex environmental issues, particularly those related to ecology, conservation, and restoration. Outside of academics, I enjoy dancing, attending concerts, and listening to various music genres. Feel free to look around and get to know me better!
+Hi, I’m Matteo!
+
+I’m a graduate student dedicated to building data science skills to solve complex environmental challenges. With a focus on ecology, conservation, and restoration, I aim to drive meaningful insights and advance solutions in environmental data science.
+
+Now that you’re here, feel free to look around and get to know me better!
+
+If you’d like to connect or see what I’ve been working on, don’t hesitate to drop me an email or check out my GitHub!
+
+<--- links are right there by the way 👀
