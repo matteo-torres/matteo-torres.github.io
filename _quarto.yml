@@ -5,18 +5,18 @@ project:
 website:
   title: "Matteo Torres"
   navbar:
-    title: matteo
+    title: Matteo
     right:
       - href: index.qmd
-        text: home
+        text: Home
       - href: about.qmd
-        text: about
+        text: About
       - href: resources.qmd
-        text: resources
+        text: Resources
       - href: posts.qmd
-        text: blog
+        text: Blog
       - href: Torres_Matteo_Resume.pdf
-        text: resume
+        text: Resume
         target: _blank
   page-footer:
     left: Copyright 2024, Matteo Torres
