@@ -8,7 +8,8 @@ title: "About Me"
 
 **Bren School of Environmental Data Science & Management — University of California, Santa Barbara (UCSB)**
 
-Insert Description Here
+- *Highlighted Coursework:* Python for Environmental Data Science, Scientific Programming Essentials,
+Geospatial Analysis and Remote Sensing, Working with Environmental Datasets
 
 ![](images/bren-logo.png){width=100 fig-align="center"}
 
@@ -16,7 +17,7 @@ Insert Description Here
 
 **College of Natural Sciences & Mathematics — California State University, Long Beach (CSULB)**
 
-Insert Description Here
+- *Highlighted Coursework:* Conservation Biology, Population Ecology, Biostatistics, Geographic Information Science for Natural Sciences, Undergraduate Directed Research
 
 ![](images/lb-logo.png){width=125 fig-align="center"}
 
@@ -26,6 +27,36 @@ I grew up in Wilmington, CA, a small neighborhood in the South Bay and Harbor re
 
 Living in this environment has deeply inspired me to pursue environmental data science. Growing up surrounded by industrial activity, pollution, and environmental challenges has fueled my desire to contribute something positive to my community. I aim to use my education and skills to work on projects focused on environmental justice, conservation planning, and biodiversity monitoring. Through data-driven solutions, I hope to help create a more sustainable and equitable future for communities like mine.
 
+::: {layout-ncol=2}
+
+<div style="text-align: center;">
+  <img src="images/patagonia.png" alt="Pollution is racial violence" style="width: 300px; display: block; margin: 0 auto;">
+  <p style="font-size: 0.9em; margin-top: 5px; text-align: center;">
+    *Pollution is racial violence.* Photo by Michael Estrada, sourced from Patagonia and Wilmas Youth for Environmental Justice.
+  </p>
+</div>
+
+<div style="text-align: center;">
+  {{< video https://youtu.be/zgvisRXxxdM width="550" height="330" >}}
+  <p style="font-size: 0.9em; margin-top: 5px; text-align: center;">
+    Video source: Patagonia.<br>
+    *District 15 | Stop Neighborhood Oil Drilling.*<br>
+    Communities for a Better Environment works to empower California communities in the fight for environmental justice. This short film highlights the resilience of Wilmington’s young activists as they advocate for a Los Angeles City Council ban on oil and gas drilling within 2,500 feet of homes, schools, and hospitals.
+  </p>
+</div>
+
+:::
+
 ## Interests
 
 Outside of academics, I enjoy dancing, attending concerts, and exploring a variety of music genres! 🎧
+
+<div style="display: flex; align-items: center;">
+  <img src="images/spotify.jpeg" alt="Spotify" style="width: 300px; margin-right: 20px;">
+  <p style="font-size: 1em; line-height: 1.5; text-align: center; width: 100%;">
+    These are my top five songs from my Spotify Wrapped! <br>
+    Inspired by this, I've decided to create my own monthly Spotify Wrapped by building a dataset and script to track and update stats such as my song of the month and top artist. 
+    <br><br>
+    <span style="font-weight: bold;">COMING SOON...</span>
+  </p>
+</div>

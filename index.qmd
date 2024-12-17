@@ -30,5 +30,3 @@ I’m a graduate student dedicated to building data science skills to solve comp
 Now that you’re here, feel free to look around and get to know me better!
 
 If you’d like to connect or see what I’ve been working on, don’t hesitate to drop me an email or check out my GitHub!
-
-<--- links are right there by the way 👀
