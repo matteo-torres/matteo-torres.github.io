@@ -12,7 +12,7 @@ about:
       target: _blank
     - text: GitHub
       icon: github
-      href: https://github.com/matteo-torresin
+      href: https://github.com/matteo-torres
       target: _blank
     - text: Email
       icon: envelope
