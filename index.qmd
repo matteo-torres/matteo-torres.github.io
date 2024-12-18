@@ -19,7 +19,7 @@ about:
       href: mailto:matteotorres@bren.ucsb.edu
       target: _blank
 ---
-## Welcome to my website!💚
+## Welcome to my website!
 
 I was worried you might have gotten lost on the way...
 
