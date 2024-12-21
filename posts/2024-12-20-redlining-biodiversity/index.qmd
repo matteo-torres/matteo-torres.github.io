@@ -1,0 +1,35 @@
+---
+title: "Addressing the Impact of Redlining on Biodiversity Conservation"
+description: "Uncovering how redlining affects biodiversity data, citizen science, and the need for equitable conservation."
+author:
+  - name: Matteo Torres
+    url: https://matteo-torres.github.io/
+    affiliation: MEDS
+    affiliation-url: https://bren.ucsb.edu/masters-programs/master-environmental-data-science
+date: 2024-12-20
+categories: [Biodiversity Conservation, Data Bias, Environmental Justice]
+toc: true
+bibliography: references.bib
+image: ebird.png
+---
+## Introduction
+Redlining has historically contributed to disparities in the United States. It originated in the 1930s when the Home Owners' Loan Corporation (HOLC) assessed neighborhoods for lending risk, which led to racial segregation and the promotion of affluent white neighborhoods. Today, neighborhoods that were marked as "red" continue to face economic disadvantages, including higher poverty rates and lower economic mobility [@swope2022relationship]. Despite the gradual movement toward reparations, significant geographic disparities persist in biodiversity monitoring and conservation planning, leading to a lack of attention and resources for "red" communities. Recognizing and addressing these disparities is crucial for advancing conservation priorities and accurately protecting biodiversity.
+
+## Case Study
+There has been a significant increase in the availability of biodiversity data, largely driven by technological advances. According to the article “Historical Redlining is Associated with Increasing Geographical Disparities in Bird Biodiversity Sampling in the United States,” a study shows that digital collections created by citizen scientists using cellphone apps, such as eBird, tend to be spatially biased. Specifically, higher-income areas are overrepresented while low-income areas are undersampled [@ellis-soto2023redlining]. Although this issue may seem minor, databases like eBird play a critical role in conservation decisions. This bias can dramatically affect measurements of biodiversity change, making it more difficult to accurately map and forecast species distributions.
+
+Citizen science plays a vital role in monitoring biodiversity, but relying solely on it for conservation planning and resource allocation can introduce bias and negatively impact biodiversity, particularly in underrepresented areas. Research has indicated that eBird activity correlates with income and racial demographics at the census tract level. As a result, bird populations are often undersampled in lower-income communities, reflecting a bias in sampling associated with historical redlining [@grade2022evaluating]. This raises concerns about the missing data that could significantly impact these excluded communities. Moreover, there is a notable disparity between the racial composition of the general public and the birdwatching community, which predominantly consists of white individuals, with very limited representation of Black, Indigenous, and People of Color [@rutter2021racial]. As mentioned earlier, the long-term effects of  historical redlining have fostered predominantly white neighborhoods, which helps explain why eBird data may not accurately represent the broader population.
+
+eBird has implemented a diverse range of products, including outreach materials, environmental assessments, and conservation plans. According to the article “Using Open Access Observational Data for Conservation Action: A Case Study for Birds,” eBird has played a crucial role in species assessments, such as identifying the rufa Red Knot as a threatened species and implementing policies to restrict wind energy in certain areas [@sullivan2017using]. However, it is noted that eBird has not yet reached a sufficiently large audience. To realize its full potential, intensive partnership building, a strong community, and time will be necessary. Although these products positively impact environmental science, there is a risk from using a platform that has poorly conducted data, which can potentially misinform policy and practice [@konno2024potential]. Biased bird observation data can be problematic because it may introduce inaccuracies that could affect our understanding of conservation priorities and ultimately lead to the decline or even extinction of truly threatened species populations.
+
+## Reflection
+There are two significant sources of bias present in the eBird data: availability bias and volunteer bias. Availability bias occurs when we rely on the most readily accessible data—in this case, the eBird app. As a result, the data may not adequately represent the target population as intended. On the other hand, volunteer bias arises when participants in a study have traits that differ from the general population of interest [@catalogue_of_bias]. In this context, it pertains to the socioeconomic status of bird watchers. Determining representativeness is complicated when the available data does not capture the relevant characteristics of either the sampled users or the larger population [@olteanu2019social]. These biases pose significant limitations to the use of the data due to uncertainties and cold spots. Furthermore, they raise ethical concerns, as the eBird observations may reflect patterns of redlining.
+
+- How can we address redlining when the necessary data is lacking?  
+- How might this missing data affect the allocation of resources for disadvantaged areas?  
+- Although it may not be intentional, how can we bridge the socioeconomic gap among birdwatchers?
+
+Scientists, policymakers, the general public, and the eBird platform should carefully consider how they utilize bird observation datasets and seek ways to improve these disparities.
+
+## Solutions
+To promote equitable biodiversity research and conservation, it is crucial to align scientific goals with community-led initiatives. By prioritizing the improvement of biodiversity sampling in underrepresented regions, often referred to as coldspots, and collaborating with neighborhood associations and non-governmental groups, we can encourage inclusive citizen science. Programs like STEM-focused initiatives for high school students, Black Birders Week, and Latino Outdoors are examples of how engaging marginalized communities can enhance scientific literacy and encourage broader participation in nature-based activities. Furthermore, by leveraging federal initiatives like Justice40, resources can be directed to historically underserved communities, empowering them with K-12 STEM education and promoting active involvement in conservation efforts.​ Until we see a change in the data that reflects the population, tools like eBird can eventually be used to improve environmental science and policy. By embracing these strategies, we can develop a more inclusive and informed approach to biodiversity conservation.
