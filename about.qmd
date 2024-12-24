@@ -6,7 +6,7 @@ title: "About Me"
 
 **Master of Environmental Data Science (MEDS)** (Expected June 2025)
 
-**Bren School of Environmental Data Science & Management — University of California, Santa Barbara (UCSB)**
+**Bren School of Environmental Science & Management — University of California, Santa Barbara (UCSB)** 
 
 - *Highlighted Coursework:* Python for Environmental Data Science, Scientific Programming Essentials,
 Geospatial Analysis and Remote Sensing, Working with Environmental Datasets
@@ -15,7 +15,7 @@ Geospatial Analysis and Remote Sensing, Working with Environmental Datasets
 
 **Bachelor of Science, Biology | Minor in Dance** (December 2023)
 
-**College of Natural Sciences & Mathematics — California State University, Long Beach (CSULB)**
+**College of Natural Sciences and Mathematics — California State University, Long Beach (CSULB)**
 
 - *Highlighted Coursework:* Conservation Biology, Population Ecology, Biostatistics, Geographic Information Science for Natural Sciences, Undergraduate Directed Research
 
