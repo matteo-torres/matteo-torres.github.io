@@ -302,7 +302,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>                             kind <span class="op">=</span> <span class="st">"line"</span>,</span>
 <span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>                             color<span class="op">=</span>[<span class="st">"red"</span>, <span class="st">"blue"</span>])</span>
 <span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>ax.legend([<span class="st">"Daily"</span>, <span class="st">"5-Day Average"</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>ax.legend([<span class="st">"Daily"</span>, <span class="st">"5-Day Average"</span>])</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>fig <span class="op">=</span> ax.get_figure()  <span class="co"># Get the Matplotlib figure object</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>fig.savefig(<span class="st">"sb_aqi_2017_plot.png"</span>, dpi<span class="op">=</span><span class="dv">300</span>, bbox_inches<span class="op">=</span><span class="st">"tight"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
@@ -367,7 +370,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>                 edgecolor <span class="op">=</span> <span class="st">"red"</span>, </span>
 <span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>                 linewidth <span class="op">=</span> <span class="dv">1</span>)</span>
 <span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"False Color Image of the Thomas Fire (2017)"</span>)</span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"False-Color Image of the Thomas Fire (2017)"</span>)</span>
 <span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"X Coordinate of Projection (m)"</span>)</span>
 <span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"Y Coordinate of Projection (m)"</span>)</span>
 <span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>legend_elements <span class="op">=</span> [Line2D([<span class="dv">0</span>], [<span class="dv">0</span>], </span>
@@ -390,18 +393,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="final-visualizations">Final Visualizations</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="index_files/figure-html/a9d4ef50-f029-4346-ab5d-55e190a86201-1-7759ca7c-638d-4593-ad64-a123f842fc17.jpg" class="img-fluid figure-img"></p>
-<figcaption>ax_plot.jpg</figcaption>
+<p><img src="index_files/figure-html/a9d4ef50-f029-4346-ab5d-55e190a86201-1-c3670d27-e6ff-4087-aa71-258538658f60.png" class="img-fluid figure-img"></p>
+<figcaption>sb_aqi_2017_plot.png</figcaption>
 </figure>
 </div>
 <p>The plot illustrates the Air Quality Index (AQI) in Santa Barbara throughout 2017. At the end of the year, both the daily and 5-day average AQIs show a significant spike in December, coinciding with the occurrence of the Thomas fire. This demonstrates how the Thomas fire contributed to poorer air quality, which likely impacted local communities.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="index_files/figure-html/1e0fc815-9f75-46cd-81ca-3de45eb4f830-1-6b4a59da-8424-4de0-82c5-ec4ffab06064.jpg" class="img-fluid figure-img"></p>
-<figcaption>ax_map.jpg</figcaption>
+<p><img src="index_files/figure-html/1e0fc815-9f75-46cd-81ca-3de45eb4f830-1-5547b4ff-4e6b-4739-86e0-4da6a3dbe5b2.png" class="img-fluid figure-img"></p>
+<figcaption>thomas_fire_map.png</figcaption>
 </figure>
 </div>
-<p>The map illustrates the effects of the Thomas Fire, which occurred in 2017. The false color image (using shortwave infrared, near-infrared, and red wavelengths) highlights areas of the burn scar on vegetation in red. In this imagery, green is typically used to assess vegetation health and density; the brighter or more vivid the green, the healthier and denser the vegetation appears.</p>
+<p>The map illustrates the effects of the Thomas Fire, which occurred in 2017. The false-color image (using shortwave infrared, near-infrared, and red wavelengths) highlights areas of the burn scar on vegetation in red. In this imagery, green is typically used to assess vegetation health and density; the brighter or more vivid the green, the healthier and denser the vegetation appears.</p>
 </section>
 <section id="data-references" class="level2">
 <h2 class="anchored" data-anchor-id="data-references">Data References</h2>
