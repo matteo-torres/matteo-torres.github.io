@@ -11,7 +11,7 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "Master of Environmental Data Science (MEDS) (Expected June 2025)\nBren School of Environmental Science & Management — University of California, Santa Barbara (UCSB)\n\nHighlighted Coursework: Python for Environmental Data Science, Scientific Programming Essentials, Geospatial Analysis and Remote Sensing, Working with Environmental Datasets\n\n\n\n\n\n\nBachelor of Science, Biology | Minor in Dance (December 2023)\nCollege of Natural Sciences and Mathematics — California State University, Long Beach (CSULB)\n\nHighlighted Coursework: Conservation Biology, Population Ecology, Biostatistics, Geographic Information Science for Natural Sciences, Undergraduate Directed Research"
+    "text": "University of California, Santa Barbara (UCSB)\nBren School of Environmental Science & Management\n\nHighlighted Coursework: Python for Environmental Data Science, Databases and Data Management, Machine Learning in Environmental Science, Data Visualization and Communication\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCalifornia State University, Long Beach (CSULB)\nCollege of Natural Sciences and Mathematics\n\nHighlighted Coursework: Conservation Biology, Population Ecology, Biostatistics, Geographic Information Science for Natural Sciences, Undergraduate Directed Research"
   },
   {
     "objectID": "DELETE-LATER/practice.html",
@@ -172,14 +172,14 @@
     "href": "about.html#interests",
     "title": "About Me",
     "section": "Interests",
-    "text": "Interests\nOutside of academics, I enjoy dancing, attending concerts, and exploring a variety of music genres! 🎧\n\n\n\nThese are my top five songs from my Spotify Wrapped!  Inspired by this, I’ve decided to create my own monthly Spotify Wrapped by building a dataset and script to track and update stats such as my song of the month and top artist.  COMING SOON…"
+    "text": "Interests\nOutside of my academics, I love to dance, attend live concerts, and listen to music. This year, I’m incorporating my data science skills into my hobbies, so I created a monthly Spotify Wrapped using my streaming data! If you’re interested in trying it out for yourself, you can check out my repository on GitHub.\nHere are my monthly statistics, along with last year’s Wrapped and my top song of the month. I’ve also included a Spotify playlist featuring my top songs from this month—feel free to give it a listen! Let me know what you think!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n   Previous    Next"
   },
   {
     "objectID": "about.html#education",
     "href": "about.html#education",
     "title": "About Me",
     "section": "",
-    "text": "Master of Environmental Data Science (MEDS) (Expected June 2025)\nBren School of Environmental Science & Management — University of California, Santa Barbara (UCSB)\n\nHighlighted Coursework: Python for Environmental Data Science, Scientific Programming Essentials, Geospatial Analysis and Remote Sensing, Working with Environmental Datasets\n\n\n\n\n\n\nBachelor of Science, Biology | Minor in Dance (December 2023)\nCollege of Natural Sciences and Mathematics — California State University, Long Beach (CSULB)\n\nHighlighted Coursework: Conservation Biology, Population Ecology, Biostatistics, Geographic Information Science for Natural Sciences, Undergraduate Directed Research"
+    "text": "University of California, Santa Barbara (UCSB)\nBren School of Environmental Science & Management\n\nHighlighted Coursework: Python for Environmental Data Science, Databases and Data Management, Machine Learning in Environmental Science, Data Visualization and Communication\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCalifornia State University, Long Beach (CSULB)\nCollege of Natural Sciences and Mathematics\n\nHighlighted Coursework: Conservation Biology, Population Ecology, Biostatistics, Geographic Information Science for Natural Sciences, Undergraduate Directed Research"
   },
   {
     "objectID": "posts/2024-12-20-redlining-biodiversity/index.html",
@@ -278,5 +278,68 @@
     "title": "Thomas Fire Analysis",
     "section": "Data References",
     "text": "Data References\nCalifornia Department of Forestry and Fire Protection. (n.d.). California fire perimeters (all) [Dataset]. Data.gov. Retrieved from https://catalog.data.gov/dataset/california-fire-perimeters-all-b3436\nEarth Resources Observation and Science (EROS) Center. (2020). Landsat 8-9 Operational Land Imager / Thermal Infrared Sensor Level-2, Collection 2 [Dataset]. U.S. Geological Survey. https://doi.org/10.5066/P9OGBGM6\nUnited States Environmental Protection Agency. (2024). Daily AQI by County [Dataset]. EPA. Retrieved from https://aqs.epa.gov/aqsweb/airdata/download_files.html#AQI"
+  },
+  {
+    "objectID": "about.html#my-spotify-wrapped",
+    "href": "about.html#my-spotify-wrapped",
+    "title": "About Me",
+    "section": "My Spotify Wrapped",
+    "text": "My Spotify Wrapped\n{{&lt; gallery \"lightbox\" &gt;}}\n{{&lt; figure \"images/january/jan_artists.png\" \"January Artists\" &gt;}}\n{{&lt; figure \"images/january/jan_songs.png\" \"January Songs\" &gt;}}\n{{&lt; figure \"images/january/jan_monthly.png\" \"January Monthly\" &gt;}}\n{{&lt; figure \"images/january/jan_day.png\" \"January Day\" &gt;}}\n{{&lt; /gallery  &gt;}}"
+  },
+  {
+    "objectID": "about.html#my-spotify-wrapped-1",
+    "href": "about.html#my-spotify-wrapped-1",
+    "title": "About Me",
+    "section": "My Spotify Wrapped",
+    "text": "My Spotify Wrapped\n{{&lt; gallery \"lightbox\" &gt;}}\n{{&lt; figure \"images/january/jan_artists.png\" \"January Artists\" &gt;}}\n{{&lt; figure \"images/january/jan_songs.png\" \"January Songs\" &gt;}}\n{{&lt; figure \"images/january/jan_monthly.png\" \"January Monthly\" &gt;}}\n{{&lt; figure \"images/january/jan_day.png\" \"January Day\" &gt;}}\n{{&lt; /gallery  &gt;}}"
+  },
+  {
+    "objectID": "about.html#my-monthly-spotify-wrapped",
+    "href": "about.html#my-monthly-spotify-wrapped",
+    "title": "Matteo Torres",
+    "section": "My Monthly Spotify Wrapped",
+    "text": "My Monthly Spotify Wrapped\n\n\n&lt;div class=\"carousel-item active\"&gt;\n  &lt;img src=\"images/january/jan_artists.png\" class=\"d-block w-100\" alt=\"January Artists\"&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;img src=\"images/january/jan_songs.png\" class=\"d-block w-100\" alt=\"January Songs\"&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;img src=\"images/january/jan_monthly.png\" class=\"d-block w-100\" alt=\"January Monthly\"&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;img src=\"images/january/jan_day.png\" class=\"d-block w-100\" alt=\"January Day\"&gt;\n&lt;/div&gt;\n\n  Previous    Next"
+  },
+  {
+    "objectID": "about.html#january-photo-slideshow",
+    "href": "about.html#january-photo-slideshow",
+    "title": "About Me",
+    "section": "January Photo Slideshow",
+    "text": "January Photo Slideshow"
+  },
+  {
+    "objectID": "about.html#january-photos-slideshow",
+    "href": "about.html#january-photos-slideshow",
+    "title": "About Me",
+    "section": "January Photos Slideshow",
+    "text": "January Photos Slideshow\n\n\n&lt;section&gt;\n  ![January Artist](images/january/jan_artists.png)\n&lt;/section&gt;\n\n&lt;section&gt;\n  ![January Songs](images/january/jan_songs.png)\n&lt;/section&gt;\n\n&lt;section&gt;\n  ![January Monthly](images/january/jan_monthly.png)\n&lt;/section&gt;\n\n&lt;section&gt;\n  ![January Day](images/january/jan_day.png)\n&lt;/section&gt;"
+  },
+  {
+    "objectID": "about.html#january-photos-slideshow-1",
+    "href": "about.html#january-photos-slideshow-1",
+    "title": "About Me",
+    "section": "January Photos Slideshow",
+    "text": "January Photos Slideshow\n\nSlideshow of January Photos\n\n\n\n\nJanuary Artist\n\n\n\n\n\nJanuary Songs\n\n\n\n\n\nJanuary Monthly\n\n\n\n\n\nJanuary Day"
+  },
+  {
+    "objectID": "about.html#january-photos-carousel",
+    "href": "about.html#january-photos-carousel",
+    "title": "About Me",
+    "section": "January Photos Carousel",
+    "text": "January Photos Carousel\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n   Previous    Next"
+  },
+  {
+    "objectID": "about.html#education-1",
+    "href": "about.html#education-1",
+    "title": "About Me",
+    "section": "Education",
+    "text": "Education\n\n\n\n\n\n\nMaster of Environmental Data Science (MEDS) (Expected June 2025)\nBren School of Environmental Science & Management — University of California, Santa Barbara (UCSB)\n\nHighlighted Coursework: Python for Environmental Data Science, Scientific Programming Essentials, Geospatial Analysis and Remote Sensing, Working with Environmental Datasets\n\nBachelor of Science, Biology | Minor in Dance (December 2023)\nCollege of Natural Sciences and Mathematics — California State University, Long Beach (CSULB)\n\nHighlighted Coursework: Conservation Biology, Population Ecology, Biostatistics, Geographic Information Science for Natural Sciences, Undergraduate Directed Research"
+  },
+  {
+    "objectID": "about.html#master-of-environmental-data-science-meds-expected-june-2025",
+    "href": "about.html#master-of-environmental-data-science-meds-expected-june-2025",
+    "title": "About Me",
+    "section": "Master of Environmental Data Science (MEDS) (Expected June 2025)",
+    "text": "Master of Environmental Data Science (MEDS) (Expected June 2025)\nUniversity of California, Santa Barbara (UCSB)\nBren School of Environmental Science & Management\n\nHighlighted Coursework: Python for Environmental Data Science, Scientific Programming Essentials, Geospatial Analysis and Remote Sensing, Working with Environmental Datasets"
   }
 ]
