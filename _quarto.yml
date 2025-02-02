@@ -27,7 +27,7 @@ format:
     theme: 
     - cyborg
     - styles.scss
-    mainfont: monospace
+    mainfont: courier
     fontcolor: white
     toc: false
     page-layout: full
