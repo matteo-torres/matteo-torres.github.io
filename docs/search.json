@@ -172,7 +172,7 @@
     "href": "about.html#interests",
     "title": "About Me",
     "section": "Interests",
-    "text": "Interests\nOutside of my academics, I love to dance, attend live concerts, and listen to music. This year, I’m incorporating my data science skills into my hobbies, so I created a monthly Spotify Wrapped using my streaming data! If you’re interested in trying it out for yourself, you can check out my repository on GitHub.\nHere are my monthly statistics, along with last year’s Wrapped and my top song of the month. I’ve also included a Spotify playlist featuring my top songs from this month—feel free to give it a listen! Let me know what you think!"
+    "text": "Interests\nOutside of my academics, I love to dance, attend live concerts, and listen to music. This year, I’m combining my passion for music with data science by creating a monthly Spotify Wrapped using my streaming data. If you’re curious or want to try it yourself, you can check out my code on GitHub.\nP.S. I also built a fun, interactive web app to showcase my results—almost like a mood board for music. You’ll find it linked in the top right of my navbar. Let me know what you think!"
   },
   {
     "objectID": "about.html#education",
