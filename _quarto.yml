@@ -15,7 +15,7 @@ website:
         text: Resources
       - href: posts.qmd
         text: Blog
-      - href: https://matteo-torres.github.io/spotify-wrapped/dashboard.html
+      - href: https://matteo-torres.shinyapps.io/shinydashboard/
         text: Spotify
         target: _blank
       - href: Torres_Matteo_Resume.pdf
