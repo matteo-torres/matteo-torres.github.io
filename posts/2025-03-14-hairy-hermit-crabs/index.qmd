@@ -20,6 +20,7 @@ toc: true
 In approaching this topic, I aimed to visualize geographical differences and changes in abundance at survey sites over time.
 
 Key questions that guided my analysis include:
+
 - Given the overall trend of climate change, is there evidence of a northern migration?
 - Are there notable differences in abundance in each California georegion?
 - Has the population declined significantly over time?
