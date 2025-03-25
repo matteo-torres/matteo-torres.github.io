@@ -1,10 +1,31 @@
 [
   {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Addressing the Impact of Redlining on Biodiversity Conservation\n\n\n\nBiodiversity Conservation\n\n\nData Bias\n\n\nEnvironmental Justice\n\n\n\nUncovering how redlining affects biodiversity data, citizen science, and the need for equitable conservation.\n\n\n\nMatteo Torres\n\n\nDec 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThomas Fire Analysis\n\n\n\nAQI\n\n\nFalse-Color Imagery\n\n\nRemote Sensing\n\n\n\nAnalyzing the Thomas Fire’s impact using AQI, false-color imagery, and remote sensing.\n\n\n\nMatteo Torres\n\n\nDec 13, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nHairy Hermit Crab Infographic\n\n\n\nData Visualization\n\n\nScience Communication\n\n\nConservation\n\n\n\nAn analysis of the CA intertidal population using MARINe survey data\n\n\n\nMatteo Torres\n\n\nMar 14, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Matteo Torres",
     "section": "",
-    "text": "I was worried you might have gotten lost on the way…\nHi, I’m Matteo!\nI’m a graduate student dedicated to building data science skills to solve complex environmental challenges. With a focus on ecology, conservation, and restoration, I aim to drive meaningful insights and advance solutions in environmental data science.\nNow that you’re here, feel free to look around and get to know me better!\nIf you’d like to connect or see what I’ve been working on, don’t hesitate to drop me an email or check out my GitHub!"
+    "text": "I’m a graduate student pursuing a Master in Environmental Data Science (MEDS) at the Bren School of Environmental Science & Management.\nCheck out my latest projects, blog posts, and GitHub to see what I’ve been working on!"
+  },
+  {
+    "objectID": "index.html#hi-im-matteo",
+    "href": "index.html#hi-im-matteo",
+    "title": "Matteo Torres",
+    "section": "",
+    "text": "I’m a graduate student pursuing a Master in Environmental Data Science (MEDS) at the Bren School of Environmental Science & Management.\nCheck out my latest projects, blog posts, and GitHub to see what I’ve been working on!"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Spotify Wrapped Dashboard\n\n\nA monthly analysis of my streaming data\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -14,151 +35,11 @@
     "text": "University of California, Santa Barbara (UCSB)\nBren School of Environmental Science & Management\n\nHighlighted Coursework: Python for Environmental Data Science, Databases and Data Management, Machine Learning in Environmental Science, Data Visualization and Communication\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCalifornia State University, Long Beach (CSULB)\nCollege of Natural Sciences and Mathematics\n\nHighlighted Coursework: Conservation Biology, Population Ecology, Biostatistics, Geographic Information Science for Natural Sciences, Undergraduate Directed Research"
   },
   {
-    "objectID": "DELETE-LATER/practice.html",
-    "href": "DELETE-LATER/practice.html",
-    "title": "Here is my level one header",
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About Me",
     "section": "",
-    "text": "Here is my level one header\nHere is my first paragraph\nHere is my second paragraph, where you can read more about MEDS.\nThis is very important text!"
-  },
-  {
-    "objectID": "about.html#what-i-do-for-work",
-    "href": "about.html#what-i-do-for-work",
-    "title": "About",
-    "section": "",
-    "text": "I love to work!"
-  },
-  {
-    "objectID": "about.html#what-i-do-for-fun",
-    "href": "about.html#what-i-do-for-fun",
-    "title": "About",
-    "section": "What I do for fun",
-    "text": "What I do for fun\nI love to have fun!"
-  },
-  {
-    "objectID": "posts.html",
-    "href": "posts.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Addressing the Impact of Redlining on Biodiversity Conservation\n\n\n\nBiodiversity Conservation\n\n\nData Bias\n\n\nEnvironmental Justice\n\n\n\nUncovering how redlining affects biodiversity data, citizen science, and the need for equitable conservation.\n\n\n\nMatteo Torres\n\n\nDec 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThomas Fire Analysis\n\n\n\nAQI\n\n\nFalse-Color Imagery\n\n\nRemote Sensing\n\n\n\nAnalyzing the Thomas Fire’s impact using AQI, false-color imagery, and remote sensing.\n\n\n\nMatteo Torres\n\n\nDec 13, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nHairy Hermit Crab Infographic\n\n\n\nData Visualization\n\n\nScience Communication\n\n\nConservation\n\n\n\nAn analysis of the CA intertidal population using MARINe survey data\n\n\n\nMatteo Torres\n\n\nMar 14, 2024\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/2024-10-18-my-first-post/index.html#this-is-my-second-section",
-    "href": "posts/2024-10-18-my-first-post/index.html#this-is-my-second-section",
-    "title": "Blog Post Title",
-    "section": "This is my second section",
-    "text": "This is my second section\nHere’s my next paragraph2\nI’m citing Sam(Csik 2022)"
-  },
-  {
-    "objectID": "posts/2024-10-18-my-first-post/index.html",
-    "href": "posts/2024-10-18-my-first-post/index.html",
-    "title": "Blog Post Title",
-    "section": "",
-    "text": "I’m going to insert a footnote here1"
-  },
-  {
-    "objectID": "posts/2024-10-18-my-first-post/index.html#this-is-my-first-section",
-    "href": "posts/2024-10-18-my-first-post/index.html#this-is-my-first-section",
-    "title": "Blog Post Title",
-    "section": "",
-    "text": "I’m going to insert a footnote here1"
-  },
-  {
-    "objectID": "posts/2024-10-18-my-first-post/index.html#footnotes",
-    "href": "posts/2024-10-18-my-first-post/index.html#footnotes",
-    "title": "Blog Post Title",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nHere is a new footnote↩︎\nHere is my second footnote↩︎"
-  },
-  {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Resources",
-    "section": "",
-    "text": "Coming soon… 🔄"
-  },
-  {
-    "objectID": "about.html#about-me",
-    "href": "about.html#about-me",
-    "title": "About",
-    "section": "",
-    "text": "I am full time graduate student pursuing a master of environmental data science at the Bren School of Environmental Science & Management at the University of California, Santa Barbara."
-  },
-  {
-    "objectID": "posts/2024-12-13-stats-final/index.html",
-    "href": "posts/2024-12-13-stats-final/index.html",
-    "title": "Exploring Environmental Justice in Los Angeles County",
-    "section": "",
-    "text": "Repository: https://github.com/matteo-torres/ejscreen-LA"
-  },
-  {
-    "objectID": "posts/2024-12-13-stats-final/index.html#background",
-    "href": "posts/2024-12-13-stats-final/index.html#background",
-    "title": "Exploring Environmental Justice in Los Angeles County",
-    "section": "Background",
-    "text": "Background\nLos Angeles County, home to approximately 9.6 million residents, is one of the most diverse regions in the United States. About 30% of its population identifies as people of color, and around 14% are classified as low-income or living in poverty (US Census). Many of these individuals have been adversely affected by the generational impact of historical redlining, a practice that began in the 1930s under the Home Owners’ Loan Corporation (HOLC).\nThe term “redlining” originates from HOLC’s use of color-coded maps to rank neighborhoods, with green designated as the best and red labeled as hazardous. This practice systematically deepened racial segregation, excluding communities of color from neighborhoods deemed “green,” and primarily benefiting white individuals and neighborhoods. As a result, perceptions of neighborhoods shifted, along with the allocation of resources, living conditions, and overall quality of life for those in red areas.\nEvidence suggests that the HOLC grading system is associated with numerous adverse health outcomes and poorer environmental characteristics in present-day neighborhoods (Swope). Some of these include higher levels of pollution, limited access to healthy food, and increased surface temperatures. Despite the passage of time, many residents of Los Angeles continue to bear the consequences of living in these historically redlined areas, which have seen little to no improvement in quality.\nThe purpose of this study is to statistically analyze current data to understand how pollutants and socioeconomic factors may correlate with life expectancy in Los Angeles County. My goal is to identify trends that deepen our understanding of the current situation in communities that have historically experienced disparities."
-  },
-  {
-    "objectID": "posts/2024-12-13-stats-final/index.html#highlights",
-    "href": "posts/2024-12-13-stats-final/index.html#highlights",
-    "title": "Exploring Environmental Justice in Los Angeles County",
-    "section": "Highlights",
-    "text": "Highlights"
-  },
-  {
-    "objectID": "posts/2024-12-13-stats-final/index.html#data-descriptions",
-    "href": "posts/2024-12-13-stats-final/index.html#data-descriptions",
-    "title": "Exploring Environmental Justice in Los Angeles Countyy",
-    "section": "Data Descriptions",
-    "text": "Data Descriptions"
-  },
-  {
-    "objectID": "posts/2024-12-13-stats-final/index.html#about-the-data",
-    "href": "posts/2024-12-13-stats-final/index.html#about-the-data",
-    "title": "Exploring Environmental Justice in Los Angeles County",
-    "section": "About the Data",
-    "text": "About the Data\nFor this study, I chose to utilize the EJScreen: Environmental Justice Screening and Mapping Tool dataset provided by the Environmental Protection Agency. This CSV file contains a variety of variables that assess different environmental burden indicators, socioeconomic indicators, and health disparity indicators, with Census block groups serving as the primary geographic unit.\nTo begin my analysis, it is essential to filter the dataset to include only observations from Los Angeles County, select the relevant variables for measurement, and remove any entries with missing data.\n\nDependent Variable\nThe primary focus of this statistical analysis is to measure how life expectancy responds to environmental and socioeconomic factors.\n\nLow Life Expectancy: This measure identifies areas where life expectancy is lower than the national average.\n\nEJScreen employs an inverse approach, where higher values correspond to lower life expectancy, and lower scores indicate higher life expectancy. The percentage of low life expectancy is calculated using the formula:\n% Low Life Expectancy = 1 - (Life Expectancy / Max Life Expectancy)\n\n\nIndependent Variables\nEnvironmental Burden Indicators\n\nParticulate Matter 2.5 (PM 2.5): This metric quantifies potential exposure to fine particulate matter (2.5 micrometers or smaller) and is expressed as the annual average concentration in the air, measured in micrograms per cubic meter.\nOzone: The ozone indicator in EJScreen reflects the annual mean of the 10 highest daily maximum 8-hour (MDA8) ozone concentrations.\nHazardous Waste Proximity: This indicator considers the total number of hazardous waste facilities within a 10-kilometer radius of the average resident in each block group, adjusted for distance. It is calculated as a population-weighted average of the blocks within each block group.\n\nSocioeconomic Indicators\n\nPeople of Color: This group includes individuals who identify as a race other than “white alone” and/or identify their ethnicity as Hispanic or Latino.\nLow Income: A household is classified as low income if its income is equal to or less than twice the poverty level, defined as $29,950 by the U.S. Census Bureau.\n\n\n\nLimitations\nBefore continuing onto my analysis plan, it’s important to acknowledge the limitations of the EJScreen dataset.\n\nThis tool is not intended to provide a comprehensive risk analysis. Instead, it functions as a screening tool to examine certain issues related to environmental justice. It does not encompass all relevant issues that should be considered, and it strives to balance the need for data quality and national coverage while including as many significant environmental factors as possible within the constraints of available resources.\nThe dataset relies on demographic and environmental estimates that carry a considerable degree of uncertainty, especially when analyzing smaller geographic areas."
-  },
-  {
-    "objectID": "posts/2024-12-13-stats-final/index.html#citations",
-    "href": "posts/2024-12-13-stats-final/index.html#citations",
-    "title": "Exploring Environmental Justice in Los Angeles County",
-    "section": "Citations",
-    "text": "Citations\nEnvironmental Protection Agency. (2024). EJScreen: Environmental Justice Mapping and Screening Tool. epa.gov. https://www.epa.gov/ejscreen/download-ejscreen-data\nSwope, C.B., Hernández, D. & Cushing, L.J. The Relationship of Historical Redlining with Present-Day Neighborhood Environmental and Health Outcomes: A Scoping Review and Conceptual Model. J Urban Health 99, 959–983 (2022). https://doi.org/10.1007/s11524-022-00665-z\nUnited States Census Bureau. (2023). Quick Facts Los Angeles County, California. Census.gov. https://www.census.gov/quickfacts/losangelescountycalifornia"
-  },
-  {
-    "objectID": "posts/2024-12-13-stats-final/index.html#limitations",
-    "href": "posts/2024-12-13-stats-final/index.html#limitations",
-    "title": "Exploring Environmental Justice in Los Angeles County",
-    "section": "Limitations",
-    "text": "Limitations\n\nThis tool is not designed to provide a comprehensive risk analysis. Instead, it serves as a screening tool to explore important issues related to environmental justice.\nIt is based on demographic and environmental estimates that carry a considerable degree of uncertainty, particularly when analyzing small geographic areas."
-  },
-  {
-    "objectID": "posts/2024-12-13-stats-final/index.html#analysis",
-    "href": "posts/2024-12-13-stats-final/index.html#analysis",
-    "title": "Exploring Environmental Justice in Los Angeles County",
-    "section": "Analysis",
-    "text": "Analysis\nGoal: Explore the relationship between environmental pollutants and socio-economic factors, controlling for confounding variables.\n\nCorrelation Analysis\n\n\nRegression Models"
-  },
-  {
-    "objectID": "posts/2024-12-13-stats-final/index.html#analysis-plan",
-    "href": "posts/2024-12-13-stats-final/index.html#analysis-plan",
-    "title": "Exploring Environmental Justice in Los Angeles County",
-    "section": "Analysis Plan",
-    "text": "Analysis Plan\n\nCorrelation Analysis\n\nAnalyze the pairwise correlations among Environmental Burden Indicators, Socioeconomic Indicators, and Low Life Expectancy.\n\n\n\nRegression Models\n\nModel 1: Utilize simple regression to predict life expectancy based on environmental burden indicators (pollutants).\nModel 2: Implement multiple linear regression by including socioeconomic indicators as additional predictors.\nModel 3: Examine interaction effects to understand how socioeconomic indicators influence the relationship between environmental burden indicators (pollutants) and low life expectancy."
-  },
-  {
-    "objectID": "posts/2024-12-13-stats-final/index.html#results",
-    "href": "posts/2024-12-13-stats-final/index.html#results",
-    "title": "Exploring Environmental Justice in Los Angeles County",
-    "section": "Results",
-    "text": "Results\n\nCorrelation Analysis\n\nPairwise Correlation Analysis for all Variables\n\n\n\npm25\nozone\nptsdf\nlowincpct\nlifeexppct\npeopcolorpct\n\n\n\n\npm25\n1.00\n-0.10\n0.59\n0.17\n0.12\n0.46\n\n\nozone\n-0.10\n1.00\n-0.52\n-0.02\n-0.19\n0.05\n\n\nptsdf\n0.59\n-0.52\n1.00\n0.29\n0.24\n0.39\n\n\nlowincpct\n0.17\n-0.02\n0.29\n1.00\n0.41\n0.52\n\n\nlifeexppct\n0.12\n-0.19\n0.24\n0.41\n1.00\n0.38\n\n\npeopcolorpct\n0.46\n0.05\n0.39\n0.52\n0.38\n1.00\n\n\n\nAccording to the pairwise correlation analysis, which quantified the linear relationships between all variable pairs, there is a moderately positive association between hazardous waste proximity and exposure to particulate matter (PM 2.5). There is also a moderately positive association between the percentage of people of color and the percentage of low-income individuals. However, there is a moderate negative association between hazardous waste proximity and the ozone indicator.\nWhile these moderate relationships may provide insights into the situation in Los Angeles County, we cannot assume that correlation implies causation. It is essential to further analyze the data in different ways to gain a clearer understanding of whether these relationships are causal.\n\n\nRegression Models\nModel 1: Simple Regression\nlm(lifeexppct ~ pm25 + ozone + ptsdf, data = los_angeles)\n\nSimple Regression Model\n\n\nCoefficients\nEstimate\nStd. Error\nt-value\np-value\n\n\n\n\n(Intercept)\n1.841e-01\n5.296e-03\n34.765\n&lt; 2e-16\n\n\npm25\n1.022e-04\n3.200e-04\n0.319\n0.749\n\n\nozone\n-3.287e-04\n5.364e-05\n-6.128\n9.43e-10\n\n\nptsdf\n7.626e-04\n7.584e-05\n10.056\n&lt; 2e-16\n\n\n\nAdjusted R-squared: 0.06091\n\nThe results indicate that both ozone levels and proximity to hazardous waste sites are significant predictors of life expectancy, as evidenced by the low p-values. The negative coefficient for ozone suggests that areas with higher ozone levels tend to have lower life expectancy. On the other hand, the positive coefficient for proximity to hazardous waste sites indicates that regions closer to these sites also tend to have lower life expectancy. However, the model explains only about 6.1% of the variation in life expectancy, which implies it may not fully account for all the factors influencing this outcome. There may be other variables not included in the model that could have a more substantial impact on life expectancy.\nModel 2: Multiple Regression\nlm(lifeexppct ~ pm25 + ozone + ptsdf + peopcolorpct + lowincpct, data = los_angeles)\n\nMultiple Regression Model\n\n\nCoefficients\nEstimate\nStd. Error\nt-value\np-value\n\n\n\n\n(Intercept)\n2.146e-01\n4.870e-03\n44.072\n&lt; 2e-16\n\n\npm25\n-1.092e-03\n2.990e-04\n-3.654\n0.000261\n\n\nozone\n-7.951e-04\n4.964e-05\n-16.017\n&lt; 2e-16\n\n\nptsdf\n-1.683e-04\n7.183e-05\n-2.343\n0.019141\n\n\npeopcolorpct\n3.679e-02\n1.858e-03\n19.802\n&lt; 2e-16\n\n\nlowincpct\n4.828e-02\n2.269e-03\n21.280\n&lt; 2e-16\n\n\n\nAdjusted R-squared: 0.248\n\nBased on the new model, both particulate matter (PM 2.5) and ozone levels show a negative and statistically significant relationship with life expectancy. This indicates that higher pollution levels are linked to lower life expectancy. Additionally, communities located closer to hazardous waste sites also tend to have lower life expectancy. The analysis reveals that higher percentages of people of color and low-income individuals are associated with lower life expectancy, highlighting the compounded effects of environmental and socioeconomic factors in vulnerable communities. The model now accounts for approximately 24.8% of the variation in life expectancy, which is a significant improvement over the previous model. This suggests that incorporating both environmental and socioeconomic variables has enhanced the model’s fit.\nModel 3: Interaction Effects (PM 2.5)\n(lm(lifeexppct ~ pm25 + ozone + ptsdf + lowincpct + peopcolorpct + pm25:lowincpct + pm25:peopcolorpct, data = los_angeles)\n\nInteraction Effects (PM 2.5)\n\n\nCoefficients\nEstimate\nStd. Error\nt-value\np-value\n\n\n\n\n(Intercept)\n1.762e-01\n1.015e-02\n17.369\n&lt; 2e-16\n\n\npm25\n2.272e-03\n8.385e-04\n2.710\n0.006750\n\n\nozone\n-8.134e-04\n4.974e-05\n-16.354\n&lt; 2e-16\n\n\nptsdf\n-1.960e-04\n7.240e-05\n-2.708\n0.006796\n\n\nlowincpct\n7.113e-02\n1.843e-02\n3.860\n0.000115\n\n\npeopcolorpct\n8.244e-02\n1.491e-02\n5.528\n3.38e-08\n\n\npm25:lowincpct\n-1.751e-03\n1.436e-03\n-1.220\n0.222597\n\n\npm25:peopcolorpct\n-3.767e-03\n1.203e-03\n-3.132\n0.001747\n\n\n\nAdjusted R-squared: 0.2502\n\n According to the interaction model, the relationship between PM 2.5 levels and life expectancy is influenced by the proportion of people of color in a community. It suggests that in communities with higher percentages of people of color, the harmful effects of PM 2.5 on life expectancy are more pronounced. However, there is no significant interaction effect between particulate matter levels and the percentage of low-income individuals in predicting life expectancy. This model explains approximately 25.02% of the variability in life expectancy. Although the explanatory power of the model has slightly improved with the addition of interaction terms, it still does not account for a large portion of the variation in life expectancy, indicating that additional factors or more advanced modeling may be needed.\nModel 3: Interaction Effects (Ozone)\n(lm(lifeexppct ~ pm25 + ozone + ptsdf + lowincpct + peopcolorpct + ozone:lowincpct + ozone:peopcolorpct, data = los_angeles)\n\nInteraction Effects (Ozone)\n\n\nCoefficients\nEstimate\nStd. Error\nt-value\np-value\n\n\n\n\n(Intercept)\n5.760e-02\n1.090e-02\n5.286\n1.29e-07\n\n\npm25\n-3.570e-04\n2.992e-04\n-1.193\n0.233\n\n\nozone\n1.046e-03\n1.248e-04\n8.384\n&lt; 2e-16\n\n\nptsdf\n-4.230e-04\n7.293e-05\n-5.800\n6.96e-09\n\n\nlowincpct\n3.485e-02\n2.166e-02\n1.609\n0.108\n\n\npeopcolorpct\n2.629e-01\n1.635e-02\n16.086\n&lt; 2e-16\n\n\nozone:lowincpct\n1.353e-04\n2.576e-04\n0.525\n0.599\n\n\nozone:peopcolorpct\n-2.710e-03\n1.937e-04\n-13.991\n&lt; 2e-16\n\n\n\nAdjusted R-squared: 0.2773\n\n\nAccording to the interaction model, the relationship between ozone levels and the percentage of people of color is highly significant, indicating that communities of color face disproportionately higher health risks from ozone pollution. In contrast, the interaction between ozone levels and the percentage of low-income individuals is not significant, suggesting that income levels do not influence the negative effects of ozone on life expectancy. Approximately 27.73% of the variability in life expectancy is explained by this model, which shows an improvement to previous models, likely due to the inclusion of interaction terms.\nModel 3: Interaction Effects (Hazardous Waste Proximity)\n(lm(lifeexppct ~ pm25 + ozone + ptsdf + lowincpct + peopcolorpct + ptsdf:lowincpct + ptsdf:peopcolorpct, data = los_angeles)\n\nInteraction Effects (Hazardous Waste Proximity)\n\n\nCoefficients\nEstimate\nStd.Error\nt-value\np-value\n\n\n\n\n(Intercept)\n2.094e-01\n5.169e-03\n40.513\n&lt; 2e-16\n\n\npm25\n-1.008e-03\n3.003e-04\n-3.358\n0.000791\n\n\nozone\n-7.771e-04\n5.053e-05\n-15.380\n&lt; 2e-16\n\n\nptsdf\n-1.352e-05\n1.613e-04\n-0.084\n0.933184\n\n\nlowincpct\n7.232e-02\n6.077e-03\n11.899\n&lt; 2e-16\n\n\npeopcolorpct\n3.094e-02\n4.551e-03\n6.798\n1.16e-11\n\n\nptsdf:lowincpct\n-1.178e-03\n2.779e-04\n-4.238\n2.29e-05\n\n\nptsdf:peopcolorpct\n2.720e-04\n2.281e-04\n1.193\n0.233109\n\n\n\nAdjusted R-squared: 0.25\n\n\nAccording to this interaction model, the significant interaction effect indicates that low-income communities are more vulnerable to the negative impacts of living near hazardous waste sites. In contrast, the non-significant interaction between proximity to hazardous waste and the percentage of people of color suggests that the racial composition of a neighborhood does not significantly influence the health effects of living near these sites. The model accounts for approximately 25% of the variance in life expectancy.\nFurther exploration of potential interactions between other environmental pollutants and socioeconomic factors could provide deeper insights. This exploration may reveal instances of omitted variable bias, which occurs when an important factor is left out of the analysis. Additionally, we could consider model improvements by incorporating variations of effects from other variables and interactions to enhance the overall the analysis."
-  },
-  {
-    "objectID": "index.html#welcome-to-my-website",
-    "href": "index.html#welcome-to-my-website",
-    "title": "Matteo Torres",
-    "section": "",
-    "text": "I was worried you might have gotten lost on the way…\nHi, I’m Matteo!\nI’m a graduate student dedicated to building data science skills to solve complex environmental challenges. With a focus on ecology, conservation, and restoration, I aim to drive meaningful insights and advance solutions in environmental data science.\nNow that you’re here, feel free to look around and get to know me better!\nIf you’d like to connect or see what I’ve been working on, don’t hesitate to drop me an email or check out my GitHub!"
+    "text": "University of California, Santa Barbara (UCSB)\nBren School of Environmental Science & Management\n\nHighlighted Coursework: Python for Environmental Data Science, Databases and Data Management, Machine Learning in Environmental Science, Data Visualization and Communication\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCalifornia State University, Long Beach (CSULB)\nCollege of Natural Sciences and Mathematics\n\nHighlighted Coursework: Conservation Biology, Population Ecology, Biostatistics, Geographic Information Science for Natural Sciences, Undergraduate Directed Research"
   },
   {
     "objectID": "about.html#background",
@@ -173,13 +54,6 @@
     "title": "About Me",
     "section": "Interests",
     "text": "Interests\nOutside of my academics, I love to dance, attend live concerts, and listen to music. This year, I’m combining my passion for music with data science by creating a monthly Spotify Wrapped using my streaming data. If you’re curious or want to try it yourself, you can check out my code on GitHub.\nP.S. I also built a fun, interactive web app to showcase my results—almost like a mood board for music. You’ll find it linked in the top right of my navbar. Let me know what you think!"
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "About Me",
-    "section": "",
-    "text": "University of California, Santa Barbara (UCSB)\nBren School of Environmental Science & Management\n\nHighlighted Coursework: Python for Environmental Data Science, Databases and Data Management, Machine Learning in Environmental Science, Data Visualization and Communication\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCalifornia State University, Long Beach (CSULB)\nCollege of Natural Sciences and Mathematics\n\nHighlighted Coursework: Conservation Biology, Population Ecology, Biostatistics, Geographic Information Science for Natural Sciences, Undergraduate Directed Research"
   },
   {
     "objectID": "posts/2024-12-20-redlining-biodiversity/index.html",
@@ -215,13 +89,6 @@
     "title": "Addressing the Impact of Redlining on Biodiversity Conservation",
     "section": "Solutions",
     "text": "Solutions\nTo promote equitable biodiversity research and conservation, it is crucial to align scientific goals with community-led initiatives. By prioritizing the improvement of biodiversity sampling in underrepresented regions, often referred to as coldspots, and collaborating with neighborhood associations and non-governmental groups, we can encourage inclusive citizen science. Programs like STEM-focused initiatives for high school students, Black Birders Week, and Latino Outdoors are examples of how engaging marginalized communities can enhance scientific literacy and encourage broader participation in nature-based activities. Furthermore, by leveraging federal initiatives like Justice40, resources can be directed to historically underserved communities, empowering them with K-12 STEM education and promoting active involvement in conservation efforts.​ Until we see a change in the data that reflects the population, tools like eBird can eventually be used to improve environmental science and policy. By embracing these strategies, we can develop a more inclusive and informed approach to biodiversity conservation."
-  },
-  {
-    "objectID": "posts/2024-12-20-redlining-biodiversity/index.html#citations",
-    "href": "posts/2024-12-20-redlining-biodiversity/index.html#citations",
-    "title": "Addressing the Impact of Redlining on Biodiversity Conservation",
-    "section": "Citations",
-    "text": "Citations\nKonno, K., Gibbons, J., Lewis, R., & et al. (2024). Potential types of bias when estimating causal effects in environmental research and how to interpret them. Environmental Evidence, 13(1). https://doi.org/10.1186/s13750-024-00324-7\nOlteanu, A., Castillo, C., Diaz, F., & Kiciman, E. (2019). Social data: Biases, methodological pitfalls, and ethical boundaries. Frontiers in Big Data, 2. https://doi.org/10.3389/fdata.2019.00013\nRutter, J. D., Dayer, A. A., Harshaw, H. W., Cole, N. W., Duberstein, J. N., Fulton, D. C., Raedeke, A. H., & Schuster, R. M. (2021). Racial, ethnic, and social patterns in the recreation specialization of birdwatchers: An analysis of United States eBird registrants. Journal of Outdoor Recreation and Tourism, 35, 100400. https://doi.org/10.1016/j.jort.2021.100400\nSullivan, B. L., Phillips, T., Dayer, A. A., Wood, C. L., Farnsworth, A., Iliff, M. J., Davies, I. J., Wiggins, A., Fink, D., Hochachka, W. M., Rodewald, A. D., Rosenberg, K. V., Bonney, R., & Kelling, S. (2017). Using open access observational data for conservation action: A case study for birds. Biological Conservation, 208, 5–14. https://doi.org/10.1016/j.biocon.2016.04.031\nSwope, C.B., Hernández, D. & Cushing, L.J. The Relationship of Historical Redlining with Present-Day Neighborhood Environmental and Health Outcomes: A Scoping Review and Conceptual Model. J Urban Health 99, 959–983 (2022). https://doi.org/10.1007/s11524-022-00665-z"
   },
   {
     "objectID": "posts/2024-12-13-thomas-fire/index.html",
@@ -280,69 +147,6 @@
     "text": "Data References\nCalifornia Department of Forestry and Fire Protection. (n.d.). California fire perimeters (all) [Dataset]. Data.gov. Retrieved from https://catalog.data.gov/dataset/california-fire-perimeters-all-b3436\nEarth Resources Observation and Science (EROS) Center. (2020). Landsat 8-9 Operational Land Imager / Thermal Infrared Sensor Level-2, Collection 2 [Dataset]. U.S. Geological Survey. https://doi.org/10.5066/P9OGBGM6\nUnited States Environmental Protection Agency. (2024). Daily AQI by County [Dataset]. EPA. Retrieved from https://aqs.epa.gov/aqsweb/airdata/download_files.html#AQI"
   },
   {
-    "objectID": "about.html#my-spotify-wrapped",
-    "href": "about.html#my-spotify-wrapped",
-    "title": "About Me",
-    "section": "My Spotify Wrapped",
-    "text": "My Spotify Wrapped\n{{&lt; gallery \"lightbox\" &gt;}}\n{{&lt; figure \"images/january/jan_artists.png\" \"January Artists\" &gt;}}\n{{&lt; figure \"images/january/jan_songs.png\" \"January Songs\" &gt;}}\n{{&lt; figure \"images/january/jan_monthly.png\" \"January Monthly\" &gt;}}\n{{&lt; figure \"images/january/jan_day.png\" \"January Day\" &gt;}}\n{{&lt; /gallery  &gt;}}"
-  },
-  {
-    "objectID": "about.html#my-spotify-wrapped-1",
-    "href": "about.html#my-spotify-wrapped-1",
-    "title": "About Me",
-    "section": "My Spotify Wrapped",
-    "text": "My Spotify Wrapped\n{{&lt; gallery \"lightbox\" &gt;}}\n{{&lt; figure \"images/january/jan_artists.png\" \"January Artists\" &gt;}}\n{{&lt; figure \"images/january/jan_songs.png\" \"January Songs\" &gt;}}\n{{&lt; figure \"images/january/jan_monthly.png\" \"January Monthly\" &gt;}}\n{{&lt; figure \"images/january/jan_day.png\" \"January Day\" &gt;}}\n{{&lt; /gallery  &gt;}}"
-  },
-  {
-    "objectID": "about.html#my-monthly-spotify-wrapped",
-    "href": "about.html#my-monthly-spotify-wrapped",
-    "title": "Matteo Torres",
-    "section": "My Monthly Spotify Wrapped",
-    "text": "My Monthly Spotify Wrapped\n\n\n&lt;div class=\"carousel-item active\"&gt;\n  &lt;img src=\"images/january/jan_artists.png\" class=\"d-block w-100\" alt=\"January Artists\"&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;img src=\"images/january/jan_songs.png\" class=\"d-block w-100\" alt=\"January Songs\"&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;img src=\"images/january/jan_monthly.png\" class=\"d-block w-100\" alt=\"January Monthly\"&gt;\n&lt;/div&gt;\n&lt;div class=\"carousel-item\"&gt;\n  &lt;img src=\"images/january/jan_day.png\" class=\"d-block w-100\" alt=\"January Day\"&gt;\n&lt;/div&gt;\n\n  Previous    Next"
-  },
-  {
-    "objectID": "about.html#january-photo-slideshow",
-    "href": "about.html#january-photo-slideshow",
-    "title": "About Me",
-    "section": "January Photo Slideshow",
-    "text": "January Photo Slideshow"
-  },
-  {
-    "objectID": "about.html#january-photos-slideshow",
-    "href": "about.html#january-photos-slideshow",
-    "title": "About Me",
-    "section": "January Photos Slideshow",
-    "text": "January Photos Slideshow\n\n\n&lt;section&gt;\n  ![January Artist](images/january/jan_artists.png)\n&lt;/section&gt;\n\n&lt;section&gt;\n  ![January Songs](images/january/jan_songs.png)\n&lt;/section&gt;\n\n&lt;section&gt;\n  ![January Monthly](images/january/jan_monthly.png)\n&lt;/section&gt;\n\n&lt;section&gt;\n  ![January Day](images/january/jan_day.png)\n&lt;/section&gt;"
-  },
-  {
-    "objectID": "about.html#january-photos-slideshow-1",
-    "href": "about.html#january-photos-slideshow-1",
-    "title": "About Me",
-    "section": "January Photos Slideshow",
-    "text": "January Photos Slideshow\n\nSlideshow of January Photos\n\n\n\n\nJanuary Artist\n\n\n\n\n\nJanuary Songs\n\n\n\n\n\nJanuary Monthly\n\n\n\n\n\nJanuary Day"
-  },
-  {
-    "objectID": "about.html#january-photos-carousel",
-    "href": "about.html#january-photos-carousel",
-    "title": "About Me",
-    "section": "January Photos Carousel",
-    "text": "January Photos Carousel\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n   Previous    Next"
-  },
-  {
-    "objectID": "about.html#education-1",
-    "href": "about.html#education-1",
-    "title": "About Me",
-    "section": "Education",
-    "text": "Education\n\n\n\n\n\n\nMaster of Environmental Data Science (MEDS) (Expected June 2025)\nBren School of Environmental Science & Management — University of California, Santa Barbara (UCSB)\n\nHighlighted Coursework: Python for Environmental Data Science, Scientific Programming Essentials, Geospatial Analysis and Remote Sensing, Working with Environmental Datasets\n\nBachelor of Science, Biology | Minor in Dance (December 2023)\nCollege of Natural Sciences and Mathematics — California State University, Long Beach (CSULB)\n\nHighlighted Coursework: Conservation Biology, Population Ecology, Biostatistics, Geographic Information Science for Natural Sciences, Undergraduate Directed Research"
-  },
-  {
-    "objectID": "about.html#master-of-environmental-data-science-meds-expected-june-2025",
-    "href": "about.html#master-of-environmental-data-science-meds-expected-june-2025",
-    "title": "About Me",
-    "section": "Master of Environmental Data Science (MEDS) (Expected June 2025)",
-    "text": "Master of Environmental Data Science (MEDS) (Expected June 2025)\nUniversity of California, Santa Barbara (UCSB)\nBren School of Environmental Science & Management\n\nHighlighted Coursework: Python for Environmental Data Science, Scientific Programming Essentials, Geospatial Analysis and Remote Sensing, Working with Environmental Datasets"
-  },
-  {
     "objectID": "posts/2025-03-14-hairy-hermit-crabs/index.html",
     "href": "posts/2025-03-14-hairy-hermit-crabs/index.html",
     "title": "Hairy Hermit Crab Infographic",
@@ -376,5 +180,12 @@
     "title": "Hairy Hermit Crab Infographic",
     "section": "Visualizations",
     "text": "Visualizations\nIt is important to note that all of the visualiations in the infographic were created in R using the ggplot2 package.\nFeel free to look at the breakdown of my code for each visualization!\n\n\nCode\n# Filter to observations in 2004\nyr_2004 &lt;- hairy_hermit_sf %&gt;%\n  filter(year == 2004 & num_count &gt; 0)\n\n# CA map of presence (2004)\ntm_shape(california) +\n  tm_polygons(col = \"grey\",\n              border.col = \"black\") +\ntm_shape(sites) +\n  tm_dots(col = \"black\",\n          size = 0.05,\n          alpha = 0.5) +\ntm_shape(yr_2004) +\n  tm_dots(col = \"red\",\n          size = 0.3,\n          shape = 8) +\n  tm_layout(frame = FALSE)\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Filter to observations in 2024\nyr_2024 &lt;- hairy_hermit_sf %&gt;%\n  filter(year == 2024 & num_count &gt; 0)\n\n# CA map of presence (2024)\ntm_shape(california) +\n  tm_polygons(col = \"grey\",\n              border.col = \"black\") +\ntm_shape(sites) +\n  tm_dots(col = \"black\",\n          size = 0.05,\n          alpha = 0.5) +\ntm_shape(yr_2024) +\n  tm_dots(col = \"red\",\n          size = 0.3,\n          shape = 8) +\n  tm_layout(frame = FALSE)\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Reflected lollipop chart (2004 vs. 2024)\nhairy_hermit %&gt;%\n  filter(year %in% c(2004, 2024)) %&gt;%\n  group_by(georegion, year) %&gt;%\n  summarise(total_count = sum(num_count), .groups = \"drop\") %&gt;%\n  mutate(total_count = ifelse(year == 2004, -total_count, total_count)) %&gt;%\n  mutate(georegion = fct_relevel(georegion, c(\"Channel Islands South\",\n                                              \"Channel Islands North\",\n                                              \"South\",\n                                              \"Central\",\n                                              \"North\"))) %&gt;% \n  ggplot(aes(x = georegion, y = total_count)) +  \n  geom_linerange(aes(ymin = 0, ymax = total_count),\n                 color = \"black\",\n                 linewidth = 0.8, \n                 linetype = \"dotted\") +\n  geom_hline(yintercept = 0, \n             linetype = \"solid\", \n             color = \"black\") +\n   coord_flip(clip = \"off\") +\n  scale_y_continuous(expand = c(0, 0), limits = c(-300, 300)) +\n  theme_void() +\n  theme(panel.background = element_rect(fill = \"#ffebb0\"))\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Line plot of abundance over time (2004-2024)\nhairy_hermit %&gt;%\n  filter(year %in% c(2004:2024)) %&gt;%\n  group_by(year) %&gt;%\n  summarize(total = sum(num_count)) %&gt;%\n  ungroup() %&gt;%\n  ggplot(aes(x = year, y = total)) +\n  geom_line(color = \"#006AB2\", linewidth = 1) +\n  geom_area_pattern(pattern = \"gradient\",\n                    pattern_fill = \"#006AB2\",\n                    pattern_fill2 = \"white\") +\n  scale_x_continuous(expand = c(0, 0), breaks = c(2004, 2009, 2014, 2019, 2024)) +\n  scale_y_continuous(expand = c(0, 0), limits = c(0, 1000)) +\n  labs(x = \"Year\",\n       y = \"Total Count (n)\") +\n  theme_classic() +\n  theme(plot.margin = unit(c(t = 0.5, r = 0.5, b = 0.5, l = 0.5), \"cm\"),\n        panel.background = element_rect(fill = \"#7f8386\"))"
+  },
+  {
+    "objectID": "projects/spotify-wrapped/index.html",
+    "href": "projects/spotify-wrapped/index.html",
+    "title": "Spotify Wrapped Dashboard",
+    "section": "",
+    "text": "Shiny dashboard  GitHub repository"
   }
 ]

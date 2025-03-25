@@ -6,5 +6,11 @@
       "/posts/2024-12-13-thomas-fire/index.html",
       "/posts/2025-03-14-hairy-hermit-crabs/index.html"
     ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/spotify-wrapped/index.html"
+    ]
   }
 ]
