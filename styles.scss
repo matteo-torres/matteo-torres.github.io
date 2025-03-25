@@ -1,32 +1,14 @@
 /*-- scss:defaults --*/
 
 // Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
 // Colors 
-$apple-green: #A9B83D;
-$moss-green: #8EA253;
 $brat-green: #8ACE00;
-$spring-bud: #AAFF00;
 $black: #000000;
 
-// Quarto Sass Variables 
-$footer-bg: $brat-green; // footer
+// Quarto Sass Variables
 $navbar-hl: $brat-green; // navbar highlight
 $link-color: $brat-green; // link highlight
 
 /*-- scss:rules --*/
-
-/* Center the slideshow */
-.revealjs .slides {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.revealjs .slides img {
-  max-width: 100%;
-  max-height: 80vh; /* Adjust to prevent the images from being too large */
-  margin: 0 auto;
-  border-radius: 15px;
-}

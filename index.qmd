@@ -1,32 +1,17 @@
 ---
-#title: "Matteo Torres"
-image: meds_headshot.jpeg
+image: meds-headshot-cropped.jpeg
 about: 
-  template: trestles
-  image-shape: rounded
+  template: jolla
+  image-shape: round
   image-width: 16em
-  links:
-    - text: LinkedIn
-      icon: linkedin
-      href: http://www.linkedin.com/in/matteo-torres-876a62234
-      target: _blank
-    - text: GitHub
-      icon: github
-      href: https://github.com/matteo-torres
-      target: _blank
-    - text: Email
-      icon: envelope
-      href: mailto:matteotorres@bren.ucsb.edu
-      target: _blank
 ---
-## Welcome to my website!
+## Hi, I’m Matteo!
 
-I was worried you might have gotten lost on the way...
+I’m a graduate student pursuing a Master in Environmental Data Science (MEDS) at the Bren School of Environmental Science & Management. 
 
-Hi, I’m Matteo!
+Check out my latest projects, blog posts, and GitHub to see what I’ve been working on!
 
-I’m a graduate student dedicated to building data science skills to solve complex environmental challenges. With a focus on ecology, conservation, and restoration, I aim to drive meaningful insights and advance solutions in environmental data science.
+[<i class="fab fa-linkedin fa-2x"></i>](https://www.linkedin.com/in/matteo-torres-876a62234){target="_blank"} &nbsp;
+[<i class="fab fa-github-alt fa-2x"></i>](https://github.com/matteo-torres){target="_blank"} &nbsp;
+[<i class="fa fa-envelope fa-2x"></i>](mailto:matteotorres@bren.ucsb.edu)
 
-Now that you’re here, feel free to look around and get to know me better!
-
-If you’d like to connect or see what I’ve been working on, don’t hesitate to drop me an email or check out my GitHub!

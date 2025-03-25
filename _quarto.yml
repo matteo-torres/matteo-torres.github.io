@@ -5,33 +5,41 @@ project:
 website:
   title: "Matteo Torres"
   navbar:
-    title: Matteo
+    title: Matteo Torres
     right:
       - href: index.qmd
         text: Home
       - href: about.qmd
         text: About
-      - href: resources.qmd
-        text: Resources
       - href: posts.qmd
         text: Blog
-      - href: https://matteo-torres.shinyapps.io/shinydashboard/
-        text: Spotify
-        target: _blank
+      - href: projects.qmd
+        text: Projects
       - href: Torres_Matteo_Resume.pdf
         text: Resume
         target: _blank
+      - text: Connect
+        menu:
+          - text: LinkedIn
+            icon: linkedin
+            href: http://www.linkedin.com/in/matteo-torres-876a62234
+            target: _blank
+          - text: Email
+            icon: envelope
+            href: mailto:matteotorres@bren.ucsb.edu
+            target: _blank
+        
   page-footer:
     left: Copyright 2024, Matteo Torres
     right: This website is built with {{< fa brands github title="The GitHub octocat logo" >}}, {{< fa brands r-project title="R Project" >}}, Quarto, and {{< fa heart title="a heart" >}}
 
 format:
   html:
-    theme: 
+    theme:
     - cyborg
     - styles.scss
-    mainfont: courier
-    fontcolor: white
+    mainfont: Saira
+    fontcolor: "#f0efef"
     toc: false
     page-layout: full
 
