@@ -1,46 +1,50 @@
 ---
 title: "Hairy Hermit Crab Infographic"
-description: "An analysis of the CA intertidal population using MARINe survey data"
+description: "Exploring changes in California's population using MARINe biodiversity surveys"
 author:
   - name: Matteo Torres
     url: https://matteo-torres.github.io/
     affiliation: MEDS
     affiliation-url: https://bren.ucsb.edu/masters-programs/master-environmental-data-science
 date: 2024-03-14
-categories: [Data Visualization, Science Communication, Conservation]
+categories: [Data Visualization, Science Communication]
 toc: true
+image: hairyhermit.jpg
 ---
 
 ## Introduction
-*Pagurus hirsutiusculus*, commonly known as the hairy hermit crab, is a key intertidal species found along the California coastline. These scavengers play a crucial role in nutrient cycling by consuming dead organic matter and recycling nutrients back into the ecosystem. However, over the past two decades, climate change has altered habitat conditions and resource availability, leading to a decline in their abundance along the coast. Using biodiversity survey data from the Multi-Agency Rocky Intertidal Network (MARINe), this infographic will illustrate changes in the distribution and abundance of *P. hirsutiusculus* over time, highlighting differences between 2004 and 2024.
+
+*Pagurus hirsutiusculus*, commonly known as the hairy hermit crab, is a key intertidal species found along the California coastline. As scavengers, these crabs play a vital role in nutrient cycling by consuming dead organic matter, preventing waste buildup, and contributing to the overall health of their ecosystem. However, over the past two decades, climate change has altered habitat conditions, potentially leading to shifts in their distribution and declines in their populations. Rising ocean temperatures, habitat loss, and changing food availability may all contribute to these changes.
+
+This infographic uses biodiversity survey data from the [Multi-Agency Rocky Intertidal Network (MARINe)](https://marine.ucsc.edu/methods/biodiversity-methods.html) to illustrate how the distribution and abundance of *P. hirsutiusculus* have changed between 2004 and 2024. By visually comparing these two years, we can explore whether populations have declined, migrated, or remained stable along the California coast.
 
 ![](infographic.png)
 
 ## Approach
-In approaching this topic, I aimed to visualize geographical differences and changes in abundance at survey sites over time.
 
-Key questions that guided my analysis include:
+To investigate these changes, I focused on visualizing geographical differences and abundance trends at MARINe survey sites over time. Some key questions that guided my analysis include:
 
-- Given the overall trend of climate change, is there evidence of a northern migration?
-- Are there notable differences in abundance in each California georegion?
-- Has the population declined significantly over time?
+1. Is there evidence of a northern migration in response to climate change?
+2. Are there notable differences in abundance across California's georegions?
+3. Has the population declined significantly over time?
 
-Despite the severity of my analysis, I chose to present my findings using engaging and easy-to-understand visualizations, such as line plots, lollipop charts, and maps, to make the information accessible to audiences of all ages.
+Although this is a serious topic, I wanted to present my findings in an engaging and accessible way for a broad audience. By incorporating a beach-inspired design, I aimed to create an informative yet visually appealing representation of the data.
 
 ## Design Process
 
-When designing the infographic, I faced the challenge of selecting the graphic format, as there are many ways to display and communicate data. I opted for line plots, lollipop charts, and maps because they were appropriate for the data types in my dataset (categorical and numerical), straightforward to understand, and effectively conveyed my analysis.
+Designing this infographic required careful consideration of how best to communicate both numerical and categorical data. After testing different approaches, I selected line plots, lollipop charts, and maps because they effectively highlighted the key patterns in my dataset.
 
-To minimize text, I let the visualizations communicate the findings themselves. However, I implemented the fonts Nunito and Arial for my plot text and titles, as they are accessible for people with dyslexia.
+To enhance engagement, I used a cohesive beach theme, incorporating natural elements such as shells, bird tracks, and rocks to create a familiar and inviting visual context.
 
-To make my visualizations fun and engaging, I chose to implement a cartoon theme to attract viewers to the infographic and help them digest the information. For the line plot, I modified the theme by adding animated images of intertidal species to illustrate it as a wave crashing onto the rocky shore. I emphasized the use of color to help visualize data on a 2D surface and depict changes in abundance over time. For the lollipop chart, I used animated images of hairy hermit crabs, beach debris, and a sandcastle, illustrating the crabs walking along the beach. This image also relied on color and the orientation of the crabs to portray differences in abundances based on distance. I did not modify the theme for the two maps; instead, I used a simple map of California along with colors and shapes in the markers to display species presence and absence across MARINe survey sites.
+- Line Plot (Abundance Over Time): I modified the design to resemble a shoreline, using shading techniques to mimic ocean tides. One challenge was making the shaded area under the line appear natural in a 2D visualization.
+- Lollipop Chart (Abundance by Georegion): To depict abundance across California's regions, I positioned the hermit crabs at varying distances along a beach background. One of the biggest challenges was correctly flipping the chart in R to align counts from north to south.
+- Maps (Species Distribution): Using a simple California basemap, I differentiated survey years using red and black markers, making it easy to spot changes in species presence and absence across MARINe sites.
 
-One of my biggest challenges was deciding on the orientation of the infographic, as it was important to clearly communicate the differences between 2004 and 2024. I decided to divide my infographic into two sides, with the line plot as the divider. The maps are oriented by their designated year. This design choice helps the audience understand that the left side displays the geographical locations and abundances of hairy hermit crabs surveyed in 2004, while the right side shows the data for 2024.
+Another major design decision was the layout of the infographic. I divided it into two sections, placing 2004 on the left and 2024 on the right, with the lollipop chart acting as a visual divider. This structure helps guide the audience through the data, making it clear how distributions and abundances have changed over time.
 
 ## Visualizations
-It is important to note that all of the visualiations in the infographic were created in R using the `ggplot2` package. 
 
-Feel free to look at the breakdown of my code for each visualization!
+All visualizations were created in R using `ggplot2` and later refined in Canva for personalization and styling. Click through the sections below to explore the coding choices behind each visualization!
 
 ```{r, echo = FALSE, output = FALSE}
 # Load packages
@@ -83,51 +87,57 @@ california <- spData::us_states %>%
 ```{r}
 #| code-fold: true
 
-# Filter to observations in 2004
+# Filter to survey observations in 2004
 yr_2004 <- hairy_hermit_sf %>%
   filter(year == 2004 & num_count > 0)
 
-# CA map of presence (2004)
+# Map species presence in 2004
 tm_shape(california) +
-  tm_polygons(col = "grey",
-              border.col = "black") +
+  tm_polygons(col = "#855f35",
+              alpha = 0.7,
+              border.col = "#855f35",
+              border.alpha = 0.7) +
 tm_shape(sites) +
   tm_dots(col = "black",
-          size = 0.05,
+          size = 0.3,
           alpha = 0.5) +
 tm_shape(yr_2004) +
   tm_dots(col = "red",
           size = 0.3,
           shape = 8) +
-  tm_layout(frame = FALSE)
+  tm_layout(frame = FALSE,
+            bg = "#ffe797")
 ```
 
 ```{r}
 #| code-fold: true
 
-# Filter to observations in 2024
+# Filter survey observations in 2024
 yr_2024 <- hairy_hermit_sf %>%
   filter(year == 2024 & num_count > 0)
 
-# CA map of presence (2024)
+# Map species presence in 2024
 tm_shape(california) +
-  tm_polygons(col = "grey",
-              border.col = "black") +
+  tm_polygons(col = "#855f35",
+              alpha = 0.7,
+              border.col = "#855f35",
+              border.alpha = 0.7) +
 tm_shape(sites) +
   tm_dots(col = "black",
-          size = 0.05,
+          size = 0.3,
           alpha = 0.5) +
 tm_shape(yr_2024) +
   tm_dots(col = "red",
           size = 0.3,
           shape = 8) +
-  tm_layout(frame = FALSE)
+  tm_layout(frame = FALSE,
+            bg = "#ffe797")
 ```
 
 ```{r}
 #| code-fold: true
 
-# Reflected lollipop chart (2004 vs. 2024)
+# Reflected lollipop chart of abundance by georegion (2004 vs. 2024)
 hairy_hermit %>%
   filter(year %in% c(2004, 2024)) %>%
   group_by(georegion, year) %>%
@@ -146,10 +156,10 @@ hairy_hermit %>%
   geom_hline(yintercept = 0, 
              linetype = "solid", 
              color = "black") +
-   coord_flip(clip = "off") +
-  scale_y_continuous(expand = c(0, 0), limits = c(-300, 300)) +
+  coord_flip() +
+  scale_y_continuous(expand = c(0, 0), limits = c(-261, 261)) +
   theme_void() +
-  theme(panel.background = element_rect(fill = "#ffebb0"))
+  theme(panel.background = element_rect(fill = "#ffe797"))
 ```
 
 ```{r}
@@ -162,17 +172,20 @@ hairy_hermit %>%
   summarize(total = sum(num_count)) %>%
   ungroup() %>%
   ggplot(aes(x = year, y = total)) +
-  geom_line(color = "#006AB2", linewidth = 1) +
+  geom_line(color = "aliceblue", linewidth = 8, alpha = 0.5) +
   geom_area_pattern(pattern = "gradient",
                     pattern_fill = "#006AB2",
-                    pattern_fill2 = "white") +
+                    pattern_fill2 = "lightblue") +
   scale_x_continuous(expand = c(0, 0), breaks = c(2004, 2009, 2014, 2019, 2024)) +
   scale_y_continuous(expand = c(0, 0), limits = c(0, 1000)) +
-  labs(x = "Year",
-       y = "Total Count (n)") +
+  labs(y = "Total Count") +
   theme_classic() +
-  theme(plot.margin = unit(c(t = 0.5, r = 0.5, b = 0.5, l = 0.5), "cm"),
-        panel.background = element_rect(fill = "#7f8386"))
+  theme(plot.margin = margin(t = 1, r = 1, b = 1, l = 0.5, "cm"),
+        panel.background = element_rect(fill = "#ffe797"),
+        plot.background = element_rect(fill = "#ffe797"),
+        axis.title.x.bottom = element_blank(),
+        axis.title = element_text(size = 14),
+        axis.text = element_text(size = 12, color = "black"))
 ```
 
 
