@@ -71,6 +71,14 @@ hairy_hermit <- bind_rows(point_contact_data, quadrat_data, swath_data) %>%
 # Convert to an sf object for mapping
 hairy_hermit_sf <- st_as_sf(hairy_hermit, coords = c("longitude", "latitude"), crs = 4326)
 
+# Filter survey observations in 2004
+yr_2004 <- hairy_hermit_sf %>%
+  filter(year == 2004 & num_count > 0)
+
+# Filter survey observations in 2024
+yr_2024 <- hairy_hermit_sf %>%
+  filter(year == 2024 & num_count > 0)
+
 # MARINe sites
 sites <- bind_rows(point_contact_data, quadrat_data, swath_data) %>%
   filter(state_province == "California") %>%
@@ -87,11 +95,7 @@ california <- spData::us_states %>%
 ```{r}
 #| code-fold: true
 
-# Filter to survey observations in 2004
-yr_2004 <- hairy_hermit_sf %>%
-  filter(year == 2004 & num_count > 0)
-
-# Map species presence in 2004
+# Map (2004)
 tm_shape(california) +
   tm_polygons(col = "#855f35",
               alpha = 0.7,
@@ -112,11 +116,7 @@ tm_shape(yr_2004) +
 ```{r}
 #| code-fold: true
 
-# Filter survey observations in 2024
-yr_2024 <- hairy_hermit_sf %>%
-  filter(year == 2024 & num_count > 0)
-
-# Map species presence in 2024
+# Map (2024)
 tm_shape(california) +
   tm_polygons(col = "#855f35",
               alpha = 0.7,
@@ -126,7 +126,7 @@ tm_shape(sites) +
   tm_dots(col = "black",
           size = 0.3,
           alpha = 0.5) +
-tm_shape(yr_2024) +
+tm_shape(yr_2024) + 
   tm_dots(col = "red",
           size = 0.3,
           shape = 8) +
@@ -137,7 +137,7 @@ tm_shape(yr_2024) +
 ```{r}
 #| code-fold: true
 
-# Reflected lollipop chart of abundance by georegion (2004 vs. 2024)
+# Lollipop chart
 hairy_hermit %>%
   filter(year %in% c(2004, 2024)) %>%
   group_by(georegion, year) %>%
@@ -165,7 +165,7 @@ hairy_hermit %>%
 ```{r}
 #| code-fold: true
 
-# Line plot of abundance over time (2004-2024)
+# Line plot
 hairy_hermit %>%
   filter(year %in% c(2004:2024)) %>%
   group_by(year) %>%
