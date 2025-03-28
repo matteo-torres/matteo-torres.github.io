@@ -80,8 +80,4 @@ Living in this environment has deeply inspired me to pursue environmental data s
 
 ## Interests
 
-Outside of my academics, I love to dance, attend live concerts, and listen to music. This year, I’m combining my passion for music with data science by creating a monthly Spotify Wrapped using my streaming data. If you’re curious or want to try it yourself, you can check out my code on [GitHub](https://github.com/matteo-torres/spotify-wrapped).
-
-P.S. I also built a fun, interactive web app to showcase my results—almost like a mood board for music. You’ll find it linked in the top right of my navbar. Let me know what you think!
-
 
