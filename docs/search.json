@@ -4,21 +4,21 @@
     "href": "posts.html",
     "title": "Blog",
     "section": "",
-    "text": "Addressing the Impact of Redlining on Biodiversity Conservation\n\n\n\nBiodiversity Conservation\n\n\nData Bias\n\n\nEnvironmental Justice\n\n\n\nUncovering how redlining affects biodiversity data, citizen science, and the need for equitable conservation.\n\n\n\nMatteo Torres\n\n\nDec 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThomas Fire Analysis\n\n\n\nAQI\n\n\nFalse-Color Imagery\n\n\nRemote Sensing\n\n\n\nAnalyzing the Thomas Fire’s impact using AQI, false-color imagery, and remote sensing.\n\n\n\nMatteo Torres\n\n\nDec 13, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHairy Hermit Crab Infographic\n\n\n\nData Visualization\n\n\nScience Communication\n\n\n\nExploring changes in California’s population using MARINe biodiversity surveys\n\n\n\nMatteo Torres\n\n\nMar 14, 2024\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Hairy Hermit Crab Infographic\n\n\n\nData Visualization\n\n\nScience Communication\n\n\n\nExploring changes in California’s population using MARINe biodiversity surveys\n\n\n\nMatteo Torres\n\n\nMar 14, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAddressing the Impact of Redlining on Biodiversity Conservation\n\n\n\nBiodiversity Conservation\n\n\nData Bias\n\n\nEnvironmental Justice\n\n\n\nUncovering how redlining affects biodiversity data, citizen science, and the need for equitable conservation.\n\n\n\nMatteo Torres\n\n\nDec 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThomas Fire Analysis\n\n\n\nAQI\n\n\nFalse-Color Imagery\n\n\nRemote Sensing\n\n\n\nAnalyzing the Thomas Fire’s impact using AQI, false-color imagery, and remote sensing.\n\n\n\nMatteo Torres\n\n\nDec 13, 2024\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Matteo Torres",
     "section": "",
-    "text": "I’m a graduate student pursuing a Master in Environmental Data Science (MEDS) at the Bren School of Environmental Science & Management.\nCheck out my latest projects, blog posts, and GitHub to see what I’ve been working on!"
+    "text": "I’m a graduate student pursuing a Master in Environmental Data Science (MEDS) at the University of California, Santa Barbara, Bren School of Environmental Science & Management.\nCheck out my latest projects, blog posts, and GitHub to see what I’ve been working on!"
   },
   {
     "objectID": "index.html#hi-im-matteo",
     "href": "index.html#hi-im-matteo",
     "title": "Matteo Torres",
     "section": "",
-    "text": "I’m a graduate student pursuing a Master in Environmental Data Science (MEDS) at the Bren School of Environmental Science & Management.\nCheck out my latest projects, blog posts, and GitHub to see what I’ve been working on!"
+    "text": "I’m a graduate student pursuing a Master in Environmental Data Science (MEDS) at the University of California, Santa Barbara, Bren School of Environmental Science & Management.\nCheck out my latest projects, blog posts, and GitHub to see what I’ve been working on!"
   },
   {
     "objectID": "projects.html",
@@ -32,28 +32,28 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "University of California, Santa Barbara (UCSB)\nBren School of Environmental Science & Management\n\nHighlighted Coursework: Python for Environmental Data Science, Databases and Data Management, Machine Learning in Environmental Science, Data Visualization and Communication\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCalifornia State University, Long Beach (CSULB)\nCollege of Natural Sciences and Mathematics\n\nHighlighted Coursework: Conservation Biology, Population Ecology, Biostatistics, Geographic Information Science for Natural Sciences, Undergraduate Directed Research"
+    "text": "I am from Wilmington, CA, a small neighborhood in the South Bay Harbor region of Los Angeles. It is located just south of the Port of Los Angeles and is surrounded by major oil refineries, including Phillips 66, Marathon, and Valero, making it the third-largest oil field in the United States.\n\n\n\n\n\n\nWilmington is predominantly a Latino, working-class community centered around industry. While the area provides job opportunities through its port and refineries, it also faces significant challenges related to pollution and health disparities. Residents are at a high risk for cancer, respiratory problems, and cardiovascular diseases.\nGrowing up in this environment has motivated me to pursue a career in environmental data science, with the hope of making a meaningful impact on communities like mine that are affected by environmental racism.\n\n\n\n\n\n\n\n\n\n\n\nRecent News: Phillips 66 Announces Plan to Cease Operation in Los Angeles"
   },
   {
     "objectID": "about.html#education",
     "href": "about.html#education",
     "title": "About Me",
-    "section": "",
-    "text": "University of California, Santa Barbara (UCSB)\nBren School of Environmental Science & Management\n\nHighlighted Coursework: Python for Environmental Data Science, Databases and Data Management, Machine Learning in Environmental Science, Data Visualization and Communication\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCalifornia State University, Long Beach (CSULB)\nCollege of Natural Sciences and Mathematics\n\nHighlighted Coursework: Conservation Biology, Population Ecology, Biostatistics, Geographic Information Science for Natural Sciences, Undergraduate Directed Research"
+    "section": "Education",
+    "text": "Education\n\n\n\n\n\n\nUniversity of California, Santa Barbara (UCSB)\nBren School of Environmental Science & Management\nMaster of Environmental Data Science (MEDS) (June 2025)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCalifornia State University, Long Beach (CSULB)\nCollege of Natural Sciences and Mathematics\nBachelor of Science in Biology | Minor in Dance (December 2023)"
   },
   {
     "objectID": "about.html#background",
     "href": "about.html#background",
     "title": "About Me",
-    "section": "Background",
-    "text": "Background\nI grew up in Wilmington, CA, a small neighborhood in the South Bay and Harbor region of Los Angeles. The area has a predominantly Hispanic/Latino population and is home to a working-class community. Wilmington is located adjacent to the Port of Los Angeles and is home to the third-largest oil field in the continental United States. Several major oil refineries, including Marathon, Phillips 66, Valero, and Tesoro, are based here, making it a critical hub for the region’s industrial and energy infrastructure.\nLiving in this environment has deeply inspired me to pursue environmental data science. Growing up surrounded by industrial activity, pollution, and environmental challenges has fueled my desire to contribute something positive to my community. I aim to use my education and skills to work on projects focused on environmental justice, conservation planning, and biodiversity monitoring. Through data-driven solutions, I hope to help create a more sustainable and equitable future for communities like mine.\n\n\n\n\n\n\n\n\nPollution is racial violence. Photo by Michael Estrada, sourced from Patagonia and Wilmas Youth for Environmental Justice.\n\n\n\n\n\nVideo source: Patagonia. District 15 | Stop Neighborhood Oil Drilling. Communities for a Better Environment works to empower California communities in the fight for environmental justice. This short film highlights the resilience of Wilmington’s young activists as they advocate for a Los Angeles City Council ban on oil and gas drilling within 2,500 feet of homes, schools, and hospitals."
+    "section": "",
+    "text": "I am from Wilmington, CA, a small neighborhood in the South Bay Harbor region of Los Angeles. It is located just south of the Port of Los Angeles and is surrounded by major oil refineries, including Phillips 66, Marathon, and Valero, making it the third-largest oil field in the United States.\n\n\n\n\n\n\nWilmington is predominantly a Latino, working-class community centered around industry. While the area provides job opportunities through its port and refineries, it also faces significant challenges related to pollution and health disparities. Residents are at a high risk for cancer, respiratory problems, and cardiovascular diseases.\nGrowing up in this environment has motivated me to pursue a career in environmental data science, with the hope of making a meaningful impact on communities like mine that are affected by environmental racism.\n\n\n\n\n\n\n\n\n\n\n\nRecent News: Phillips 66 Announces Plan to Cease Operation in Los Angeles"
   },
   {
     "objectID": "about.html#interests",
     "href": "about.html#interests",
     "title": "About Me",
     "section": "Interests",
-    "text": "Interests\nOutside of my academics, I love to dance, attend live concerts, and listen to music. This year, I’m combining my passion for music with data science by creating a monthly Spotify Wrapped using my streaming data. If you’re curious or want to try it yourself, you can check out my code on GitHub.\nP.S. I also built a fun, interactive web app to showcase my results—almost like a mood board for music. You’ll find it linked in the top right of my navbar. Let me know what you think!"
+    "text": "Interests"
   },
   {
     "objectID": "posts/2024-12-20-redlining-biodiversity/index.html",
@@ -187,5 +187,19 @@
     "title": "Spotify Wrapped Dashboard",
     "section": "",
     "text": "Shiny dashboard  GitHub repository"
+  },
+  {
+    "objectID": "about.html#life-now",
+    "href": "about.html#life-now",
+    "title": "About Me",
+    "section": "Life Now",
+    "text": "Life Now"
+  },
+  {
+    "objectID": "about.html#life",
+    "href": "about.html#life",
+    "title": "About Me",
+    "section": "Life",
+    "text": "Life"
   }
 ]

@@ -1,5 +1,5 @@
 ---
-image: meds-headshot-cropped.jpeg
+image: images/meds-headshot-cropped.jpeg
 about: 
   template: jolla
   image-shape: round
@@ -7,7 +7,7 @@ about:
 ---
 ## Hi, I’m Matteo!
 
-I’m a graduate student pursuing a Master in Environmental Data Science (MEDS) at the Bren School of Environmental Science & Management. 
+I’m a graduate student pursuing a Master in Environmental Data Science (MEDS) at the University of California, Santa Barbara, Bren School of Environmental Science & Management. 
 
 Check out my latest projects, blog posts, and GitHub to see what I’ve been working on!
 

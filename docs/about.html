@@ -68,6 +68,21 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
+<script src="site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
+<script src="site_libs/leaflet-providers-plugin-2.2.2/leaflet-providers-plugin.js"></script>
+<link href="site_libs/leaflet-minimap-3.3.1/Control.MiniMap.min.css" rel="stylesheet">
+<script src="site_libs/leaflet-minimap-3.3.1/Control.MiniMap.min.js"></script>
+<script src="site_libs/leaflet-minimap-3.3.1/Minimap-binding.js"></script>
 
 
 </head>
@@ -142,9 +157,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#education" id="toc-education" class="nav-link active" data-scroll-target="#education">Education</a></li>
-  <li><a href="#background" id="toc-background" class="nav-link" data-scroll-target="#background">Background</a></li>
-  <li><a href="#interests" id="toc-interests" class="nav-link" data-scroll-target="#interests">Interests</a></li>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
+  <li><a href="#life" id="toc-life" class="nav-link" data-scroll-target="#life">Life</a></li>
   </ul>
 </nav>
     </div>
@@ -170,24 +185,43 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>I am from Wilmington, CA, a small neighborhood in the South Bay Harbor region of Los Angeles. It is located just south of the Port of Los Angeles and is surrounded by major oil refineries, including Phillips 66, Marathon, and Valero, making it the third-largest oil field in the United States.</p>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout="[ 40, 60 ]">
+<div class="quarto-layout-row">
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: flex-start;">
+<p>Wilmington is predominantly a Latino, working-class community centered around industry. While the area provides job opportunities through its port and refineries, it also faces significant challenges related to pollution and health disparities. Residents are at a high risk for cancer, respiratory problems, and cardiovascular diseases.</p>
+<p>Growing up in this environment has motivated me to pursue a career in environmental data science, with the hope of making a meaningful impact on communities like mine that are affected by environmental racism.</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 60.0%;justify-content: flex-start;">
+<div class="cell">
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-379f79cece6427da05ff" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-379f79cece6427da05ff">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["OpenStreetMap",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMiniMap","args":[null,null,"bottomright",150,150,19,19,-5,false,false,false,true,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]},{"method":"addPolygons","args":[[[[{"lng":[-118.2375959995182,-118.2387309996934,-118.2467190002987,-118.2584949995084,-118.2566009993495,-118.2611739998145,-118.2622620001057,-118.2630779992694,-118.2639929994465,-118.2639319998118,-118.2737269998451,-118.2753019998131,-118.2752965005974,-118.2755560001059,-118.2772909999922,-118.2772959997416,-118.2831109995479,-118.2830330003376,-118.2854889995754,-118.2851710000773,-118.2860519994075,-118.2870619995305,-118.2856819999034,-118.2834720009585,-118.28362600077,-118.284295000118,-118.2848729999914,-118.2858019995973,-118.2858570001817,-118.2870410003253,-118.2873939997142,-118.2869030003206,-118.2915599997569,-118.2970430004786,-118.2971540001298,-118.2969940001475,-118.2972000006431,-118.2972869995385,-118.2972980005909,-118.2974359998287,-118.2971329999535,-118.2965392994442,-118.2962239998755,-118.2954220003958,-118.2937109991696,-118.2929180000842,-118.2918489997351,-118.2890300008947,-118.2886294005276,-118.2911363994742,-118.2907592993569,-118.2910333998988,-118.2913414004482,-118.2929339992553,-118.2931428993872,-118.2926177999502,-118.2922537003182,-118.2920089998531,-118.2915606005403,-118.2914652998921,-118.2913272004365,-118.2914681003353,-118.29114009994,-118.2881643998893,-118.2833659999382,-118.2828525992465,-118.2834130003931,-118.2833710002421,-118.2827619995757,-118.282848700505,-118.282325999606,-118.2816239994535,-118.2803980003749,-118.2801969992659,-118.2801510005274,-118.2793999994077,-118.2788568005567,-118.2790387997667,-118.2785800000922,-118.2784249998456,-118.2783533003301,-118.2769563997946,-118.2770425001692,-118.2769040000289,-118.2774000006258,-118.2773270996494,-118.2707331002652,-118.2722853005754,-118.27239990041,-118.2740452992267,-118.2737277006911,-118.2741940993463,-118.2735070003761,-118.2735869997192,-118.2739630000747,-118.2740569994187,-118.2731449999686,-118.2730510003829,-118.2728390006819,-118.2720084003359,-118.2720573000771,-118.2696874997613,-118.2700907001798,-118.2702162000208,-118.2661040001116,-118.2657669001854,-118.2654561003166,-118.2652974999384,-118.2655899996309,-118.2654760001363,-118.2659150006955,-118.2655750997971,-118.2659819993097,-118.2658762995524,-118.2655127006359,-118.2654998002479,-118.2656107001217,-118.2661392998118,-118.2663326999389,-118.2666034001696,-118.2676527993184,-118.2681118001647,-118.2676295003845,-118.2675288999172,-118.267446399625,-118.267552099633,-118.267360599637,-118.2676450003361,-118.2679466998006,-118.2677015994068,-118.2673249999976,-118.2671385993238,-118.2636490002236,-118.2634441007836,-118.2623547998225,-118.2614025996909,-118.2616009995434,-118.261508400374,-118.2613167003859,-118.2610659990611,-118.2614023997146,-118.263783999683,-118.2638291999993,-118.2632201996299,-118.2631354004041,-118.2630554999549,-118.2630364996857,-118.2626307997617,-118.2626059000138,-118.2608209998051,-118.2606511000884,-118.2605519003471,-118.2599300007267,-118.2597979998852,-118.2600149995465,-118.2599231994846,-118.2595856004206,-118.259462000619,-118.2584716995829,-118.2585963006233,-118.2578991998593,-118.257803399945,-118.2558540006947,-118.2561348999601,-118.2561381999642,-118.2555797997557,-118.2552539998408,-118.2506909992657,-118.2496013997819,-118.2497890998449,-118.2493921999369,-118.2493254996615,-118.2475678999927,-118.2454468003902,-118.2453460997092,-118.2451342000526,-118.2452419997702,-118.2447332000617,-118.2446232004452,-118.2442182004859,-118.2443415993648,-118.2427381998635,-118.241894100348,-118.2416996999544,-118.2413885000011,-118.2415628001222,-118.2441239998054,-118.2472129007038,-118.2475374993603,-118.24780970065,-118.2481650005232,-118.2484520994807,-118.2489173994256,-118.2492554001134,-118.2493438999763,-118.2491260000921,-118.2497060000638,-118.2498401000302,-118.2497543002048,-118.2500975995881,-118.2500647001281,-118.2497190001136,-118.2492964005455,-118.2491168002941,-118.2489925009161,-118.2474919001243,-118.2478953998874,-118.2475470000559,-118.2475306002825,-118.2478560001801,-118.2479533998584,-118.2503000008273,-118.2506531000718,-118.2507360001135,-118.2507139001555,-118.2511753998341,-118.2511974997143,-118.2503628998889,-118.2501058994406,-118.2498040002359,-118.2496665999927,-118.2497412001906,-118.2504873007579,-118.2500286000016,-118.2491497993971,-118.2456178001515,-118.2418099006552,-118.2419330007791,-118.2417921002747,-118.240718000665,-118.2404040005569,-118.2402589998025,-118.2400649996506,-118.239942000218,-118.2395240004153,-118.2398699996341,-118.2400300000237,-118.2396919998936,-118.2397780001647,-118.2395379997136,-118.2393367001423,-118.2388039999415,-118.2371569999932,-118.2327210000905,-118.228124000618,-118.2277359999997,-118.2274849994107,-118.2268999992481,-118.2266329997392,-118.2260140003446,-118.2238520007909,-118.2232189997747,-118.2229960002699,-118.2229019998448,-118.2219140003643,-118.2213889997991,-118.2211020002873,-118.221025500069,-118.2212699996203,-118.2214009997788,-118.2234369995944,-118.2235370001997,-118.2250209998574,-118.2258480000937,-118.2258750001123,-118.2259600001775,-118.2260074998204,-118.2262540002926,-118.2268069993333,-118.2270720001978,-118.226966999502,-118.2286940000019,-118.2309870005762,-118.2302089999333,-118.2375959995182],"lat":[33.80039900080348,33.80044700013747,33.80009799974959,33.79944899965952,33.80477699984422,33.80464000026988,33.80450200011131,33.80467499976086,33.80471899979278,33.799160999582,33.79867100026328,33.79869299970094,33.79861500035113,33.7985699995729,33.79847800019565,33.79858500012412,33.7983090003685,33.7976590001174,33.79777869952532,33.79795800021738,33.79782500048626,33.79781299964804,33.79634599989207,33.79301700002232,33.79296500001521,33.79382100017288,33.79368200025734,33.79360600040469,33.79338900025583,33.79340099938344,33.79109500019827,33.79097099959478,33.79098999974567,33.78611600035801,33.78594700016118,33.78570900046454,33.78549099979975,33.78519699979336,33.78273000050793,33.78205400013891,33.78148799985054,33.78079500056011,33.78135760000746,33.78088599996853,33.77963199943275,33.77925600017632,33.77899699985901,33.77852399991079,33.77687570016465,33.77644900016535,33.77489529973762,33.77512369971156,33.77515890023511,33.77485140002993,33.77462669976604,33.77159500037691,33.77099399974189,33.77023689958704,33.76971550030327,33.76944150040458,33.76875859941789,33.76800349993505,33.76686180052288,33.76677019955959,33.76681469992933,33.76830580033909,33.77012099988533,33.77037000010757,33.77088200009864,33.77118460038593,33.77110419986034,33.76815700009585,33.77073900004589,33.77132200062925,33.77183299993244,33.77171019952279,33.77137909984114,33.77099279969101,33.7690100002496,33.76884600049509,33.76890029927462,33.76714589931191,33.7670929997198,33.76690499987662,33.76666270002468,33.76622569963091,33.76700019998346,33.76254910046316,33.76244459977825,33.7582126995004,33.75808770016341,33.75722820059035,33.75610000013304,33.75607299983589,33.75664299961411,33.75660399986694,33.75512699982649,33.75515799961998,33.75479899994821,33.75455639962305,33.75442369981572,33.75380209984669,33.75870090056057,33.7588062998639,33.76311000020243,33.76290509992688,33.7632488994668,33.76315629995458,33.76283999945242,33.76277290029096,33.7623220001548,33.7620455992928,33.76166149968925,33.76156859997349,33.76155060028537,33.76144229983158,33.76129529996425,33.7612386000516,33.7610270998854,33.76105030043363,33.75989749961322,33.75864949937569,33.75690360005994,33.75691900018548,33.75662509930334,33.75654000004316,33.7564780997127,33.75642389971631,33.75649610018493,33.7530662993461,33.75309700011034,33.75322580018788,33.75697799988613,33.75685089999067,33.75796939954396,33.75900089979726,33.75914640021719,33.75924559965586,33.75911329961575,33.75939500005044,33.76325899965313,33.76493899986614,33.76569890027667,33.76614359999498,33.7658964998357,33.76589729961712,33.76605090026131,33.76604840060861,33.76624779976235,33.76636499991307,33.766494200557,33.76637509959017,33.76644400061396,33.76636400023358,33.76615899949753,33.76589190019728,33.76111359949378,33.76110100004076,33.76214380026569,33.76239000010002,33.76314330043231,33.76314330034575,33.76535350020568,33.76559799992659,33.76571359982804,33.76536990067351,33.76557099957127,33.77044599958224,33.77226429974493,33.7725115006699,33.77287719983868,33.77339549959503,33.77478950055108,33.77580710053633,33.77568889947897,33.77579260055373,33.77592599972125,33.77621010009035,33.77609220013784,33.7762972997479,33.7764711998758,33.77730310010792,33.77739220005338,33.77724470019278,33.77673430077022,33.77640209997634,33.7747369995681,33.77300010007246,33.77267120027988,33.77219629937593,33.77191700013805,33.77181950029401,33.77187190004027,33.77120079977142,33.77074590009943,33.77041600008307,33.7695017991822,33.76943709946195,33.76920519957893,33.76881500023914,33.76844859995123,33.76814300011041,33.7684900003898,33.76849280009323,33.7683628998476,33.76646720052073,33.76614660010139,33.76567600028764,33.7654972999544,33.76535699936962,33.76541710081673,33.76742700011158,33.76762490021181,33.76758069980544,33.7673099000965,33.76689810076494,33.76678199938439,33.76692569942292,33.76669089994735,33.76615100024258,33.76584800001854,33.76557439998435,33.76521789948731,33.76432809948449,33.7645270995766,33.7657216999321,33.7665653003672,33.76665900061217,33.76684669963781,33.76729600030956,33.76749600054584,33.7677640000239,33.7680820004167,33.76812100008673,33.76938700018952,33.77047899980313,33.77162700007502,33.77234200001215,33.77395500058905,33.77450599943248,33.77462750038561,33.77466299968381,33.77435299975655,33.77463999953329,33.77938199979071,33.77940000003866,33.77953599997588,33.78052100046249,33.78072899985595,33.78094099974469,33.78109599966037,33.78122100018707,33.78130400006337,33.78151200022899,33.78175000000633,33.78230000018412,33.78246499986317,33.78259729998494,33.78281700011044,33.78340300020422,33.78523099927511,33.78621299965658,33.78757400019204,33.78820900026104,33.78840300027251,33.78839800035043,33.78852310035604,33.78864000085208,33.78991699959464,33.78999599956644,33.79022999968809,33.79105899974185,33.79165099962926,33.79288700056404,33.80039900080348]}]]],null,null,{"interactive":true,"className":"","stroke":true,"color":"green","weight":3,"opacity":1,"fill":true,"fillColor":"green","fillOpacity":0.2,"smoothFactor":1,"noClip":false},null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"setView":[[33.7858,-118.2641],12,[]],"limits":{"lat":[33.7530662993461,33.80477699984422],"lng":[-118.2974359998287,-118.221025500069]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Recent News: <a href="https://investor.phillips66.com/financial-information/news-releases/news-release-details/2024/Phillips-66-provides-notice-of-its-plan-to-cease-operations-at-Los-Angeles-area-refinery/default.aspx">Phillips 66 Announces Plan to Cease Operation in Los Angeles</a></p>
+</section>
 <section id="education" class="level2">
 <h2 class="anchored" data-anchor-id="education">Education</h2>
 <div>
 
 </div>
-<div class="quarto-layout-panel" data-layout="[ 80, 20 ]">
+<div class="quarto-layout-panel" data-layout="[ 70, 30 ]">
 <div class="quarto-layout-row">
-<div id="first-column" class="quarto-layout-cell" style="flex-basis: 80.0%;justify-content: flex-start;">
-<section id="master-of-environmental-data-science-expected-june-2025" class="level6">
-<h6 class="anchored" data-anchor-id="master-of-environmental-data-science-expected-june-2025">Master of Environmental Data Science <em>(Expected June 2025)</em></h6>
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
 <p><strong>University of California, Santa Barbara (UCSB)</strong><br>
 <em>Bren School of Environmental Science &amp; Management</em></p>
-<ul>
-<li><strong>Highlighted Coursework:</strong> Python for Environmental Data Science, Databases and Data Management, Machine Learning in Environmental Science, Data Visualization and Communication</li>
-</ul>
-</section>
+<p><a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science">Master of Environmental Data Science (MEDS)</a> (June 2025)</p>
 </div>
-<div id="second-column" class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/bren-logo.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="100"></p>
@@ -199,19 +233,14 @@ ul.task-list li input[type="checkbox"] {
 <div>
 
 </div>
-<div class="quarto-layout-panel" data-layout="[ 80, 20 ]">
+<div class="quarto-layout-panel" data-layout="[ 70, 30 ]">
 <div class="quarto-layout-row">
-<div id="first-column" class="quarto-layout-cell" style="flex-basis: 80.0%;justify-content: flex-start;">
-<section id="bachelor-of-science-in-biology-minor-in-dance-december-2023" class="level6">
-<h6 class="anchored" data-anchor-id="bachelor-of-science-in-biology-minor-in-dance-december-2023">Bachelor of Science in Biology | Minor in Dance <em>(December 2023)</em></h6>
+<div id="first-column" class="quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
 <p><strong>California State University, Long Beach (CSULB)</strong><br>
 <em>College of Natural Sciences and Mathematics</em></p>
-<ul>
-<li><strong>Highlighted Coursework:</strong> Conservation Biology, Population Ecology, Biostatistics, Geographic Information Science for Natural Sciences, Undergraduate Directed Research</li>
-</ul>
-</section>
+<p><a href="https://www.csulb.edu/biological-sciences/undergraduate-programs">Bachelor of Science in Biology</a> | <a href="https://www.csulb.edu/dance/minor-dance">Minor in Dance</a> (December 2023)</p>
 </div>
-<div id="second-column" class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/lb-logo.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="125"></p>
@@ -221,34 +250,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="background" class="level2">
-<h2 class="anchored" data-anchor-id="background">Background</h2>
-<p>I grew up in Wilmington, CA, a small neighborhood in the South Bay and Harbor region of Los Angeles. The area has a predominantly Hispanic/Latino population and is home to a working-class community. Wilmington is located adjacent to the Port of Los Angeles and is home to the third-largest oil field in the continental United States. Several major oil refineries, including Marathon, Phillips 66, Valero, and Tesoro, are based here, making it a critical hub for the region’s industrial and energy infrastructure.</p>
-<p>Living in this environment has deeply inspired me to pursue environmental data science. Growing up surrounded by industrial activity, pollution, and environmental challenges has fueled my desire to contribute something positive to my community. I aim to use my education and skills to work on projects focused on environmental justice, conservation planning, and biodiversity monitoring. Through data-driven solutions, I hope to help create a more sustainable and equitable future for communities like mine.</p>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<img src="images/patagonia.png" alt="Pollution is racial violence" style="width: 300px; display: block; margin: 0 auto;">
-<p style="font-size: 0.9em; margin-top: 5px; text-align: center;">
-<em>Pollution is racial violence.</em> Photo by Michael Estrada, sourced from Patagonia and Wilmas Youth for Environmental Justice.
-</p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div class="quarto-video"><iframe data-external="1" src="https://www.youtube.com/embed/zgvisRXxxdM" width="550" height="330" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p style="font-size: 0.9em; margin-top: 5px; text-align: center;">
-Video source: Patagonia.<br> <em>District 15 | Stop Neighborhood Oil Drilling.</em><br> Communities for a Better Environment works to empower California communities in the fight for environmental justice. This short film highlights the resilience of Wilmington’s young activists as they advocate for a Los Angeles City Council ban on oil and gas drilling within 2,500 feet of homes, schools, and hospitals.
-</p>
-</div>
-</div>
-</div>
-</section>
-<section id="interests" class="level2">
-<h2 class="anchored" data-anchor-id="interests">Interests</h2>
-<p>Outside of my academics, I love to dance, attend live concerts, and listen to music. This year, I’m combining my passion for music with data science by creating a monthly Spotify Wrapped using my streaming data. If you’re curious or want to try it yourself, you can check out my code on <a href="https://github.com/matteo-torres/spotify-wrapped">GitHub</a>.</p>
-<p>P.S. I also built a fun, interactive web app to showcase my results—almost like a mood board for music. You’ll find it linked in the top right of my navbar. Let me know what you think!</p>
+<section id="life" class="level2">
+<h2 class="anchored" data-anchor-id="life">Life</h2>
 
 
 </section>
