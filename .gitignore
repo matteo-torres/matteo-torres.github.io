@@ -6,3 +6,6 @@
 .quarto
 
 /.quarto/
+
+# Ignore "data"" folder
+/data*

@@ -1,25 +1,71 @@
 ---
 title: "About Me"
 toc: true
-format:
-  html:
-    includes:
-      in_header:
-        - "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      in_footer:
-        - "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+format: html
+editor_options: 
+  chunk_output_type: console
 ---
-## Education
 
-:::: {layout="[ 80, 20 ]"}
+## Background
+
+```{r, echo = FALSE, message = FALSE}
+# Load packages
+library(sf)
+library(here)
+library(leaflet)
+library(tidyverse)
+```
+
+```{r, echo = FALSE}
+# Read in Los Angeles Zip Codes shapefile
+wilmington <- read_sf(here("data", "ZipCodes_3170383398510875265", "California_Zip_Codes.shp")) %>%
+  filter(ZIP_CODE == 90744) %>%
+  st_transform(crs = 4326)
+```
+
+I am from Wilmington, CA, a small neighborhood in the South Bay Harbor region of Los Angeles. It is located just south of the Port of Los Angeles and is surrounded by major oil refineries, including Phillips 66, Marathon, and Valero, making it the third-largest oil field in the United States.
+
+:::: {layout="[ 40, 60 ]"}
 
 ::: {#first-column}
 
-###### Master of Environmental Data Science *(Expected June 2025)*  
-**University of California, Santa Barbara (UCSB)**  
-*Bren School of Environmental Science & Management* 
+Wilmington is predominantly a Latino, working-class community centered around industry. While the area provides job opportunities through its port and refineries, it also faces significant challenges related to pollution and health disparities. Residents are at a high risk for cancer, respiratory problems, and cardiovascular diseases. 
 
-- **Highlighted Coursework:** Python for Environmental Data Science, Databases and Data Management, Machine Learning in Environmental Science, Data Visualization and Communication 
+Growing up in this environment has motivated me to pursue a career in environmental data science, with the hope of making a meaningful impact on communities like mine that are affected by environmental racism.
+
+:::
+
+::: {#second-column}
+
+```{r, echo = FALSE}
+# Leaflet Map of Wilmigton
+leaflet() %>%
+  addProviderTiles(provider = "OpenStreetMap") %>%
+  setView(lng = -118.2641, lat = 33.7858, zoom = 12) %>%
+  addMiniMap(toggleDisplay = TRUE, minimized = FALSE) %>%
+  addPolygons(data = wilmington,
+              color = "green",
+              opacity = 1,
+              weight = 3)
+```
+
+:::
+
+::::
+
+Recent News:
+[Phillips 66 Announces Plan to Cease Operation in Los Angeles](https://investor.phillips66.com/financial-information/news-releases/news-release-details/2024/Phillips-66-provides-notice-of-its-plan-to-cease-operations-at-Los-Angeles-area-refinery/default.aspx)
+
+## Education
+
+:::: {layout="[ 70, 30 ]"}
+
+::: {#first-column}
+
+**University of California, Santa Barbara (UCSB)**  
+*Bren School of Environmental Science & Management*
+
+[Master of Environmental Data Science (MEDS)](https://bren.ucsb.edu/masters-programs/master-environmental-data-science) (June 2025)
 
 :::
 
@@ -31,15 +77,14 @@ format:
 
 ::::
 
-:::: {layout="[ 80, 20 ]"}
+:::: {layout="[ 70, 30 ]"}
 
 ::: {#first-column}
-
-###### Bachelor of Science in Biology | Minor in Dance *(December 2023)*  
+ 
 **California State University, Long Beach (CSULB)**  
-*College of Natural Sciences and Mathematics*  
+*College of Natural Sciences and Mathematics* 
 
-- **Highlighted Coursework:** Conservation Biology, Population Ecology, Biostatistics, Geographic Information Science for Natural Sciences, Undergraduate Directed Research
+[Bachelor of Science in Biology](https://www.csulb.edu/biological-sciences/undergraduate-programs) | [Minor in Dance](https://www.csulb.edu/dance/minor-dance) (December 2023)  
 
 :::
 
@@ -51,33 +96,6 @@ format:
 
 ::::
 
-
-## Background
-
-I grew up in Wilmington, CA, a small neighborhood in the South Bay and Harbor region of Los Angeles. The area has a predominantly Hispanic/Latino population and is home to a working-class community. Wilmington is located adjacent to the Port of Los Angeles and is home to the third-largest oil field in the continental United States. Several major oil refineries, including Marathon, Phillips 66, Valero, and Tesoro, are based here, making it a critical hub for the region’s industrial and energy infrastructure.
-
-Living in this environment has deeply inspired me to pursue environmental data science. Growing up surrounded by industrial activity, pollution, and environmental challenges has fueled my desire to contribute something positive to my community. I aim to use my education and skills to work on projects focused on environmental justice, conservation planning, and biodiversity monitoring. Through data-driven solutions, I hope to help create a more sustainable and equitable future for communities like mine.
-
-::: {layout-ncol=2}
-
-<div style="text-align: center;">
-  <img src="images/patagonia.png" alt="Pollution is racial violence" style="width: 300px; display: block; margin: 0 auto;">
-  <p style="font-size: 0.9em; margin-top: 5px; text-align: center;">
-    *Pollution is racial violence.* Photo by Michael Estrada, sourced from Patagonia and Wilmas Youth for Environmental Justice.
-  </p>
-</div>
-
-<div style="text-align: center;">
-  {{< video https://youtu.be/zgvisRXxxdM width="550" height="330" >}}
-  <p style="font-size: 0.9em; margin-top: 5px; text-align: center;">
-    Video source: Patagonia.<br>
-    *District 15 | Stop Neighborhood Oil Drilling.*<br>
-    Communities for a Better Environment works to empower California communities in the fight for environmental justice. This short film highlights the resilience of Wilmington’s young activists as they advocate for a Los Angeles City Council ban on oil and gas drilling within 2,500 feet of homes, schools, and hospitals.
-  </p>
-</div>
-
-:::
-
-## Interests
+## Life
 
 

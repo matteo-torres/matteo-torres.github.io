@@ -6,7 +6,7 @@ author:
     url: https://matteo-torres.github.io/
     affiliation: MEDS
     affiliation-url: https://bren.ucsb.edu/masters-programs/master-environmental-data-science
-date: 2024-03-14
+date: 2025-03-14
 categories: [Data Visualization, Science Communication]
 toc: true
 image: hairyhermit.jpg

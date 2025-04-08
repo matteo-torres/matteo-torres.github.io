@@ -5,10 +5,64 @@
 
 // Colors 
 $brat-green: #8ACE00;
+$brat-dark-green: #6ca200;
 $black: #000000;
+$dark-gray: #303030;
+$mid-gray: #d1d1d1; 
+$light-gray: #d9d9d9;
 
 // Quarto Sass Variables
+$body-bg: $dark-gray; // background color
+$navbar-bg: $dark-gray; // navbar background color
 $navbar-hl: $brat-green; // navbar highlight
+$footer-fg: $mid-gray; // footer text color
 $link-color: $brat-green; // link highlight
 
 /*-- scss:rules --*/
+
+// header text
+h1, h2, h3, h4, h5, h6 {
+  color: $mid-gray;
+}
+
+// body text
+body{
+  font-size: 19.5px;
+  color: $mid-gray;
+}
+// update landing page button colors
+div.quarto-about-jolla .about-link {
+  color: $brat-green;
+}
+
+// update landing page button hover colors
+div.quarto-about-jolla .about-link:hover {
+  color: $brat-dark-green;
+}
+
+// blog post category color
+.quarto-title .quarto-categories .quarto-category {
+  color: $brat-green;
+}
+
+// blog post category hover color
+.quarto-title .quarto-categories .quarto-category:hover {
+  color: $brat-dark-green;
+}
+
+// listing page item category color
+.quarto-grid-item .listing-categories .listing-category  {
+  color: $brat-green;
+  border-color: $brat-green;
+}
+
+// listing page item category hover color
+.quarto-grid-item .listing-categories .listing-category:hover  {
+  color: $brat-dark-green;
+  border-color: $brat-dark-green;
+}
+
+// listing page "Categories" selction color
+.quarto-listing-category .category.active {
+  color: $brat-green;
+}
