@@ -12,6 +12,7 @@ editor_options:
 # Load packages
 library(sf)
 library(here)
+library(slickR)
 library(leaflet)
 library(tidyverse)
 ```
@@ -98,4 +99,23 @@ Recent News:
 
 ## Life
 
+```{r, echo = FALSE}
+image_list <- list.files("images/carousel", full.names = TRUE, pattern = "jpeg")
+
+captions <- c("A", "B", "C", "D", "E")
+
+
+slickR(image_list,
+       slideId = "Carousel",
+       slideType = "img",
+       width = "50%",
+       height = 500) +
+  settings(
+    slidesToShow = 1,
+    slidesToScroll = 1,
+    arrows = TRUE,
+    autoplay = TRUE,
+    autoplaySpeed = 3000 
+  ) 
+```
 
