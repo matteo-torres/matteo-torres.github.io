@@ -15,7 +15,7 @@ website:
         text: Blog
       - href: projects.qmd
         text: Projects
-      - href: Torres_Matteo_Resume.pdf
+      - href: Resume.pdf
         text: Resume
         target: _blank
       - text: Connect
