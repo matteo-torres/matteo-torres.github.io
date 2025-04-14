@@ -62,7 +62,24 @@ div.quarto-about-jolla .about-link:hover {
   border-color: $brat-dark-green;
 }
 
-// listing page "Categories" selction color
+// listing page "Categories" selection color
 .quarto-listing-category .category.active {
   color: $brat-green;
 }
+
+// carousel image captions
+.slick-slide p {
+  color: $brat-green;
+  background-color: $dark-gray;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 auto;
+  text-overflow: ellipsis;
+}
+
+// carousel image arrows
+.slick-prev:before,
+.slick-next:before {
+  color: $brat-green !important;
+}
+
