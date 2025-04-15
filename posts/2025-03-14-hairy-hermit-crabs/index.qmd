@@ -1,6 +1,6 @@
 ---
 title: "Hairy Hermit Crab Infographic"
-description: "Exploring changes in California's population using MARINe biodiversity surveys"
+description: "Exploring changes in California's population using MARINe biodiversity surveys."
 author:
   - name: Matteo Torres
     url: https://matteo-torres.github.io/
