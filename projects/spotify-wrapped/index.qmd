@@ -1,6 +1,6 @@
 ---
 title: "Spotify Wrapped Dashboard"
-description: "A monthly analysis of my streaming data"
+description: "A monthly analysis of my streaming data, inspired by Spotify’s iconic end-of-year Wrapped."
 categories: [Shiny]
 image: spotify.jpg
 ---
