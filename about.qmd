@@ -103,6 +103,7 @@ Recent News:
 image_list <- list.files("images/carousel", full.names = TRUE, pattern = "jpeg")
 
 captions <- c("View of Bren Hall",
+              "Field trip",
               "Graffiti", 
               "Coffee run with friends", 
               "View after the faculty review", 
