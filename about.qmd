@@ -102,8 +102,8 @@ Recent News:
 ```{r, echo = FALSE}
 image_list <- list.files("images/carousel", full.names = TRUE, pattern = "jpeg")
 
-captions <- c("View of Bren Hall",
-              "Field trip",
+captions <- c("Bren Hall",
+              "Capstone team field trip",
               "Graffiti", 
               "Coffee run with friends", 
               "View after the faculty review", 
