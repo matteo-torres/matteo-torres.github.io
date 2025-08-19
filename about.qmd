@@ -15,6 +15,7 @@ library(here)
 library(slickR)
 library(leaflet)
 library(tidyverse)
+library(leaflet.extras)
 ```
 
 ```{r, echo = FALSE}
@@ -32,7 +33,7 @@ I am from Wilmington, CA, a small neighborhood in the South Bay Harbor region of
 
 Wilmington is predominantly a Latino, working-class community centered around industry. While the area provides job opportunities through its port and refineries, it also faces significant challenges related to pollution and health disparities. Residents are at a high risk for cancer, respiratory problems, and cardiovascular diseases. 
 
-Growing up in this environment has motivated me to pursue a career in environmental data science, with the hope of making a meaningful impact on communities like mine that are affected by environmental racism.
+Growing up in this environment has motivated me to pursue a career in environmental data science, with the hope of making a meaningful impact on communities like mine that are affected by environmental issues.
 
 :::
 
@@ -47,7 +48,10 @@ leaflet() %>%
   addPolygons(data = wilmington,
               color = "green",
               opacity = 1,
-              weight = 3)
+              weight = 3) %>%
+  addEasyButton(easyButton(icon = "fa-home",
+                           title = "Reset View",
+                           onClick = JS("function(btn, map){ map.setView([33.7858, -118.2641], 12); }")))
 ```
 
 :::

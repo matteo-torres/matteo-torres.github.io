@@ -7,7 +7,7 @@ about:
 ---
 ## Hi, I’m Matteo!
 
-I’m a graduate student pursuing a Master in Environmental Data Science (MEDS) at the University of California, Santa Barbara, Bren School of Environmental Science & Management. 
+I'm a recent graduate from the University of California, Santa Barbara’s Bren School of Environmental Science & Management, where I earned a Master in Environmental Data Science (MEDS).
 
 Check out my latest projects, blog posts, and GitHub to see what I’ve been working on!
 
