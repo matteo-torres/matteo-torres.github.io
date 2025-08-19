@@ -41,7 +41,7 @@ Growing up in this environment has motivated me to pursue a career in environmen
 
 ```{r, echo = FALSE}
 # Leaflet Map of Wilmigton
-leaflet(width = "100%", height = "400px") %>%
+leaflet() %>%
   addProviderTiles(provider = "OpenStreetMap") %>%
   setView(lng = -118.2641, lat = 33.7858, zoom = 12) %>%
   addMiniMap(toggleDisplay = TRUE, minimized = FALSE) %>%
