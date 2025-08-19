@@ -107,21 +107,26 @@ Recent News:
 image_list <- list.files("images/carousel", full.names = TRUE, pattern = "jpeg")
 
 captions <- c("Bren Hall",
-              "Capstone team field trip",
+              "MEDS Cohort 2025",
+              "Field Trip to Dangermond Preserve",
+              "Aloes in Wonderland",
+              "Graduation",
               "Graffiti", 
-              "Coffee run with friends", 
-              "View after the faculty review", 
+              "Coffee Run", 
+              "Landshark!",
+              "NCEAS", 
+              "Ocean View", 
               "Sunbathing POV")
 
 slickR(image_list,
        slideId = "carousel",
        slideType = "img",
-       width = "50%",
-       height = 500) %synch%
-  (slickR(captions, slideType = "p", width = "100%", height = 50) + settings(arrows = FALSE)) +
+       width = "350px",
+       height = "400px") %synch%
+  (slickR(captions, slideType = "p", width = "350px", height = "50px") + settings(arrows = FALSE)) +
   settings(slidesToShow = 1,
            slidesToScroll = 1,
            arrows = TRUE,
            autoplay = TRUE,
-           autoplaySpeed = 3000) 
+           autoplaySpeed = 5000)
 ```
