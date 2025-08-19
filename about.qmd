@@ -51,7 +51,8 @@ leaflet() %>%
               weight = 3) %>%
   addEasyButton(easyButton(icon = "fa-home",
                            title = "Reset View",
-                           onClick = JS("function(btn, map){ map.setView([33.7858, -118.2641], 12); }")))
+                           onClick = JS("function(btn, map){ map.setView([33.7858, -118.2641], 12); }"))) %>%
+  htmlwidgets::onRender("function(el, x) {el.style.width = '100%'; el.style.height = '450px';}")
 ```
 
 :::
