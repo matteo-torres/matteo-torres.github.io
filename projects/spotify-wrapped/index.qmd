@@ -4,7 +4,14 @@ description: "A monthly analysis of my streaming data, inspired by Spotify’s i
 categories: [Shiny]
 image: spotify.jpg
 ---
-
 [{{< fa brands r-project >}} Shiny dashboard](https://matteo-torres.shinyapps.io/shinydashboard/){.btn target=_blank}
 [{{< fa brands github-alt >}} GitHub repository](https://github.com/matteo-torres/spotify-wrapped){.btn target=_blank}
 
+## Tableau Dashboard
+
+<iframe 
+  src="https://public.tableau.com/views/SpotifyWrapped_17565836113240/Dashboard1?:embed=y&:display_count=yes&:showVizHome=no" 
+  width="100%" 
+  height="850" 
+  style="border:none;">
+</iframe>
