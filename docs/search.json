@@ -208,5 +208,12 @@
     "title": "Spotify Wrapped Dashboard",
     "section": "Tableau Dashboard",
     "text": "Tableau Dashboard"
+  },
+  {
+    "objectID": "projects/spotify-wrapped/index.html#shiny-dashboard",
+    "href": "projects/spotify-wrapped/index.html#shiny-dashboard",
+    "title": "Spotify Wrapped Dashboard",
+    "section": "",
+    "text": "Shiny dashboard  GitHub repository"
   }
 ]

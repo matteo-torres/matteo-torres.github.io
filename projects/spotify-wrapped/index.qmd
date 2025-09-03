@@ -1,9 +1,10 @@
 ---
 title: "Spotify Wrapped Dashboard"
 description: "A monthly analysis of my streaming data, inspired by Spotify’s iconic end-of-year Wrapped."
-categories: [Shiny]
+categories: [Shiny, Tableau, Data Visualization]
 image: spotify.jpg
 ---
+## Shiny Dashboard
 [{{< fa brands r-project >}} Shiny dashboard](https://matteo-torres.shinyapps.io/shinydashboard/){.btn target=_blank}
 [{{< fa brands github-alt >}} GitHub repository](https://github.com/matteo-torres/spotify-wrapped){.btn target=_blank}
 
