@@ -201,5 +201,12 @@
     "title": "About Me",
     "section": "Life",
     "text": "Life"
+  },
+  {
+    "objectID": "projects/spotify-wrapped/index.html#tableau-dashboard",
+    "href": "projects/spotify-wrapped/index.html#tableau-dashboard",
+    "title": "Spotify Wrapped Dashboard",
+    "section": "Tableau Dashboard",
+    "text": "Tableau Dashboard"
   }
 ]
