@@ -11,7 +11,7 @@ image: spotify.jpg
 ## Tableau Dashboard
 
 <iframe 
-  src="https://public.tableau.com/views/SpotifyWrapped_17565836113240/SpotifyWrappedDashboard?:embed=y&:display_count=yes&:showVizHome=no" 
+  src="https://public.tableau.com/views/SpotifyWrapped_17565836113240/SpotifyWrappedDashboard?:embed=y&:display_count=yes&:showVizHome=no&:tabs=no" 
   width="100%" 
   height="850" 
   style="border:none;">
