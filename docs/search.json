@@ -207,7 +207,7 @@
     "href": "projects/spotify-wrapped/index.html#tableau-dashboard",
     "title": "Spotify Wrapped Dashboard",
     "section": "Tableau Dashboard",
-    "text": "Tableau Dashboard"
+    "text": "Tableau Dashboard\n\n\n\n\n\n\nFor my mid-year review, I decided to utilize Tableau to build a dashboard.\n\nCheck out the playlist of my top 10 songs so far!"
   },
   {
     "objectID": "projects/spotify-wrapped/index.html#shiny-dashboard",
@@ -215,5 +215,26 @@
     "title": "Spotify Wrapped Dashboard",
     "section": "",
     "text": "Shiny dashboard  GitHub repository"
+  },
+  {
+    "objectID": "projects/spotify-wrapped/index.html#playlist",
+    "href": "projects/spotify-wrapped/index.html#playlist",
+    "title": "Spotify Wrapped Dashboard",
+    "section": "Playlist",
+    "text": "Playlist"
+  },
+  {
+    "objectID": "projects/spotify-wrapped/index.html#monthly-review",
+    "href": "projects/spotify-wrapped/index.html#monthly-review",
+    "title": "Spotify Wrapped Dashboard",
+    "section": "",
+    "text": "Shiny dashboard  GitHub repository"
+  },
+  {
+    "objectID": "projects/spotify-wrapped/index.html#mid-year-review",
+    "href": "projects/spotify-wrapped/index.html#mid-year-review",
+    "title": "Spotify Wrapped Dashboard",
+    "section": "Mid-Year Review",
+    "text": "Mid-Year Review\n\n\n\n\n\n\nFor my mid-year review, I decided to build a dashboard in Tableau to familiarize myself with the software. The platform is quite intuitive for data cleaning, creating visualizations, and formatting dashboard layouts. I successfully analyzed my streaming patterns across the first six months, including total and unique streams, my top 10 songs, top 10 artists, and the artists I consistently listened to each month.\n\nBelow, you can explore the interactive dashboard and uncover the insights I found in my streaming data. Navigate through the different visualizations for a complete view of my listening habits over the past six months, and check out the playlist I created featuring my top 10 songs!"
   }
 ]
