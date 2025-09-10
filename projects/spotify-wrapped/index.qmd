@@ -4,11 +4,32 @@ description: "A monthly analysis of my streaming data, inspired by Spotify’s i
 categories: [Shiny, Tableau, Data Visualization]
 image: spotify.jpg
 ---
-## Shiny Dashboard
+## Monthly Review
+
 [{{< fa brands r-project >}} Shiny dashboard](https://matteo-torres.shinyapps.io/shinydashboard/){.btn target=_blank}
 [{{< fa brands github-alt >}} GitHub repository](https://github.com/matteo-torres/spotify-wrapped){.btn target=_blank}
 
-## Tableau Dashboard
+## Mid-Year Review
+
+:::: {layout="[ 60, 40 ]"}
+
+::: {#first-column}
+
+For my mid-year review, I decided to build a dashboard in Tableau to familiarize myself with the software. The platform is quite intuitive for data cleaning, creating visualizations, and formatting dashboard layouts. I successfully analyzed my streaming patterns across the first six months, including total and unique streams, my top 10 songs, top 10 artists, and the artists I consistently listened to each month.
+
+<br> 
+
+Below, you can explore the interactive dashboard and uncover the insights I found in my streaming data. Navigate through the different visualizations for a complete view of my listening habits over the past six months, and check out the playlist I created featuring my top 10 songs!
+
+:::
+
+::: {#second-column}
+
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4bq5blSPdk7BOzJkllUwh0?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+:::
+
+::::
 
 <iframe 
   src="https://public.tableau.com/views/SpotifyWrapped_17565836113240/SpotifyWrappedDashboard?:embed=y&:display_count=yes&:showVizHome=no&:tabs=no" 
